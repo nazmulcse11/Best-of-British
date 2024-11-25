@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="login-wraper w-[100%] grid md:grid-cols-2 grid-cols-1 md:gap-[0px] gap-[30px] h-[100svh]">
+            <div class="left-part ">
+                <div class="content-wraper max-w-[760px] px-[20px] mx-auto pt-[60px]">
+                    <div class="logo-image">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </div>
+                    <div class="login-wraper-inner max-w-[450px] mx-auto sm:mt-[120px] mt-[60px]">
+                        <h3 class="heading dm-serif 
+                        leading-[1.25] font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Login to your account</h3>
+                        <form action="#" method="get" class="flex flex-col gap-[24px]">
+                            <div class="input-wraper flex mobilexl:flex-row flex-col gap-[16px]">
+                                <input type="text" name="first-name" id="fname" placeholder="First name" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] flex-1">
+                                <input type="text" name="last-name" id="lname" placeholder="Last name" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] flex-1">
+                            </div>
+                            <div class="input-wraper ">
+                                <input type="email" name="email" id="email" placeholder="admin@mail.com" class="input-field w-[100%] bg-color3 px-4 py-3.5 rounded-[10px] focus:outline-0 text-color0 text-[1rem] font-[600] placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600] ">
+                            </div>
+                            <div class="input-wraper relative">
+                                <input type="password" name="password" id="password" placeholder="********" class="input-field w-[100%] bg-color3 px-4 py-3.5 pe-[52px] rounded-[10px] focus:outline-0 placeholder:text-color0 placeholder:text-[1rem] placeholder:font-[600]">
+                                <div class="icon absolute end-[16px] top-[50%] translate-y-[-50%] cursor-pointer">
+                                    <i class="fa-regular fa-eye"></i>
+                                </div>
+                            </div>
+                            <div class="input-wraper flex gap-[12px]">
+                                <div class="remember-me flex mt-[3px]">
+                                    <input type="checkbox" name="remember" id="remember" class="cursor-pointer custom-checkbox">
+                                </div>
+                                <div class="by-processing font-[600] text-[1rem] text-color0">By proceeding, you agree to the <a href="javascript:void(0)" class="text-color6 underline">Terms and Conditions</a></div>
+                            </div>
+                            <div class="button-wraper">
+                                <a href="javascript:void(0)" class="bg-color6 p-4 rounded-[10px] w-[100%] text-[#fff] text-[1rem] text-center transition-all duration-300 hover:opacity-80">
+                                    Sign in
+                                </a>
+                                <div class="or-login-with flex items-center gap-[24px] mt-[32px] mb-[24px]">
+                                    <div class="line bg-color7 h-[1px] flex-1"></div>
+                                    <span class="text-color2 font-[600] text-[1rem]">Or login with</span>
+                                    <div class="line bg-color7 h-[1px] flex-1"></div>
+                                </div>
+                                <div class="social-login flex flex-wrap gap-[16px]">
+                                    <a href="javascript:void(0)" class="hover:bg-color3 flex-1 flex items-center justify-center gap-[8px] p-[15px] rounded-[10px] border-[1px] border-[#F1F5F9] transition-all duration-300">     
+                                        <img src="./assets/images/google.png" alt="google">
+                                        <span class="text-color0 font-[400] text-[1rem]">Google</span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="hover:bg-color3 flex-1 flex items-center justify-center gap-[8px] p-[15px] rounded-[10px] border-[1px] border-[#F1F5F9] transition-all duration-300">     
+                                        <img src="./assets/images/apple.png" alt="apple">
+                                        <span class="text-color0 font-[400] text-[1rem]">Apple</span>
+                                    </a>
+                                </div>
+                                <div class="signup-link mt-[32px]">
+                                    <span class="text-color2 font-[600] text-[1rem]">Already have an account? <a href="./login.html" class="text-color5 underline">Sign In</a></span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="signup-footer max-w-[450px] mx-auto mobile:mt-[120px] mt-[40px]">
+                            <ul class="flex flex-wrap gap-3 mobile:justify-between justify-center ">
+                                <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Terms & Conditions</a></li>
+                                <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)" class="text-[1rem] text-color1">Help</a></li>
+                            </ul>
+                            <div class="coppywright text-center text-color2 font-[600] mt-4">@ 2024 <a href="javascript:void(0)">Best Of British</a>. All Rights Reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part bg-color4 py-[40px] bg-[url('./assets/images/login.png');] bg-no-repeat bg-center bg-cover h-[100%]">
+                <div class="custom-slick-dots py-[40px] img-slider-item-wraper global-slick-init flex flex-wrap w-[100%] h-[100%] items-center " data-infinite="true" data-autoplay="true" data-speed="3000"  data-dots="true">
+                    <div class="img-slider-item h-[100%] flex flex-col place-content-center px-[20px]">
+                        <div class="img-part max-w-[736px] max-h-[618px] mx-auto">
+                            <img src="./assets/images/login-s1.png" class="h-[100%] w-[100%] object-cover" alt="login slider">
+                        </div>
+                        <div class="text-part max-w-[520px] mx-auto mt-[30px]">
+                            <h3 class="dm-serif text-[1.8rem] text-color8 text-center">Found something you like? Add it to your cart and checkout securely right within the app.</h3>
+                        </div>
+                    </div>
+                    <div class="img-slider-item h-[100%] flex flex-col place-content-center px-[20px]">
+                        <div class="img-part max-w-[736px] max-h-[618px] mx-auto">
+                            <img src="./assets/images/login-s2.png" class="h-[100%] w-[100%] object-cover" alt="login slider">
+                        </div>
+                        <div class="text-part max-w-[520px] mx-auto mt-[30px]">
+                            <h3 class="dm-serif text-[1.8rem] text-color8 text-center">Explore a wide range of products and stores near you.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@layer utilities {
+    .selected {
+        border-color: var(--color-4) ;
+        background-color: #fff ;
+      }
+}

@@ -1,0 +1,154 @@
+
+@media only screen and (max-width: 1399.98px) {
+
+}
+@media only screen and (max-width: 1199.98px) {
+    /*padding*/
+    .sec-p-top {
+        padding-top: 70px;
+    }
+    .sec-p-bot {
+        padding-bottom: 70px;
+    }
+    .sec-ph-top {
+        padding-top: 35px;
+    }
+    .sec-ph-bot {
+        padding-bottom: 35px;
+    }
+    /*Navbar*/
+    .wmelons-navbar .custom-container {
+        position: relative;
+    }
+    .wmelons-navbar .navbar-right-content {
+        position: absolute;
+        top: calc(100% + 30px);
+        right: 20px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        z-index: 999;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        &.show-nav-content {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .wmelons-navbar .navbar-nav li {
+        width: fit-content;
+    }
+    /*Banner Part*/
+    .wmelons{
+        .main-heading {
+            font-size: 50px;
+        }
+        .second-head {
+            font-size: 30px;
+        }
+    }
+    /*Plan price part*/
+    .wmelons.pricing-plans .price-plans-wraper .single-price-plan {
+        .plan-head .plan-title {
+            font-size: 20px;          
+        }
+        .price span {
+            font-size: 20px;
+        }
+    }
+    /* About page */
+    .wmelons.commitments .title {
+        font-size: 30px;
+    }
+    /*Blog Details page*/
+    .wmelons.blog-details .blog-details-wraper .blog-details-body p:has(+ p){
+        margin-bottom: 30px;
+    }
+    .wmelons.blog-details .blog-details-wraper .share-tag .title {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 991.98px) {
+    .wmelons.get-updates .get-update-wraper {
+        padding: 30px;
+    }
+    /*Blog Details page*/
+    .wmelons.blog-details .blog-details-wraper .share-tag {
+        margin-top: 50px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .wmelons.blog-details .blog-details-wraper .share-tag .share a {
+        width: 40px;
+        height: 40px;
+    }
+    .wmelons.blog-details .blog-details-wraper .share-tag .tags a {
+        padding: 10px 34px;
+    }
+}
+@media only screen and (max-width: 767.98px) {
+    .wmelons.get-updates .get-update-wraper .get-update-inner {
+        flex-direction: column;
+    }
+    .wmelons.get-updates .get-update-wraper .get-update-inner .get-update-title {
+        font-size: 26px;
+    }
+    .wmelons.get-updates .get-update-wraper .get-update-inner .text-part .news-latter input {
+        padding: 12px 22px;
+    }
+    .wmelons.get-updates .get-update-wraper .get-update-inner .text-part .news-latter .subscribe-btn {
+        padding: 12px 22px;
+    }
+}
+@media only screen and (max-width: 575.98px) {
+    /*padding*/
+    .sec-p-top {
+        padding-top: 40px;
+    }
+    .sec-p-bot {
+        padding-bottom: 40px;
+    }
+    .sec-ph-top {
+        padding-top: 20px;
+    }
+    .sec-ph-bot {
+        padding-bottom: 20px;
+    }
+    .wmelons.pricing-plans .price-plans-wraper .plan-btn {
+        padding: 14px 20px;
+    }
+    /* blog-detais */
+    .wmelons.blog-details .blog-details-wraper .blog-head-img .writer-date {
+        padding: 12px 10px;
+        font-size: 12px;
+        left: 8px;
+        bottom: -10px;
+    }
+}
+@media only screen and (max-width: 425.98px) {
+    .wmelons .cmn-btn {
+        padding: 10px 26px;
+    }
+    .wmelons .main-heading {
+        font-size: 34px;
+    }
+    .wmelons .second-head {
+        font-size: 26px;
+    }
+    .wmelons.footer-area .footer-area-bottom ul {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .wmelons.footer-area .footer-area-bottom ul li:not(:last-child) a {
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 375.98px) {
+    .wmelons.login-reg .svae-forget {
+        flex-wrap: wrap;
+    }
+    .wmelons.login-reg .login-page .name-wraper {
+        flex-direction: column;
+    }
+}
