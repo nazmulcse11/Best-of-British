@@ -1,36 +1,9 @@
 (function ($) {
     "use strict";
     jQuery(document).ready(function ($) {
-        /* Navbar button */
-        $(document).on('click', '.navbar-toggler', function(){
-            $(".navbar-collapse").toggleClass("hidden show");
-        });
-
-
-        $(document).on('click', '.click-nav-right-icon', function(){
-            $(".navbar-right-content").toggleClass("show-nav-content");
-        });
-        $(document).on('click', '.profile-part', function(){
-            $(".profile-item").toggleClass("show");
-        });
-        $(document).on('click', '.input-with-icon .icon', function(){
-            $('.input-with-icon i').toggleClass("d-none");
-            let input_field_type = $(".input-with-icon").find('input').attr("type");
-            console.log(input_field_type);
-            if (input_field_type == "password"){
-                $(".input-with-icon input").attr("type","text");
-            }
-            else {
-                $(".input-with-icon input").attr("type","password");
-            }
-        });
-        //sign up option btn
-        $(".sign-up-option").on('click', function(){
-            $(this).siblings().removeClass("selected");
-            $(this).addClass("selected");
-        })
-    });
-     /*-----------------------------------
+        
+        // setTimeout(function(){
+               /*-----------------------------------
             global slick slicer control
         -----------------------------------*/
         var globalSlickInit = $('.global-slick-init');
@@ -117,6 +90,37 @@
                 }
             });
         }
+        // }, 500);
 
+
+
+        /* Navbar button */
+        $(document).on('click', '.navbar-toggler', function(){
+            $(".navbar-collapse").toggleClass("hidden show");
+        });
+
+        // register js
+        $(document).on('click', '#confirm_user_identity', function(){
+            let user_identity = $('.identity-wraper').find('a.selected');
+            console.log('Number of selected elements:', user_identity.length);
+            if (user_identity.length > 0) {
+                $('.identity-wraper').addClass('absolute opacity-0');
+                $('.register-info-wraper').removeClass('absolute opacity-0 overflow-hidden');
+                $('.register-info-wraper .left-part').addClass('left-right');
+                $('.register-info-wraper .right-part').addClass('right-left');
+            }
+        });
+
+        
+        
+
+        
+        //sign up option btn
+        $(".sign-up-option").on('click', function(){
+            $(this).siblings().removeClass("selected");
+            $(this).addClass("selected");
+        })
+    });
+  
 
 }(jQuery));

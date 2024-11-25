@@ -85,6 +85,9 @@ a{
     color: #fff;
   }
 }
+.slick-list {
+  width: 100%;
+}
 .custom-slick-dots {
   .slick-dots {
     margin-top: 50px;
@@ -111,6 +114,28 @@ a{
       }
     }
   }
+}
+@keyframes left-right {
+ 0%{
+  transform: translateX(-80px);
+ }
+ 100%{
+  transform: translateX(0);
+ } 
+}
+@keyframes right-left {
+ 0%{
+  transform: translateX(80px);
+ }
+ 100%{
+  transform: translateX(0);
+ } 
+}
+.left-right{
+  animation: left-right 1s ease-in-out;
+}
+.right-left{
+  animation: right-left 0s ease-in-out;
 }
 /* Container */
 .container-1440{
