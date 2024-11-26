@@ -12,6 +12,9 @@ tailwind.config = {
             color7: '#C1D5ED',
             color8: '#0F172A',
             color9: '#486789',
+            color10: '#EBEAE6',
+            color11: '#666562',
+            color12: '#2D2D2D',
         },
         screens: {
             'mobilexl': '576px',
