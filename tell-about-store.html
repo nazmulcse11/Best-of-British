@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="max-w-[1240px] px-5 mx-auto py-[60px] z-[-1] identity-wraper top-0 ">
+            <div class="logo-image">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+            <div class="tell-about-store max-w-[652px] mx-auto mt-[80px]">
+                <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Tell us about your store</h3>
+                <form action="#" method="get" class="flex flex-col gap-[20px]">
+                    <div class="flex gap-[30px]">
+                        <div class="input-wraper flex-1">
+                            <label for="store_name" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Store Name<span class="text-color14">*</span></label>
+                            <input type="text" id="store_name" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Store Name" required>
+                        </div>
+                        <div class="input-wraper flex-1">
+                            <label for="shop_category" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Category<span class="text-color14">*</span></label>
+                            <select type="text" id="shop_category" class="input-field custom-select2 w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="e.g., Clothing, Electronics, ect." required>
+                                <option value="1">Electronics</option>
+                                <option value="1">Clothing</option>
+                                <option value="1">Electronics</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="store_description" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Store Description</label>
+                        <textarea name="store_description" id="store_description" rows="3" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Write something..."></textarea>
+                    </div>
+                    <div>
+                        <label for="store_description" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Store Description</label>
+                        <textarea name="store_description" id="store_description" rows="3" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Write something..."></textarea>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <div class="input-wraper flex-1">
+                            <label for="business_email" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Business Email</label>
+                            <input type="email" id="business_email" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="neurotic@email.com">
+                        </div>
+                        <div class="input-wraper flex-1">
+                            <label for="contact_number" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Contact Number</label>
+                            <input type="text" id="contact_number" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="07 797 0462">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-[600] text-[1rem] text-color15 leading-[1.5]">Store Address</label>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <div class="input-wraper flex-1">
+                            <label for="store_country" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Country<span class="text-color14">*</span></label>
+                            <input type="text" id="store_country" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="United Kingdom">
+                        </div>
+                        <div class="input-wraper flex-1">
+                            <label for="store_city" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">City<span class="text-color14">*</span></label>
+                            <input type="text" id="store_city" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="London">
+                        </div>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <div class="input-wraper flex-1">
+                            <label for="store_address" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Address<span class="text-color14">*</span></label>
+                            <input type="email" id="store_address" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="46 The Creascent">
+                        </div>
+                        <div class="input-wraper flex-1">
+                            <label for="store_postcode" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Postcode<span class="text-color14">*</span></label>
+                            <input type="text" id="store_postcode" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="SW04 8DL">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="input-wraper flex-1">
+                            <label for="store_postcode" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Tax ID/VAT Number<span class="text-color14">*</span></label>
+                            <input type="text" id="store_postcode" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn-wraper">
+                            <a href="javascript:void(0)" class="w-[100%] bg-color6 text-[#fff] py-[16px] rounded-[10px] text-center text-[1rem] font-[600] mt-[24px]">Next</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

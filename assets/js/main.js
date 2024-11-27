@@ -113,13 +113,25 @@
 
         
         
-
+        //Signup modal for aggreement
+        $(document).on('click', '#sign-up', function(){
+            $('#seller_agreement').removeClass("hidden");
+        })
+        //close modal
+        $(document).on('click', '.close-icon', function(){
+            $('#seller_agreement').addClass("hidden");
+        })
         
         //sign up option btn
         $(".sign-up-option").on('click', function(){
             $(this).siblings().removeClass("selected");
             $(this).addClass("selected");
         })
+
+        //slelect 2 activarot
+        $('#shop_category').select2({
+            placeholder: 'Select an option',
+        });
     });
   
 

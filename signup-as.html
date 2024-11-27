@@ -12,7 +12,7 @@
 </head>
 <body> 
     <div class="main relative">
-        <div class="max-w-[1240px] px-5 mx-auto pt-[60px] identity-wraper top-0 ">
+        <div class="max-w-[1240px] px-5 mx-auto pt-[60px] z-[-1] identity-wraper top-0 ">
             <div class="logo-image">
                 <img src="./assets/images/logo.png" alt="logo">
             </div>
@@ -79,7 +79,7 @@
                                     <div class="by-processing font-[600] text-[1rem] text-color0">By proceeding, you agree to the <a href="javascript:void(0)" class="text-color6 underline">Terms and Conditions</a></div>
                                 </div>
                                 <div class="button-wraper">
-                                    <a href="javascript:void(0)" class="bg-color6 p-4 rounded-[10px] w-[100%] text-[#fff] text-[1rem] text-center transition-all duration-300 hover:opacity-80">
+                                    <a href="javascript:void(0)" id="sign-up" class="bg-color6 p-4 rounded-[10px] w-[100%] text-[#fff] text-[1rem] text-center transition-all duration-300 hover:opacity-80">
                                         Sign up
                                     </a>
                                     <div class="or-login-with flex items-center gap-[24px] mt-[32px] mb-[24px]">
@@ -130,6 +130,65 @@
                             <div class="text-part max-w-[520px] mx-auto mt-[30px]">
                                 <h3 class="dm-serif lg:text-[1.8rem] text-[1rem] text-color8 text-center">Explore a wide range of products and stores near you.</h3>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seller_agreement" class="modal-wraper hidden">
+            <div class="modal-backdrop fixed inset-0 bg-[#00020b66] z-[10] transition-opacity flex items-center justify-center">
+                <div class="modal-content bg-[#fff] relative top-[30px] max-w-[881px] max-h-[calc(100%-60px)] overflow-auto scrollbar-none rounded-[8px] p-[40px]">
+                    <div class="modal-header relative">  
+                        <h3 class="font-bold text-[2rem] text-color5 mb-[22px]">Seller Agreement</h3>
+                        <div class="close-icon absolute right-0 top-0 h-[40px] w-[40px] flex justify-center items-center rounded-[8px] bg-[#C1D5ED] text-[#486789] cursor-pointer">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body *:tracking-[0.3px] leading-[2] *:text-color8 *:text-[1rem]">
+                        <h3 class="subtitle font-[700]">Overview</h3>
+                        <p class="overview mb-[30px]">This Agreement ("Agreement") is made between the Seller ("You" or "Seller") and Best of British ("Platform"), a company providing a marketplace and recommendation platform for buyers, sellers, and recommenders. By signing up as a Seller and utilizing the platform, you agree to the terms and conditions set forth below.</p>
+                        <h3 class="subtitle font-[700]">1. Commission Structure</h3>
+                        <p>You agree to the following commission terms for any sales generated through the platform, either by Recommenders or directly:</p>
+                        <h4 class="font-[600]">1.1 Recommender Commission</h4>
+                        <p>You agree to pay a commission to Recommenders for sales made through their referrals. The commission percentage will be set by you during product listing, with the following platform minimum requirements:</p>
+                        <ul class="list-disc pl-[20px]">
+                            <li>Minimum Commission: 2% of the total sale value for Recommenders.</li>
+                        </ul>
+                        <h4 class="font-[600]">1.2 Platform Commission (Best of British)</h4>
+                        <p>In addition to the Recommender commission, you agree to pay the platform a commission for sales facilitated through the platform:</p>
+                        <ul class="list-disc pl-[20px]">
+                            <li>Platform Commission: 10% of the total sale value for Best of British.</li>
+                        </ul>
+                        <h4 class="font-[600]">1.3 Total Commission</h4>
+                        <p>The total commission (Recommender + Platform) will be automatically deducted from each sale. You will receive the remaining balance after commissions have been distributed.</p>
+                        <h3 class="subtitle font-[700]">2. Payment and Payout</h3>
+                        <h4 class="font-[600]">2.1 Payout Process</h4>
+                        <p>Sales earnings, after deductions for Recommender and Platform commissions, will be credited to your in-app wallet. Payouts will be processed weekly to your designated payment method.</p>
+                        <h4 class="font-[600]">2.2 Commission Adjustments</h4>
+                        <p>You may update the commission percentage for each product, but it must always meet the platform’s minimum requirements as stated in Section 1.</p>
+                        <h3 class="subtitle font-[700]">3. Promotions and Advertising</h3>
+                        <p>You are encouraged to use in-app promotional tools such as banners and featured product listings to increase visibility of your store. These promotional activities may incur additional fees, which will be clearly outlined before activation.</p>
+                        <h3 class="subtitle font-[700]">4. Subscription</h3>
+                        <h4 class="font-[600]">4.1 Subscription Terms</h4>
+                        <p>Sellers are required to subscribe to the platform’s services after the first 3 months of free usage. The subscription fee is £10 per month and will be automatically deducted from your in-app wallet or designated payment method.</p>
+                        <h4 class="font-[600]">4.2 Free Trial Period</h4>
+                        <p>You are eligible for a 3-month free trial from the date of registration as a Seller. During this period, you can cancel your subscription anytime without incurring any charges.</p>
+                        <h4 class="font-[600]">4.3 Subscription Cancellation</h4>
+                        <p>After the 3-month free trial, you may cancel your subscription at any time. If you cancel, the subscription will remain active until the end of the billing cycle. Once cancelled, you will no longer have access to premium seller features, and your store may be delisted from promotional features.</p>
+                        <h3 class="subtitle font-[700]">5. Responsibilities</h3>
+                        <h4 class="font-[600]">5.1 Accurate Listings</h4>
+                        <p>You agree to provide accurate product descriptions, pricing, and shipping details. You are solely responsible for fulfilling orders and handling returns or disputes with customers.</p>
+                        <h4 class="font-[600]">5.2 Compliance with Laws</h4>
+                        <p>You agree to comply with all local, national, and international laws regarding the sale of your products.</p>
+                        <h3 class="subtitle font-[700]">6. Termination</h3>
+                        <p>This Agreement may be terminated by either party at any time. However, any pending transactions and commissions owed will still be processed in accordance with the terms outlined above.</p>
+                        <h3 class="subtitle font-[700]">7. Acceptance</h3>
+                        <p>By clicking "Accept," you acknowledge that you have read, understood, and agree to these terms and conditions, including the commission structure for Recommenders and the Platform.</p>
+                    </div>
+                    <div class="modal-footer mt-[70px]">
+                        <div class="btn-wraper flex gap-[16px] justify-center *:w-[160px] *:text-center *:py-[12px] *:rounded-[8px] *:border-[1px] *:font[600] *:text-[1rem] *:transition-all *:ease-linear duration-300">
+                            <a href="javascript:void(0)" class="bg-[#fff] border-color13 text-color14 hover:bg-color14 hover:text-[#fff]">Decline</a>
+                            <a href="javascript:void(0)" class="bg-color6 border-color6 text-[#fff] hover:bg-[#fff] hover:text-color6">Accept Agreement</a>
                         </div>
                     </div>
                 </div>

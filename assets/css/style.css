@@ -188,6 +188,26 @@ a{
 .right-left{
   animation: right-left 0s ease-in-out;
 }
+.scrollbar-none{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/*select-2*/
+.custom-select2 + .select2-container{
+  .select2-selection--single {
+    padding: 12px 16px;
+    border: 1px solid #E2E8F0;
+    height: auto;
+    line-height: 1.5;
+    border-radius: 8px;
+    .select2-selection__rendered {
+      line-height: 1.5;
+      color: #334155;
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+}
 /* Container */
 .container-1440{
   max-width: 100%;
