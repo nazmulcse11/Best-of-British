@@ -96,7 +96,7 @@
 
         /* Navbar button */
         $(document).on('click', '.navbar-toggler', function(){
-            $(".navbar-collapse").toggleClass("hidden show");
+            $(".navbar-collapse").toggleClass("hidden opacity-0");
         });
 
         // register js
