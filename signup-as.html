@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Of British</title>
     <link rel="stylesheet" href="./assets/css/plugin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="./assets/js/tailwind.js"></script>
     <script src="./assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,7 +15,9 @@
     <div class="main relative">
         <div class="max-w-[1240px] px-5 mx-auto pt-[60px] z-[-1] identity-wraper top-0 ">
             <div class="logo-image">
-                <img src="./assets/images/logo.png" alt="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
             </div>
             <div class="signup-as-wraper max-w-[450px] mx-auto mt-8">
                 <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">I would like to signup as:</h3>
@@ -53,7 +56,9 @@
                 <div class="left-part">
                     <div class="content-wraper max-w-[760px] px-[20px] mx-auto pt-[60px]">
                         <div class="logo-image">
-                            <img src="./assets/images/logo.png" alt="logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </a>
                         </div>
                         <div class="login-wraper-inner max-w-[450px] mx-auto sm:mt-[120px] mt-[60px]">
                             <h3 class="heading dm-serif 
@@ -187,8 +192,8 @@
                     </div>
                     <div class="modal-footer mt-[70px]">
                         <div class="btn-wraper flex gap-[16px] justify-center *:w-[160px] *:text-center *:py-[12px] *:rounded-[8px] *:border-[1px] *:font[600] *:text-[1rem] *:transition-all *:ease-linear duration-300">
-                            <a href="javascript:void(0)" class="bg-[#fff] border-color13 text-color14 hover:bg-color14 hover:text-[#fff]">Decline</a>
-                            <a href="javascript:void(0)" class="bg-color6 border-color6 text-[#fff] hover:bg-[#fff] hover:text-color6">Accept Agreement</a>
+                            <a id="close-modal" href="javascript:void(0)" class="bg-[#fff] border-color13 text-color14 hover:bg-color14 hover:text-[#fff]">Decline</a>
+                            <a href="tell-about-store.html" class="bg-color6 border-color6 text-[#fff] hover:bg-[#fff] hover:text-color6">Accept Agreement</a>
                         </div>
                     </div>
                 </div>

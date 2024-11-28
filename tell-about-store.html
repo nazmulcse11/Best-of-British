@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Of British</title>
     <link rel="stylesheet" href="./assets/css/plugin.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind.js"></script>
     <script src="./assets/js/tailwind-config.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body> 
     <div class="main">
-        <div class="max-w-[1240px] px-5 mx-auto py-[60px] z-[-1] identity-wraper top-0 ">
+        <div class="max-w-[1660px] px-5 mx-auto py-[60px] z-[-1] identity-wraper top-0 ">
             <div class="logo-image">
-                <img src="./assets/images/logo.png" alt="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
             </div>
             <div class="tell-about-store max-w-[652px] mx-auto mt-[80px]">
                 <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Tell us about your store</h3>
-                <form action="#" method="get" class="flex flex-col gap-[20px]">
+                 <form action="#" method="get" class="flex flex-col gap-[20px]">
                     <div class="flex gap-[30px]">
                         <div class="input-wraper flex-1">
                             <label for="store_name" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Store Name<span class="text-color14">*</span></label>
                             <input type="text" id="store_name" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Store Name" required>
                         </div>
                         <div class="input-wraper flex-1">
-                            <label for="shop_category" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Category<span class="text-color14">*</span></label>
-                            <select type="text" id="shop_category" class="input-field custom-select2 w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="e.g., Clothing, Electronics, ect." required>
+                            <div for="shop_category" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Category<span class="text-color14">*</span></div>
+                            <select id="shop_category" class="input-field w-[100%] custom-select2" placeholder="e.g., Clothing, Electronics, ect.">
                                 <option value="1">Electronics</option>
                                 <option value="1">Clothing</option>
-                                <option value="1">Electronics</option>
+                                <option value="1">Accessories</option>
                             </select>
                         </div>
                     </div>
@@ -38,8 +40,9 @@
                         <textarea name="store_description" id="store_description" rows="3" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Write something..."></textarea>
                     </div>
                     <div>
-                        <label for="store_description" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Store Description</label>
-                        <textarea name="store_description" id="store_description" rows="3" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="Write something..."></textarea>
+                        <div class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Upload Stire Logo<span class="text-color14">*</span></div>
+                        <label for="store_logo" class="block cursor-pointer border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] text-color16 text-[1rem] leading-[1.5]"><i class="fa-solid fa-upload me-[12px]"></i>Upload a file</label>
+                        <input type="file" id="store_logo" class="appearance-none hidden">
                     </div>
                     <div class="flex gap-[30px]">
                         <div class="input-wraper flex-1">
@@ -57,7 +60,11 @@
                     <div class="flex gap-[30px]">
                         <div class="input-wraper flex-1">
                             <label for="store_country" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Country<span class="text-color14">*</span></label>
-                            <input type="text" id="store_country" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="United Kingdom">
+                            <select name="store_country" id="store_country" class="input-field w-[100%] custom-select2">
+                                <option value="1">United States</option>
+                                <option value="2">United Kingdom</option>
+                                <option value="3">Australia</option>
+                            </select>
                         </div>
                         <div class="input-wraper flex-1">
                             <label for="store_city" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">City<span class="text-color14">*</span></label>
@@ -82,11 +89,11 @@
                     </div>
                     <div>
                         <div class="btn-wraper">
-                            <a href="javascript:void(0)" class="w-[100%] bg-color6 text-[#fff] py-[16px] rounded-[10px] text-center text-[1rem] font-[600] mt-[24px]">Next</a>
+                            <a href="./payment-setup.html" class="w-[100%] bg-color6 text-[#fff] py-[16px] rounded-[10px] text-center text-[1rem] font-[600] mt-[24px]">Next</a>
                         </div>
                     </div>
                 </form>
-            </div>
+            </div> 
         </div>
     </div>
     <script src="./assets/js/plugin.js"></script>

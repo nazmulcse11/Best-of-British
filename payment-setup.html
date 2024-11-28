@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="max-w-[1660px] px-5 mx-auto py-[60px] z-[-1] identity-wraper top-0 ">
+            <div class="logo-image">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="tell-about-store max-w-[652px] mx-auto mt-[80px]">
+                <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Payment Setup Screen</h3>
+                 <form action="#" method="get" class="flex flex-col gap-[20px]">
+                    <div>
+                        <label for="bank-payment" class="block w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[8px_16px] rounded-[8px] has-[:checked]:border-[#486789] text-color16 text-[1rem] flex items-center justify-between">
+                            <div class="flex items-center gap-[12px]">
+                                <div class="icon h-[40px] w-[40px] rounded-[50%] bg-[#F7FAFC] flex items-center justify-center"><img src="./assets/images/hugeicons_bank.svg" alt="bankaccount"></div>
+                                <div class="text">
+                                    <h4 class="font-[600] text-[1rem] text-color17 leading-[1.5]">Bank Account</h4>
+                                    <p class="text-color2">Debit Card</p>
+                                </div>
+                            </div>
+                            <div class="leading-[1]">
+                                <input type="checkbox" name="" id="bank-payment" class="cursor-pointer appearance-none h-[16px] w-[16px] rounded-[50%] border-[1px] border-color7 after:content-['\f00c'] after:font-fontawsome font-[900] after:h-[100%] after:flex after:items-center after:justify-center after:text-[10px] after:text-[#fff] checked:bg-[#000] checked:border-[#000]">
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="paypal-payment" class="block w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[8px_16px] rounded-[8px] has-[:checked]:border-[#486789] text-color16 text-[1rem] flex items-center justify-between">
+                            <div class="flex items-center gap-[12px]">
+                                <div class="icon h-[40px] w-[40px] rounded-[50%] bg-[#F7FAFC] flex items-center justify-center"><img src="./assets/images/logos_paypal.png" alt="bankaccount"></div>
+                                <div class="text">
+                                    <h4 class="font-[600] text-[1rem] text-color17 leading-[1.5]">Paypal Account</h4>
+                                    <p class="text-color2">Paypal</p>
+                                </div>
+                            </div>
+                            <div class="leading-[1]">
+                                <input type="checkbox" name="" id="paypal-payment" class="cursor-pointer appearance-none h-[16px] w-[16px] rounded-[50%] border-[1px] border-color7 after:content-['\f00c'] after:font-fontawsome font-[900] after:h-[100%] after:flex after:items-center after:justify-center after:text-[10px] after:text-[#fff] checked:bg-[#000] checked:border-[#000]">
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <div class="input-wraper flex-1">
+                            <label for="name" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Name</label>
+                            <input type="text" id="name" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="John Doe">
+                        </div>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <div class="input-wraper flex-1">
+                            <label for="short_code" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Short code</label>
+                            <input type="number" id="short_code" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="001122">
+                        </div>
+                        <div class="input-wraper flex-1">
+                            <label for="account_number" class="inline-block font-[600] text-[1rem] text-color15 leading-[1.5] mb-[8px]">Account number</label>
+                            <input type="number" id="account_number" class="input-field w-[100%] border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color0 placeholder:text-[1rem]" placeholder="12345678">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="btn-wraper">
+                            <a href="./you-are-all-set.html" class="w-[100%] bg-color6 text-[#fff] py-[16px] rounded-[10px] text-center text-[1rem] font-[600] mt-[24px]">Next</a>
+                        </div>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

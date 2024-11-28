@@ -109,6 +109,27 @@
                 $('.register-info-wraper .left-part').addClass('left-right');
                 $('.register-info-wraper .right-part').addClass('right-left');
             }
+            else {
+                Command: toastr["warning"]("Please selelct your account type! ", "Warning")
+
+                toastr.options = {
+                  "closeButton": false,
+                  "debug": false,
+                  "newestOnTop": false,
+                  "progressBar": false,
+                  "positionClass": "toast-top-right",
+                  "preventDuplicates": false,
+                  "onclick": null,
+                  "showDuration": "300",
+                  "hideDuration": "1000",
+                  "timeOut": "5000",
+                  "extendedTimeOut": "1000",
+                  "showEasing": "swing",
+                  "hideEasing": "linear",
+                  "showMethod": "fadeIn",
+                  "hideMethod": "fadeOut"
+                }
+            }
         });
 
         
@@ -118,7 +139,7 @@
             $('#seller_agreement').removeClass("hidden");
         })
         //close modal
-        $(document).on('click', '.close-icon', function(){
+        $(document).on('click', '.close-icon , #close-modal', function(){
             $('#seller_agreement').addClass("hidden");
         })
         
@@ -130,7 +151,10 @@
 
         //slelect 2 activarot
         $('#shop_category').select2({
-            placeholder: 'Select an option',
+            // placeholder: 'Select an option',
+        });
+        $('#store_country').select2({
+            
         });
     });
   

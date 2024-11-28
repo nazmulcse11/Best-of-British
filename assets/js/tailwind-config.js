@@ -19,6 +19,11 @@ tailwind.config = {
             color14: '#EF4444',
             color15: '#1E293B',
             color16: '#334155',
+            color17: '#00020B',
+            color18: '#475569',
+        },
+        fontFamily: {
+            'fontawsome': ["'Font Awesome 6 Free'"],
         },
         screens: {
             'mobilexl': '576px',
