@@ -21,6 +21,8 @@ tailwind.config = {
             color16: '#334155',
             color17: '#00020B',
             color18: '#475569',
+            color19: '#64748B',
+            color20: '#575D6A',
         },
         fontFamily: {
             'fontawsome': ["'Font Awesome 6 Free'"],
