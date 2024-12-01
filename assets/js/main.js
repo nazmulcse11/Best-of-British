@@ -156,6 +156,20 @@
         $('#store_country').select2({
             
         });
+
+        //Dashboard sidebar 
+
+        $(".dasboard-store-hub").on('click', function(){
+            if($(".dasboard-store-hub-sub-menu").hasClass('hidden')){
+                $(".dasboard-store-hub-sub-menu").slideDown(300);
+                $(".dasboard-store-hub .angle-icon").addClass("close");
+            }
+            else{
+                $(".dasboard-store-hub-sub-menu").slideUp(300);
+                $(".dasboard-store-hub .angle-icon").removeClass("close");
+            }
+            $(".dasboard-store-hub-sub-menu").toggleClass("hidden");
+        })
     });
   
 
