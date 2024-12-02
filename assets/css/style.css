@@ -1,10 +1,13 @@
 /*--------------------------------------------------------------
     Google Fonts
 --------------------------------------------------------------*/
-
+/* DM Serif Display */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* SourceSerifPro */
 @font-face {
   font-family: 'SourceSerifPro';
   src: url('../fonts/fonts/SourceSerifPro-Light.otf') format('opentype');
@@ -23,6 +26,7 @@
   --dm-serif: "DM Serif Display", serif;
   --soruce-serif: "SourceSerifPro", serif;
   --lato: "Lato", sans-serif;
+  --roboto: "Roboto", sans-serif;
   /*color*/
   --color-0: #191B23;
   --color-1: #000000;
@@ -64,6 +68,9 @@ body {
 .lato{
   font-family: var(--lato);
 }
+.roboto{
+  font-family: var(--roboto);
+}
 a{
   display: inline-block;
 }
@@ -95,6 +102,73 @@ a{
     background-color: var(--color-5);
     color: #fff;
   }
+}
+/*Flat picker*/
+.date-flat-picker-custom {
+  .flatpickr-calendar {
+    background-color: #F8FAFC;
+    border: 1px solid #C1D5ED;
+    border-radius: 10px;
+    box-shadow: none;
+    position: static !important;
+    width: 100%;
+    .flatpickr-innerContainer {
+      display: block;
+      width: 100%;
+    }
+    .flatpickr-days {
+        display: block;
+        width: 100%;
+    }
+    .flatpickr-rContainer {
+      display: block;
+      padding: 20px;
+    }
+    .flatpickr-weekdays {
+      display: block;
+    }
+    .flatpickr-weekdays .flatpickr-weekdaycontainer {
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .dayContainer {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .flatpickr-day {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid transparent;
+    }
+    .flatpickr-day.today {
+      border-color: #2F4A69 !important;
+    }
+    .flatpickr-day:hover, .flatpickr-day.selected{
+      color: #fff !important;
+      background: #2F4A69 !important;
+      border-color: transparent !important;
+    }
+  }
+}
+/*chart js*/
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+canvas {
+  display: block;
+  width: 100%;
+  border: none !important;
 }
 /*Slick*/
 .slick-list {

@@ -169,7 +169,89 @@
                 $(".dasboard-store-hub .angle-icon").removeClass("close");
             }
             $(".dasboard-store-hub-sub-menu").toggleClass("hidden");
-        })
+        });
+
+        //flat pickr
+        $(".date-flat-picker-custom .date-picker").flatpickr({
+            mode: "single",
+            enableTime: false,
+            dateFormat: "d-m-Y",
+            altInput: true,
+            altFormat: "F j, Y",
+            time_12hr: false,
+            appendTo:document.querySelector('#datepicker'),
+        });
+        $(".sales-analysis .date-picker").flatpickr({
+            mode: "single",
+            enableTime: false,
+            dateFormat: "d-m-Y",
+            altInput: true,
+            altFormat: "F j, Y",
+            time_12hr: false,
+        });
+
+        // Chart js 
+        const ctx = document.getElementById('salesAnalysisChart').getContext('2d');
+
+        // Chart js Define data and configuration
+        const data = {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [
+            {
+            label: 'Dataset 1',
+            data: [70, 65, 80, 55, 60, 75, 70, 80, 60, 85, 65, 200],
+            borderColor: '#FF6600',
+            backgroundColor: 'rgba(255, 102, 0, 0.1)',
+            tension: 0.4,
+            },
+            {
+            label: 'Dataset 2',
+            data: [60, 70, 60, 75, 50, 65, 60, 70, 75, 80, 55, 65],
+            borderColor: '#22C55E',
+            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+            tension: 0.4,
+            },
+        ],
+        };
+
+        // Render the chart
+        new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+            tooltip: {
+                callbacks: {
+                label: (tooltipItem) => `${tooltipItem.raw} Sales`,
+                },
+            },
+            },
+            scales: {
+                x: {
+                    grid: {
+                        color: '#fff', // Grid line color
+                    },
+                },
+                y: {
+                    min: 0,
+                    max: 100,
+                    ticks: {
+                    callback: (value) => `${value}%`,
+                    },
+                    grid: {
+                        color: '#96a3beb3', // Grid line color
+                    },
+                    border: {
+                        color: '#96a3beb3', // Border color of the Y-axis
+                        dash: [5, 5], // Make the border dashed (dash pattern: [length of dash, length of gap])
+                    },
+                },
+            },
+        },
+        });
+        //end chartjs
+
     });
   
 
