@@ -325,6 +325,12 @@ canvas {
     color: #fff;
   }
 }
+/*FAQ Accordion*/
+.faq-item-wraper {
+  .faq-header.active{
+    border-color: transparent !important;
+  }
+}
 /* Container */
 .container-1440{
   max-width: 100%;

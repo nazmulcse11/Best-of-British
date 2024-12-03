@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default  py-[36px]">
+            <div class=" container-1440">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative">
+                    <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
+                        <div class="logo-wraper leading-[1] shrink-0">
+                            <a href="index.html"><img src="./assets/images/Best of British.png" alt="Best Of British"></a>
+                        </div>
+                        <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[1] md:transition-none transition-all duration-[.8s] ease-in-out">
+                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap *:items-center *:flex md:py-[0px] py-[12px] md:gap-[0px] gap-[12px]">
+                            <li class="group/home menu-item">
+                                <a href="./index.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">Home<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/about menu-item">
+                                <a href="./about.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/about:font-[600] group-hover/about:font-[600]">About<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/about:opacity-100 group-hover/about:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/recomender menu-item">
+                                <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Recommender<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/seller menu-item">
+                                <a href="./seller.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/seller:font-[600] group-hover/seller:font-[600]">Seller<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/seller:opacity-100 group-hover/seller:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/buyer menu-item">
+                                <a href="./buyer.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Buyer<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/faq menu-item active">
+                                <a href="./faq.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/faq:font-[600] group-hover/faq:font-[600]">FAQ<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/faq:opacity-100 group-hover/faq:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/contact-us menu-item">
+                                <a href="javscript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/contact-us:font-[600] group-hover/contact-us:font-[600]">Contact Us<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/contact-us:opacity-100 group-hover/contact-us:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
+                        <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
+                        <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-1">
+                                <a href="login.html" class="px-[12px] text-color5">Log in </a>
+                            </div>
+                            <div class="right-icon-2">
+                                <a href="signup-as.html" class="px-[12px] text-color5">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main bg-[#FFFFFD]">
+        <div class="faq-section bg-[#ffffff] py-[60px]">
+            <div class="container-1440">
+                <div class="max-w-[1010px] mx-auto">
+                    <div class="top-part">
+                        <h2 class="text-[2rem] leading-[2.5] dm-serif text-[#111827]">Frequently Asked Questions</h2>
+                        <div class="search-bar relative">
+                            <input type="text" placeholder="Search" class="input-field w-[100%] bg-[#F8FAFC] p-[12px_16px] pl-[52px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-[#96A3BE] text-[1rem] leading-[1.5] font-[600] placeholder:text-[#96A3BE] placeholder:text-[1rem] placeholder:font-[600]">
+                            <svg class="absolute left-[12px] top-[50%] translate-y-[-50%]" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="9.7659" cy="9.7659" r="8.98856" stroke="#191B23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.0195 16.4844L19.5436 19.9992" stroke="#191B23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-list-wraper mt-[40px] flex flex-col gap-[20px]">
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">What is Best of British?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group   border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">Who can use the Best of British platform?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group   border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">What is Best of British?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">Is Best of British available internationally?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group   border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">How do I become a seller on Best of British?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group  border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">How do I purchase a recommended item?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item-wraper">
+                            <div class="faq-header cursor-pointer flex items-center justify-between gap-[24px] group   border-b-[1px] border-color7 pb-[24px]">
+                                <h3 class="dm-serif text-[1.25rem] leading-[1.5] text-color0">Can I contact the store directly before buying?</h3>
+                                <div class="icon h-[32px] w-[32px] flex items-center justify-center transition-all duration-[.3s] ease-in-out group-[.active]:bg-color7 rounded-[8px]">
+                                    <i class="fa-solid fa-plus text-[#2F4A69] block group-[.active]:hidden"></i>
+                                    <i class="fa-solid fa-minus text-[#2F4A69] hidden group-[.active]:block"></i>
+                                </div>
+                            </div>
+                            <div class="faq-body hidden">
+                                <p class="text-color5 lato text-[1rem] leading-[1.5] text-justify text-color18">Best of British is a platform that connects buyers with High Street retailers for seamless shopping experiences. Buyers can explore products, request live shopping sessions, and engage with recommenders who promote items.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#FFFFFD]">
+        <div class="footer-top-part md:py-[120px] py-[50px]">
+            <div class="container-1440">
+                <div class="footer-widget-wraper flex sm:flex-row flex-col gap-[30px] flex-wrap justify-between">
+                    <div class="left-part sm:max-w-[302px] text-color5">
+                        <p class="lato font-[700] tracking-[1px]">Sign up For Early Access and get updates from Best of British</p>
+                        <form action="#" method="get" class="mt-[20px] pb-[10px] flex *:text-color5 *:text-[18px] border-b-[1px] border-[#CCCBC8]">
+                            <input type="email" placeholder="Email" class="flex-1 placeholder:text-color5 placeholder:text-[18px] pe-[10px]">
+                            <a href="javascript:void(0)" class="underline">Join</a>
+                        </form>
+                    </div>
+                    <div class="right-part-wraper flex-1 flex justify-center">
+                        <div class="right-part max-w-[500px] flex gap-[20px] flex-wrap justify-between flex-1">
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Shop</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Company</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">About Us</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Our Mission</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Info</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-part pb-[38px]">
+            <div class="container-1440">
+                <div class="footer-bottom-part-wraper flex lg:justify-between justify-center gap-[30px] flex-wrap">
+                    <div class="social-links flex gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <a href="javascript:void(0)" class="">Facebook</a>
+                        <a href="javascript:void(0)" class="">Instagram</a>
+                        <a href="javascript:void(0)" class="">LinkedIn</a>
+                    </div>
+                    <div class="coppyright-div flex justify-center flex-wrap gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <p class="text-center">©2024 <a href="javascript:void(0)">BEST OF BRITISH</a>. ALL RIGHTS RESERVED</p>
+                        <a href="javascript:void(0)">PRIVACY POLICY</a>
+                        <a href="javascript:void(0)">TERMS OF USES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

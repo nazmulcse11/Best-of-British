@@ -40,6 +40,7 @@ tailwind.config = {
         screens: {
             'mobilexl': '576px',
             'mobile': '475px',
+            'mobile-sm': '425px',
         },
         container: {
           center:true,

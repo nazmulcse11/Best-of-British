@@ -191,7 +191,7 @@
         });
 
         // Chart js 
-        const ctx = document.getElementById('salesAnalysisChart').getContext('2d');
+        const ctx = document.getElementById('salesAnalysisChart');
 
         // Chart js Define data and configuration
         const data = {
@@ -252,6 +252,20 @@
         });
         //end chartjs
 
+        //Faq Accordion
+
+        $(document).on('click', '.faq-header', function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $(this).siblings('.faq-body').slideUp(300);
+            }
+            else{
+                $('.faq-body').slideUp(300);
+                $('.faq-header').removeClass('active');
+                $(this).addClass('active');
+                $(this).siblings('.faq-body').slideDown(300);
+            }
+        });
     });
   
 
