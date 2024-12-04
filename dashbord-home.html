@@ -13,17 +13,19 @@
 <body>
     <div class="main">
         <div class="dashboard-main-wraper max-w-[1920px] mx-auto flex">
-            <div class="dashboard-left w-[290px] h-[100%]">
-                <div class="dashboard-logo h-[100px] w-[100%] flex items-center justify-center border-r-[1px] border-b-[1px] border-[#F2F6FF]">
+            <div class="dashboard-left transition-all ease-in-out origin-left w-[290px] h-[100svh] fixed bg-[#fff]">
+                <div class="dashboard-logo relative h-[100px] w-[100%] flex items-center justify-center border-r-[1px] border-b-[1px] border-[#F2F6FF]">
                     <a href="index.html">
                         <img src="./assets/images/Logo.png" alt="logo">
                     </a>
+                    <div class="dashboard-left-hide-icon transition-all ease-in-out absolute cursor-pointer right-0 h-[40px] w-[16px] rounded-[12px_0px_0px_12px] bg-color6 items-center justify-center flex text-[#85A1C2]"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="dashboard-left-show-icon opacity-0 transition-all ease-in-out absolute cursor-pointer right-[-16px] h-[40px] w-[16px] rounded-[0px_12px_12px_0px] bg-color6 items-center justify-center flex text-[#85A1C2]"><i class="fa-solid fa-angle-right"></i></div>
                 </div>
-                <div class="dashbord-menu-wraper border-r-[1px] border-color7 px-[40px] py-[25px]">
-                   <div class="header">
-                       <h3 class="text-color19 pb-[10px] border-b-[1px] border-[#F2F6FF]">Menu</h3>
-                   </div>
-                   <ul class="menu flex flex-col gap-[24px] mt-[20px]">
+                <div class="dashbord-menu-wraper border-r-[1px] border-color7 px-[40px] py-[25px] h-[calc(100svh-100px)] overflow-y-auto scrollbar-none">
+                <div class="header">
+                    <h3 class="text-color19 pb-[10px] border-b-[1px] border-[#F2F6FF]">Menu</h3>
+                </div>
+                <ul class="menu flex flex-col gap-[24px] mt-[20px]">
                         <li class="group active">
                             <a href="javscript:void(0)" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                 <span>
@@ -144,7 +146,7 @@
                                         <path d="M15.1 20.8008C14.6196 22.0825 13.3235 23.0008 11.8 23.0008C10.2765 23.0008 8.98035 22.0825 8.5 20.8008" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
                                         </g>
                                     </svg>
-                               </span>
+                            </span>
                                 <span>Notifications</span>
                             </a>
                             <div class="absolute right-0 h-[20px] w-[20px] rounded-[50%] bg-color21 items-center justify-center flex text-[#fff]">10</div>
@@ -160,8 +162,8 @@
                                 <span>Recommenders</span>
                             </a>
                         </li>
-                   </ul>
-                   <div class="more-options mt-[80px]">
+                </ul>
+                <div class="more-options mt-[80px]">
                     <div class="header">
                         <h3 class="text-color19 pb-[10px] border-b-[1px] border-[#F2F6FF]">More Options</h3>
                     </div>
@@ -188,11 +190,11 @@
                             </a>
                         </li>
                     </ul>
-                   </div>
+                </div>
                 </div>
             </div>
-            <div class="dashboard-right flex-1">
-                <div class="dashboard-right-top-header px-[40px] py-[18px] flex justify-between items-center gap-[24px]">
+            <div class="dashboard-right flex-1 ml-[290px]">
+                <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px]">
                      <div class="text-part">
                         <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Dashboard</h4>
                         <p class="text-[#96A3BE] text-[1rem] mt-[4px]">Let's check your store today</p>
@@ -329,12 +331,11 @@
                             <div class="top-part flex justify-between items-center gap-[20px] ">
                                 <div class="title dm-serif text-[24px] text-color0">Sales Analysis</div>
                                 <div class="side-btn-wraper flex gap-[24px]">
-                                    <div class="calender border-[1px] border-[#CBD5E1] text-color2 px-[16px] py-[10px] rounded-[8px] shrink-[0]">
-                                        <label for="calender-dd">
-                                            <span class="flex items-center gap-[6px]">
+                                    <div class="calender border-[1px] border-[#CBD5E1] text-color2 rounded-[8px]">
+                                        <span class="flex items-center gap-[6px] px-[16px] py-[10px] max-w-[200px]">
                                             <img src="./assets/images/calender.svg" alt="">    
-                                            <input type="text" id="calender-dd" class="date-picker font-[400] text-[1rem] text-color2 placeholder:text-color2" placeholder="April 11 - April 24">
-                                        </label>
+                                            <input type="text" id="calender-dd" class="date-picker w-full font-[400] text-[1rem] text-color2 placeholder:text-color2" placeholder="April 11 - April 24">
+                                        </span>
                                     </div>
                                     <div class="download border-[1px] border-[#CBD5E1] text-color2 px-[16px] py-[10px] rounded-[8px] shrink-[0]">
                                         <a href="javascript:void(0)" class="flex items-center gap-[6px]">
@@ -363,11 +364,11 @@
                                             <span class="font-[400] text-[1rem] text-color2">Filters</span>
                                         </a>
                                     </div>
-                                    <div class="calender bg-color22 text-color2 px-[16px] py-[10px] rounded-[8px] shrink-[0]">
-                                        <a href="javascript:void(0)" class="flex items-center gap-[6px]">
+                                    <div class="calender bg-color22 text-color2  rounded-[8px]">
+                                        <span class="flex items-center gap-[6px] px-[16px] py-[10px] max-w-[200px]">
                                             <img src="./assets/images/calender.svg" alt="">
-                                            <span class="font-[400] text-[1rem] text-color2">April11 - April24</span>
-                                        </a>
+                                            <input type="text" id="calender-dd" class="date-picker2 w-full bg-[transparent] font-[400] text-[1rem] text-color2 placeholder:text-color2" placeholder="April 11 - April 24">
+                                        </span>
                                     </div>
                                     <div class="download bg-color22 text-color2 px-[16px] py-[10px] rounded-[8px] shrink-[0]">
                                         <a href="javascript:void(0)" class="flex items-center gap-[6px]">
