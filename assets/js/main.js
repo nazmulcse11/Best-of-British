@@ -279,9 +279,7 @@
 
         //Dashboard icon for menu show hide
         $(document).on('click', '.dashboard-left-hide-icon, .dashboard-left-show-icon', function(){
-            $(".dashboard-left").toggleClass("translate-x-[-100%]");
-            $(".dashboard-left-show-icon").toggleClass("opacity-0");
-            $(".dashboard-right").toggleClass("ml-[290px]");
+            $('.dashboard-left-part-open-hide').toggleClass('open');
             setTimeout(() => { 
                 //check if chart is already exist
                 if (chart) {
