@@ -155,8 +155,48 @@
         });
         $('#store_country').select2({ 
         });
-        $('#showproducts-select').select2({ 
-        });
+        //custom select function
+        function initializeCustomDropdown(dropdownSelector, hiddenSelectSelector) {
+            const dropdowns = document.querySelectorAll(dropdownSelector);
+            dropdowns.forEach((dropdown) => {
+              const selected = dropdown.querySelector('.dropdown-selected');
+              const options = dropdown.querySelector('.dropdown-options');
+              const hiddenSelect = dropdown.querySelector(hiddenSelectSelector);              
+              // Toggle dropdown visibility
+              selected.addEventListener('click', () => {
+                dropdown.classList.toggle('open');
+              });
+          
+              // Handle option selection
+              options.addEventListener('click', (e) => {
+                e.target.classList.add('bg-[#F7FAFC]');
+                if (e.target.tagName === 'LI') {
+                    document.querySelectorAll('.dropdown-options li').forEach((li) => {
+                        li.classList.remove('bg-[#F7FAFC]');
+                    });
+                    e.target.classList.add('bg-[#F7FAFC]');
+                    selected.textContent = e.target.textContent;
+                //  hiddenSelect.value = e.target.getAttribute('data-value');
+                    dropdown.classList.remove('open');
+                }
+              });
+          
+              // Close dropdown when clicking outside
+              document.addEventListener('click', (e) => {
+                if (!dropdown.contains(e.target)) {
+                  dropdown.classList.remove('open');
+                }
+              });
+            });
+          }
+          
+        // Initialize dropdowns
+        initializeCustomDropdown('.filter-price-wraper .custom-dropdown', '.filter-price-wraper #hidden-select');
+        initializeCustomDropdown('.filter-date-added-wraper .custom-dropdown', '.filter-price-wraper #hidden-select');
+        initializeCustomDropdown('.filter-category-wraper .custom-dropdown', '.filter-price-wraper #hidden-select');
+        initializeCustomDropdown('.filter-status-wraper .custom-dropdown', '.filter-price-wraper #hidden-select');
+         
+        
 
         //Dashboard sidebar 
 
@@ -288,6 +328,12 @@
                 }      
                 chart = salesAnalysisChart();
             }, 400);
+        });
+
+        // Product page table action
+        $(document).on('click', '.actions-btn', function(){
+            $(this).closest('tr').siblings('tr').find(".actions-options").addClass("hidden");
+            $(this).siblings(".actions-options").toggleClass("hidden");
         });
     });
     

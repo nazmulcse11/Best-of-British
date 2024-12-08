@@ -195,8 +195,8 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-right flex-1 lg:ml-[290px] lg:peer-[.open]:ml-[0]">
-                <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px]">
+            <div class="dashboard-right lg:w-[auto] w-[100%] flex-1 lg:ml-[290px] lg:peer-[.open]:ml-[0]">
+                <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex flex-wrap justify-between items-center gap-[24px]">
                      <div class="text-part">
                         <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Product</h4>
                         <p class="text-[#96A3BE] text-[1rem] mt-[4px]">Let's check your store today</p>
@@ -218,10 +218,11 @@
                      </div>
                 </div>
                 <div class="dasboard-wraper-main bg-color22 p-[40px]">
-                    <div class="main-body ">
-                        <div class="top-filter-wraper flex gap-[16px]">
-                            <div class="showproducts">
-                                <select name="" id="showproducts-select" class="showproducts-select py-[14px] px-[52px] rounded-[8px] bg-color22 text-[#96A3BE] placeholder:text-[#96A3BE] bg-[#fff]">
+                    <div class="main-body">
+                        <div class="top-filter-wraper flex gap-[16px] justify-between flex-wrap">
+                            <div class="showproducts flex gap-[6px] items-center rounded-[8px] text-[#96A3BE] bg-[#fff] px-[16px] py-[10px]">
+                                <div class="title font-[600] text-color2 text-[1.125rem]">Show:</div>
+                                <select name="" id="showproducts-select" class="showproducts-select font-[600] text-color0 text-[1.125rem]">
                                     <option value="0">All Products</option>
                                     <option value="1">10 Products</option>
                                     <option value="2">20 Products</option>
@@ -229,7 +230,396 @@
                                     <option value="4">40 Products</option>
                                 </select>
                             </div>
-                            simple-pr
+                            <div class="another-filters flex gap-[16px] flex-wrap">
+                                <div class="short-by-products flex gap-[6px] items-center rounded-[8px] text-[#96A3BE] bg-[#fff] px-[16px] py-[10px]">
+                                    <div class="title font-[600] text-color2 text-[1.125rem]">Short by:</div>
+                                    <select name="" id="short-by-products-select" class="short-by-products-select font-[600] text-color0 text-[1.125rem]">
+                                        <option value="0">Default</option>
+                                        <option value="1">Price</option>
+                                        <option value="2">Stock</option>
+                                        <option value="3">Date Added</option>
+                                    </select>
+                                </div>
+                                <div class="upload-csv-file">
+                                    <label for="upload-csv-file" class="flex gap-[6px] items-center rounded-[8px] text-[#96A3BE] bg-[#fff] px-[16px] py-[10px] cursor-pointer">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.667 0.666016V3.99935H14.0004M8.00036 13.3327V7.33268M5.33369 9.33268L8.00036 6.66602L10.667 9.33268M1.99902 0.666016H11.667L14.0004 2.99935V15.3327H2.00036L1.99902 0.666016Z" stroke="#64748B" stroke-width="1.33333"/>
+                                        </svg>
+                                        <span class="font-[600] text-color1 text-[1.125rem]">Upload CSV</span></label><input type="file" id="upload-csv-file" class="hidden">
+                                    </label>
+                                </div>
+                                <div class="add-product-btn-wraper">
+                                    <a href="javascript:void(0)" class="flex gap-[6px] items-center rounded-[8px] bg-color5 px-[16px] py-[10px]">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1 8H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="font-[600] text-[#fff] text-[1.125rem]">Add Product</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-table-wraper mt-[24px]">
+                            <div class="top-part-search-options p-[24px] rounded-[8px] bg-[#fff]">
+                                <div class="search-part relative">
+                                    <span class="absolute left-[16px] top-[50%] translate-y-[-50%]">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="11.7669" cy="11.7659" r="8.98856" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.0186 18.4844L21.5426 21.9992" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="search-input w-full py-[16px] pl-[52px] pr-[16px] bg-[#F5F8FF] text-color2 text-[1.125rem] font-[600] rounded-[8px] placeholder:text-color2" placeholder="Search by name, variant, or others...">
+                                </div>
+                                <div class="search-filter-part mt-[16px] flex gap-[16px] flex-wrap">
+                                    <div class="filter-price-wraper flex-1">
+                                        <label for="filter-price" class="font-[600] text-color0 text-[1.125rem] mb-[8px] block">Price</label>
+                                        <div class="custom-dropdown group relative text-[#1A202C] text-[1.125rem] font-[600]">
+                                            <div class="dropdown-selected group-[.open]:border-[#1F3650] border-[1px] border-[transparent] px-[16px] py-[13px] rounded-[8px] flex justify-between items-center cursor-pointer after:content-['\f107'] after:font-fontawsome after:text-[#1A202C] group-[.open]:after:rotate-180 after:transition-all after:duration-300">Low to High</div>
+                                            <ul class="dropdown-options z-[2] absolute top-[calc(100%+16px)] shadow-[5px_5px_50px_0_#1A202C0F] rounded-[8px] w-full bg-[#fff] px-[8px] *:py-[13px] *:px-[16px] *:cursor-pointer *:rounded-[8px] hidden group-[.open]:block">
+                                              <li data-value="lth" >Low to High</li>
+                                              <li data-value="htl">High to Low</li>
+                                            </ul>
+                                        </div>
+                                        <select id="hidden-select" style="display: none;">
+                                            <option data-value="lth" >Low to High</option>
+                                            <option data-value="htl">High to Low</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-date-added-wraper flex-1">
+                                        <label for="filter-date-added" class="font-[600] text-color0 text-[1.125rem] mb-[8px] block">Date Added</label>
+                                        <div class="custom-dropdown group relative text-[#1A202C] text-[1.125rem] font-[600]">
+                                            <div class="dropdown-selected group-[.open]:border-[#1F3650] border-[1px] border-[transparent] px-[16px] py-[13px] rounded-[8px] flex justify-between items-center cursor-pointer after:content-['\f107'] after:font-fontawsome after:text-[#1A202C] group-[.open]:after:rotate-180 after:transition-all after:duration-300">01sep - 15sep2024</div>
+                                            <ul class="dropdown-options z-[2] absolute top-[calc(100%+16px)] shadow-[5px_5px_50px_0_#1A202C0F] rounded-[8px] w-full bg-[#fff] px-[8px] *:py-[13px] *:px-[16px] *:cursor-pointer *:rounded-[8px] hidden group-[.open]:block">
+                                              <li data-value="1" >01sep - 15sep2024</li>
+                                              <li data-value="2">16sep - 30sep2024</li>
+                                            </ul>
+                                        </div>
+                                        <select id="hidden-select" style="display: none;">
+                                            <option data-value="1" >01sep - 15sep2024</option>
+                                            <option data-value="2">01sep - 15sep2024</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-category-wraper flex-1">
+                                        <label for="filter-category" class="font-[600] text-color0 text-[1.125rem] mb-[8px] block">Category</label>
+                                        <div class="custom-dropdown group relative text-[#1A202C] text-[1.125rem] font-[600]">
+                                            <div class="dropdown-selected group-[.open]:border-[#1F3650] border-[1px] border-[transparent] px-[16px] py-[13px] rounded-[8px] flex justify-between items-center cursor-pointer after:content-['\f107'] after:font-fontawsome after:text-[#1A202C] group-[.open]:after:rotate-180 after:transition-all after:duration-300">All Category</div>
+                                            <ul class="dropdown-options z-[2] absolute top-[calc(100%+16px)] shadow-[5px_5px_50px_0_#1A202C0F] rounded-[8px] w-full bg-[#fff] px-[8px] *:py-[13px] *:px-[16px] *:cursor-pointer *:rounded-[8px] hidden group-[.open]:block">
+                                              <li data-value="c1" >Category 1</li>
+                                              <li data-value="c2">Category 2</li>
+                                              <li data-value="c3">Category 3</li>
+                                              <li data-value="c4">Category 4</li>
+                                            </ul>
+                                        </div>
+                                        <select id="hidden-select" style="display: none;">
+                                            <option data-value="c1" >Category 1</option>
+                                            <option data-value="c2">Category 2</option>
+                                            <option data-value="c3">Category 3</option>
+                                            <option data-value="c4">Category 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-status-wraper flex-1">
+                                        <label for="filter-status" class="font-[600] text-color0 text-[1.125rem] mb-[8px] block">Status</label>
+                                        <div class="custom-dropdown group relative text-[#1A202C] text-[1.125rem] font-[600]">
+                                            <div class="dropdown-selected group-[.open]:border-[#1F3650] border-[1px] border-[transparent] px-[16px] py-[13px] rounded-[8px] flex justify-between items-center cursor-pointer after:content-['\f107'] after:font-fontawsome after:text-[#1A202C] group-[.open]:after:rotate-180 after:transition-all after:duration-300">All Status</div>
+                                            <ul class="dropdown-options z-[2] absolute top-[calc(100%+16px)] shadow-[5px_5px_50px_0_#1A202C0F] rounded-[8px] w-full bg-[#fff] px-[8px] *:py-[13px] *:px-[16px] *:cursor-pointer *:rounded-[8px] hidden group-[.open]:block">
+                                              <li data-value="all" >All Status</li>
+                                              <li data-value="in_stock">In Stock</li>
+                                              <li data-value="on_sale">On Sale</li>
+                                              <li data-value="low_in_stock">Low In Stock</li>
+                                              <li data-value="out_of_stock">Out of Stock</li>
+                                            </ul>
+                                        </div>
+                                        <select id="hidden-select" style="display: none;">
+                                            <option data-value="all" >All Status</option>
+                                            <option data-value="in_stock">In Stock</option>
+                                            <option data-value="on_sale">On Sale</option>
+                                            <option data-value="low_in_stock">Low In Stock</option>
+                                            <option data-value="out_of_stock">Out of Stock</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-table-main bg-[#fff]">
+                                <div class="custom-table-wraper product-table-wraper overflow-x-auto w-full">
+                                    <table class="border-collapse min-w-full *:text-[1.125rem] *:font-[600] *:leading-[1.5rem]">
+                                        <thead class="*:text-color2">
+                                            <tr class="first:*:px-[24px] *:py-[22px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap ">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
+                                                <td>Product Name <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Price <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Stock <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Sale/Promotion <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Date Added <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Category</td>
+                                                <td>Status</td>
+                                                <td></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="*:text-color0">
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="checkbox" name="" id="" class="custom-checkbox"></td>
+                                                <td>
+                                                    <div class="product-name flex gap-[16px] items-center">
+                                                        <div class="img h-[56px] w-[56px] rounded-[8px] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <h3 class="text-[1.125rem] font-[600] text-color0">Rolex Submariner</h3>
+                                                            <p class="text-[1rem] font-[400] leading-[1.5] text-color2">ID: 098134NN</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="font-[600]">£3,987.00</td>
+                                                <td class="font-[600]">3</td>
+                                                <td class="font-[600]">5% Off</td>
+                                                <td>12 Sep 2024</td>
+                                                <td>Watches</td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">In Stock</span></td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="checkbox" name="" id="" class="custom-checkbox"></td>
+                                                <td>
+                                                    <div class="product-name flex gap-[16px] items-center">
+                                                        <div class="img h-[56px] w-[56px] rounded-[8px] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <h3 class="text-[1.125rem] font-[600] text-color0">Rolex Submariner</h3>
+                                                            <p class="text-[1rem] font-[400] leading-[1.5] text-color2">ID: 098134NN</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="font-[600]">£3,987.00</td>
+                                                <td class="font-[600]">3</td>
+                                                <td class="font-[600]">5% Off</td>
+                                                <td>12 Sep 2024</td>
+                                                <td>Watches</td>
+                                                <td><span class="green-badge text-color25 text-[14px] font-[600] leading-[1.6] bg-color26 px-[16px] py-[5px] rounded-[4px]">Out of Stock</span></td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="checkbox" name="" id="" class="custom-checkbox"></td>
+                                                <td>
+                                                    <div class="product-name flex gap-[16px] items-center">
+                                                        <div class="img h-[56px] w-[56px] rounded-[8px] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <h3 class="text-[1.125rem] font-[600] text-color0">Rolex Submariner</h3>
+                                                            <p class="text-[1rem] font-[400] leading-[1.5] text-color2">ID: 098134NN</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="font-[600]">£3,987.00</td>
+                                                <td class="font-[600]">3</td>
+                                                <td class="font-[600]">5% Off</td>
+                                                <td>12 Sep 2024</td>
+                                                <td>Watches</td>
+                                                <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Low in Stock</span></td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="checkbox" name="" id="" class="custom-checkbox"></td>
+                                                <td>
+                                                    <div class="product-name flex gap-[16px] items-center">
+                                                        <div class="img h-[56px] w-[56px] rounded-[8px] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <h3 class="text-[1.125rem] font-[600] text-color0">Rolex Submariner</h3>
+                                                            <p class="text-[1rem] font-[400] leading-[1.5] text-color2">ID: 098134NN</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="font-[600]">£3,987.00</td>
+                                                <td class="font-[600]">3</td>
+                                                <td class="font-[600]">5% Off</td>
+                                                <td>12 Sep 2024</td>
+                                                <td>Watches</td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">In Stock</span></td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="checkbox" name="" id="" class="custom-checkbox"></td>
+                                                <td>
+                                                    <div class="product-name flex gap-[16px] items-center">
+                                                        <div class="img h-[56px] w-[56px] rounded-[8px] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="text">
+                                                            <h3 class="text-[1.125rem] font-[600] text-color0">Rolex Submariner</h3>
+                                                            <p class="text-[1rem] font-[400] leading-[1.5] text-color2">ID: 098134NN</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="font-[600]">£3,987.00</td>
+                                                <td class="font-[600]">3</td>
+                                                <td class="font-[600]">5% Off</td>
+                                                <td>12 Sep 2024</td>
+                                                <td>Watches</td>
+                                                <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Low in Stock</span></td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="bottom-part bg-[#fff] flex gap-[20px] items-center mobile:justify-between justify-center py-[20px] px-[24px] flex-wrap">
+                                <div class="show-result flex items-center gap-[10px]">
+                                    <span class="text-[#5D6A83]">Show result:</span>
+                                    <div class="relative after:z-[1] show-result-select after:absolute after:top-1/2 after:right-[12px] after:-translate-y-1/2 after:text-[#5D6A83] after:content-['\f107'] after:font-fontawsome after:font-[900]">
+                                        <select class="appearance-none py-[8px] px-[12px] w-[68px] border-[1px] border-[#85A1C2] rounded-[6px] font-[600] leading-[1.5] relative z-[2] bg-transparent">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="pagignation flex items-center *:font-[600] *:text-[14px]">
+                                    <div class="left-icon"><a href="javascript:void(0)" class="text-[#96A3BE] px-[10px]"><i class="fa-solid fa-chevron-left"></i></a></div>
+                                    <div class="flex items-center *:h-[40px] *:w-[40px] *:rounded-[6px] *:flex *:items-center *:justify-center *:text-[#96A3BE]">
+                                        <a href="javscript:void(0)" class="">1</a>
+                                        <a href="javscript:void(0)" class="bg-[#85A1C2] text-[#2F4A69!important]">2</a>
+                                        <a href="javscript:void(0)" class="">3</a>
+                                        <a href="javscript:void(0)" class="">4</a>
+                                    </div>
+                                    <div class="right-icon"><a href="javascript:void(0)" class="text-[#96A3BE] px-[10px]"><i class="fa-solid fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

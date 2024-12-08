@@ -103,6 +103,15 @@ a{
     color: #fff;
   }
 }
+.custom-table-wraper {
+  .custom-checkbox {
+    border: 1px solid #96A3BE;
+    &:checked {
+      border: 1px solid var(--color-5);
+    }
+  }
+  
+}
 /*Flat picker*/
 .date-flat-picker-custom {
   .flatpickr-calendar {
@@ -325,6 +334,7 @@ canvas {
     color: #fff;
   }
 }
+
 /*FAQ Accordion*/
 .faq-item-wraper {
   .faq-header.active{
