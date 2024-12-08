@@ -195,8 +195,8 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-right flex-1 lg:ml-[290px] lg:peer-[.open]:ml-[0]">
-                <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px]">
+            <div class="dashboard-right flex-1 lg:w-[auto] w-[100%] lg:ml-[290px] lg:peer-[.open]:ml-[0]">
+                <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px] flex-wrap">
                      <div class="text-part">
                         <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Dashboard</h4>
                         <p class="text-[#96A3BE] text-[1rem] mt-[4px]">Let's check your store today</p>
@@ -216,9 +216,9 @@
                             <img src="./assets/images/ecommerce-logo.png" alt="" class="rounded-[10px] border-[1px] border-[#85A1C2]">
                         </div>
                      </div>
-                </div>
-                <div class="dasboard-wraper-main bg-color22 p-[40px] flex gap-[30px] xl:flex-row flex-col-reverse">
-                    <div class="main-body flex-1 shrink-1">
+                </div>      
+                <div class="dasboard-wraper-main bg-color22 p-[40px] flex gap-[30px] xl:flex-row flex-col-reverse xl:w-[100%]">
+                    <div class="main-body flex-1 shrink-1 xl:w-[calc(100%-400px)]">
                         <div class="single-cards-wraper grid grid-cols-[repeat(auto-fill,minmax(270px,_1fr))] gap-[30px]">
                             <div class="single-card rounded-[12px] p-[20px] bg-[#fff]">
                                 <div class="title-part flex items-center gap-[6px]">
@@ -332,7 +332,7 @@
                         <div class="sales-analysis bg-[#fff] p-[24px] rounded-[8px] mt-[30px]">
                             <div class="top-part flex flex-wrap justify-between items-center gap-[20px] ">
                                 <div class="title dm-serif text-[24px] text-color0">Sales Analysis</div>
-                                <div class="side-btn-wraper flex gap-[24px]">
+                                <div class="side-btn-wraper flex gap-[24px] flex-wrap">
                                     <div class="calender border-[1px] border-[#CBD5E1] text-color2 rounded-[8px]">
                                         <span class="flex items-center gap-[6px] px-[16px] py-[10px] max-w-[200px]">
                                             <img src="./assets/images/calender.svg" alt="">    
@@ -348,10 +348,10 @@
                                 </div>
                             </div>
                             <div class="chart-part-wraper mt-[30px]">
-                                <canvas id="salesAnalysisChart"></canvas>
+                                <canvas id="salesAnalysisChart"></canvas> 
                             </div>
                         </div>
-                        <div class="table-wraper bg-[#fff] mt-[30px]">
+                        <div class="table-wraper bg-[#fff] mt-[30px] block max:width-[100%]">
                             <div class="top-part p-[24px] flex gap-[16px] flex-wrap">
                                 <div class="input-wraper relative flex-1">
                                     <svg class="search-icon absolute left-[15px] top-[10px]" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -378,106 +378,108 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="custom-table-wraper overflow-x-auto">
-                                <table class="border-collapse *:text-[1rem] *:font-[600] *:leading-[1.5rem]">
-                                    <thead class="*:text-color2">
-                                        <tr class="first:*:px-[24px] *:py-[22px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td>
-                                                <input type="radio" name="" id="" class="h-[20px] w-[20px]">
-                                            </td>
-                                            <td>Customer name <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
-                                            <td>Date <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
-                                            <td>Amount <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
-                                            <td>Payment <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
-                                            <td>Status <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
-                                            <td></td>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="*:text-color0">
-                                        <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
-                                            <td>
-                                                <div class="customer-name flex gap-[16px] items-center">
-                                                    <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
-                                                        <img src="" alt="">
+                            <div class="flex-1">
+                                <div class="custom-table-wraper overflow-x-auto w-full">
+                                    <table class="border-collapse min-w-full *:text-[1rem] *:font-[600] *:leading-[1.5rem]">
+                                        <thead class="*:text-color2">
+                                            <tr class="first:*:px-[24px] *:py-[22px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="radio" name="" id="" class="h-[20px] w-[20px]">
+                                                </td>
+                                                <td>Customer name <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Date <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Amount <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Payment <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td>Status <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
+                                                <td></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="*:text-color0">
+                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                                <td>
+                                                    <div class="customer-name flex gap-[16px] items-center">
+                                                        <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="name shrink-0">Jenny Wilson</div>
                                                     </div>
-                                                    <div class="name shrink-0">Jenny Wilson</div>
-                                                </div>
-                                            </td>
-                                            <td>Apr 27, 2034</td>
-                                            <td>£3,987.00</td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                            <td>...</td>
-                                        </tr>
-                                        <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
-                                            <td>
-                                                <div class="customer-name flex gap-[16px] items-center">
-                                                    <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
-                                                        <img src="" alt="">
+                                                </td>
+                                                <td>Apr 27, 2034</td>
+                                                <td>£3,987.00</td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                                <td>
+                                                    <div class="customer-name flex gap-[16px] items-center">
+                                                        <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="name">Eleanor Pena</div>
                                                     </div>
-                                                    <div class="name">Eleanor Pena</div>
-                                                </div>
-                                            </td>
-                                            <td>Apr 24, 2023</td>
-                                            <td>£7,987.00</td>
-                                            <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Pending</span></td>
-                                            <td><span class="green-badge text-color29 text-[14px] font-[600] leading-[1.6] bg-color30 px-[16px] py-[5px] rounded-[4px]">Processing</span></td>
-                                            <td>...</td>
-                                        </tr>
-                                        <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
-                                            <td>
-                                                <div class="customer-name flex gap-[16px] items-center">
-                                                    <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
-                                                        <img src="" alt="">
+                                                </td>
+                                                <td>Apr 24, 2023</td>
+                                                <td>£7,987.00</td>
+                                                <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Pending</span></td>
+                                                <td><span class="green-badge text-color29 text-[14px] font-[600] leading-[1.6] bg-color30 px-[16px] py-[5px] rounded-[4px]">Processing</span></td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                                <td>
+                                                    <div class="customer-name flex gap-[16px] items-center">
+                                                        <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="name">Kristin Watson</div>
                                                     </div>
-                                                    <div class="name">Kristin Watson</div>
-                                                </div>
-                                            </td>
-                                            <td>Apr 27, 2034</td>
-                                            <td>£3,987.00</td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                            <td>...</td>
-                                        </tr>
-                                        <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
-                                            <td>
-                                                <div class="customer-name flex gap-[16px] items-center">
-                                                    <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
-                                                        <img src="" alt="">
+                                                </td>
+                                                <td>Apr 27, 2034</td>
+                                                <td>£3,987.00</td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                                <td>
+                                                    <div class="customer-name flex gap-[16px] items-center">
+                                                        <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="name">Wade Warren</div>
                                                     </div>
-                                                    <div class="name">Wade Warren</div>
-                                                </div>
-                                            </td>
-                                            <td>Apr 24, 2034</td>
-                                            <td>£7,987.00</td>
-                                            <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
-                                            <td><span class="green-badge text-color25 text-[14px] font-[600] leading-[1.6] bg-color26 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                            <td>...</td>
-                                        </tr>
-                                        <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                            <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
-                                            <td>
-                                                <div class="customer-name flex gap-[16px] items-center">
-                                                    <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
-                                                        <img src="" alt="">
+                                                </td>
+                                                <td>Apr 24, 2034</td>
+                                                <td>£7,987.00</td>
+                                                <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
+                                                <td><span class="green-badge text-color25 text-[14px] font-[600] leading-[1.6] bg-color26 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                                <td>
+                                                    <div class="customer-name flex gap-[16px] items-center">
+                                                        <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
+                                                            <img src="" alt="">
+                                                        </div>
+                                                        <div class="name">Kristin Watson</div>
                                                     </div>
-                                                    <div class="name">Kristin Watson</div>
-                                                </div>
-                                            </td>
-                                            <td>Apr 27, 2034</td>
-                                            <td>£3,987.00</td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
-                                            <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Success</span></td>
-                                            <td>...</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                                <td>Apr 27, 2034</td>
+                                                <td>£3,987.00</td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
+                                                <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Success</span></td>
+                                                <td>...</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="bottom-part flex items-center justify-between py-[20px] px-[24px]">
+                            <div class="bottom-part flex gap-[20px] items-center mobile:justify-between justify-center py-[20px] px-[24px] flex-wrap">
                                 <div class="show-result flex items-center gap-[10px]">
                                     <span class="text-[#5D6A83]">Show result:</span>
                                     <div class="relative after:z-[1] show-result-select after:absolute after:top-1/2 after:right-[12px] after:-translate-y-1/2 after:text-[#5D6A83] after:content-['\f107'] after:font-fontawsome after:font-[900]">
@@ -502,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-sidebar bg-[#fff] p-[28px] rounded-[8px]">
+                    <div class="right-sidebar bg-[#fff] p-[28px] rounded-[8px] xl:w-[400px]">
                         <div class="my-balance">
                             <div class="heading-part flex justify-between mb-[20px]">
                                 <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">My Balance</h4>

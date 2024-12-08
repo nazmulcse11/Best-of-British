@@ -153,8 +153,9 @@
         $('#shop_category').select2({
             // placeholder: 'Select an option',
         });
-        $('#store_country').select2({
-            
+        $('#store_country').select2({ 
+        });
+        $('#showproducts-select').select2({ 
         });
 
         //Dashboard sidebar 
