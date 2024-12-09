@@ -155,6 +155,27 @@
         });
         $('#store_country').select2({ 
         });
+        $('#add-p-category').select2({ 
+        });
+        $('#add-p-stock-quantity').select2({ 
+        });
+        $('#add-p-status').select2({ 
+        });
+        $('#add-p-movement-type').select2({ 
+        });
+        $('#add-p-water-registance').select2({ 
+            placeholder: '(e.g., "300 meters")',
+        });
+        $('#add-p-material').select2({ 
+            placeholder: '(e.g., "Stainless Steel, Ceramic Bezel")',
+        });
+        $('#add-p-dial-color').select2({ 
+            placeholder: '(e.g., "Black")',
+        });
+        $('#add-p-delivary-options').select2({ 
+            placeholder: 'Please Select',
+        });
+
         //custom select function
         function initializeCustomDropdown(dropdownSelector, hiddenSelectSelector) {
             const dropdowns = document.querySelectorAll(dropdownSelector);
