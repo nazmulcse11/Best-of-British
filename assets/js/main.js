@@ -356,7 +356,21 @@
             $(this).closest('tr').siblings('tr').find(".actions-options").addClass("hidden");
             $(this).siblings(".actions-options").toggleClass("hidden");
         });
+
+        //====Product preview page ======//
+        //faq part open close
+        $(document).on('click', '.faq-item .faq-title', function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $(this).siblings('.faq-ans').slideUp(300);
+            }
+            else {
+                $('.faq-ans').slideUp(300);
+                $('.faq-item .faq-title').removeClass('active');
+                $(this).addClass('active');
+                $(this).siblings('.faq-ans').slideDown(300);
+            }
+        });
     });
-    
 
 }(jQuery));

@@ -33,6 +33,8 @@ tailwind.config = {
             color28: '#FFF7E4',
             color29: '#CEA65D',
             color30: '#CEA65D1A',
+            color31: '#020306',
+            color32: '#a5a6ae1a',
         },
         fontFamily: {
             'fontawsome': ["'Font Awesome 6 Free'"],

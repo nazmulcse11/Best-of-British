@@ -221,7 +221,7 @@
                     <div class="main-body bg-[#fff] p-[30px]">
                         <div class="product-details-page bg-[#F7F7F5] py-[30px]">
                             <div class="container-1440">
-                                <div class="product-details-page-wraper flex gap-[20px]">
+                                <div class="product-details-page-wraper flex lg:flex-row flex-col gap-[20px]">
                                     <div class="imge-wraper-part max-w-[810px] grid grid-cols-2 gap-[10px]">
                                         <div class="img w-[100%] aspect-[4/5]">
                                             <img src="./assets/images/img-1.png" alt="img1" class="w-full h-full object-cover">
@@ -239,25 +239,282 @@
                                             <img src="./assets/images/img-1.png" alt="img1" class="w-full h-full object-cover">
                                         </div>
                                     </div>
-                                    <div class="text-part max-w-[412px] mx-auto">
-                                        <ul class="bradecrumb flex gap-[10px] text-[10px] leading-[16px] text-[#666562] font-[300]">
-                                            <li>
-                                                <a href="javascript:void(0)">Shop &nbsp; /</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)"> Dress</a>
-                                            </li>
-                                        </ul>
-                                        <h2 class="producttitle uppercase dm-serif text-[1.8rem] leading-[1.1] text-[#020306] mt-[12px]">Rolex Oyster Perpetual</h2>
-                                        <div class="reviews-wraper mt-[15px]">
-                                            <span class="review">
-                                                <i class="fa-solid fa-star text-color27"></i> 
-                                                <i class="fa-solid fa-star text-color27"></i> 
-                                                <i class="fa-solid fa-star text-color27"></i> 
-                                                <i class="fa-solid fa-star text-color27"></i> 
-                                                <i class="fa-solid fa-star text-[#EBDFC7]"></i> 
-                                            </span>
-                                            <span class="font-[600] text-[12px] text-[#A5A6AE]">1248 Reviews</span>
+                                    <div class="text-part-waper max-w-[412px] w-full mx-auto">
+                                        <div class="top-text-part">
+                                            <ul class="bradecrumb flex gap-[10px] text-[10px] leading-[16px] text-[#666562] font-[300]">
+                                                <li>
+                                                    <a href="javascript:void(0)">Shop &nbsp; /</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)"> Dress</a>
+                                                </li>
+                                            </ul>
+                                            <h2 class="producttitle uppercase dm-serif text-[1.8rem] leading-[1.1] text-[#020306] mt-[12px]">Rolex Oyster Perpetual</h2>
+                                            <div class="reviews-wraper mt-[15px]">
+                                                <span class="review">
+                                                    <i class="fa-solid fa-star text-color27"></i> 
+                                                    <i class="fa-solid fa-star text-color27"></i> 
+                                                    <i class="fa-solid fa-star text-color27"></i> 
+                                                    <i class="fa-solid fa-star text-color27"></i> 
+                                                    <i class="fa-solid fa-star text-[#EBDFC7]"></i> 
+                                                </span>
+                                                <span class="font-[600] text-[12px] text-[#A5A6AE]">1248 Reviews</span>
+                                            </div>
+                                            <div class="price-wraper mt-[15px]">
+                                                <span class="price font-[600] text-[1rem] leading-[1.5] text-[#AA7E6F] tracking-[1.5px]"><del class="font-[400] text-[#A3A3A0]">$£6,495.00</del> £5,495.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-cart-btn-wraper flex gap-[10px] items-center my-[44px]">
+                                            <div class="add-to-whislist">
+                                                <a href="javascript:void(0)" class="w-[44px] h-[44px] rounded-[50%] bg-[#a5a6ae1a] flex items-center justify-center">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.99984 17.7917L8.7915 16.6917C4.49984 12.8 1.6665 10.225 1.6665 7.08333C1.6665 4.50833 3.68317 2.5 6.24984 2.5C7.69984 2.5 9.0915 3.175 9.99984 4.23333C10.9082 3.175 12.2998 2.5 13.7498 2.5C16.3165 2.5 18.3332 4.50833 18.3332 7.08333C18.3332 10.225 15.4998 12.8 11.2082 16.6917L9.99984 17.7917Z" fill="#020306"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="add-to-cart flex-1 text-center">
+                                                <a href="javascript:void(0)" class="bg-color27 text-[#020306] font-[600] text-[.875rem] py-[10px] px-[20px] leading-[2] tracking-[1.5px]  w-full">ADD TO CART</a>
+                                            </div>
+                                            <div class="share-btn">
+                                                <a href="javascript:void(0)" class="w-[44px] h-[44px] rounded-[50%] bg-[#a5a6ae1a] flex items-center justify-center">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M14.7619 6L22 11.5556L14.7619 17.1111V14.2222C14.3763 14.2044 7.66405 13.9922 3 18C4.8672 12.35 10.7289 9.89111 14.7619 8.88889V6Z" fill="#020306"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-summary-wraper mt-[30px] flex flex-col gap-[16px]">
+                                            <div class="faq-item product-description-wraper pb-[16px] border-b-[1px] border-[#EBEAE6]">
+                                                <div class="faq-title title-wraper flex items-center justify-between gap-[20px] cursor-pointer active">
+                                                    <h3 class="text-color5 font-[700] text-[12px]">Description</h3>
+                                                    <div class="icon">
+                                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L7 7L13 1" stroke="#A3A3A0"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="faq-ans description pt-[12px]">
+                                                    <p class="text-[#020306] text-[14px] leading-[1.5] has-[+p]:mb-[24px]">The dial on this timepiece is extremely unique, as it is a concentric circular pattern that is covered by sturdy sapphire glass.</p> 
+                                                    <p class="text-[#020306] text-[14px] leading-[1.5] has-[+p]:mb-[24px]">Keeping time with a Miyota quartz movement, the face of this watch embodies our brand with a signature ‘A’ at the top to complete the look</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item product-specification-wraper pb-[16px] border-b-[1px] border-[#EBEAE6]">
+                                                <div class="faq-title title-wraper flex items-center justify-between gap-[20px] cursor-pointer">
+                                                    <h3 class="text-color5 font-[700] text-[12px]">Specifications </h3>
+                                                    <div class="icon">
+                                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L7 7L13 1" stroke="#A3A3A0"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="faq-ans spacification pt-[12px] hidden">
+                                                    <div class="flex flex-col gap-[10px]">
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Case diameter</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">40mm Polished Stainless Steel</p>
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Movements</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">Japanese Quartz Movement</p>
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Water resistance</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">3ATM (30 Meters)</p>
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Strap material</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">Genuine Leather</p>
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Strap buckle</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">Stainless Ardillon</p>
+                                                        </div>
+                                                        <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                            <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Strap color</p>
+                                                            <p class="text-color31 font-[600] text-[14px]">Black Leather</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item product-review-wraper pb-[16px] border-b-[1px] border-[#EBEAE6]">
+                                                <div class="faq-title title-wraper flex items-center justify-between gap-[20px] cursor-pointer">
+                                                    <h3 class="text-color5 font-[700] text-[12px]">Reviews</h3>
+                                                    <div class="icon">
+                                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L7 7L13 1" stroke="#A3A3A0"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="faq-ans all-reviews-wraper pt-[12px] hidden">
+                                                    <div class="flex flex-col gap-[15px]">
+                                                        <div class="review pb-[15px] border-b-[1px] border-[#EBEAE6] last:border-b-[0px]">
+                                                            <div class="top-part flex items-center flex-wrap gap-[16px]">
+                                                                <div class="img h-[50px] w-[50px] rounded-[50%] bg-color32">
+                                                                    <img src="" alt="reviewr-img" class="w-full rounded-[50%]">
+                                                                </div>
+                                                                <div class="text flex-1">
+                                                                    <h3 class="reviewer-name text-[1rem] font-[700] leading-[1.3] text-[#272833]">Mike Flexin</h3>
+                                                                    <div class="review-date flex gap-[10px] justify-between items-center flex-wrap mt-[8px]">
+                                                                        <div class="review">
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-[#EBDFC7]"></i> 
+                                                                        </div>
+                                                                        <div class="date text-[#A5A6AE] font-[600]">27 November 2019</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text text-color31 text-[13px] leading-[20px] my-[22px]">
+                                                                The dial on this timepiece is extremely unique, as it is a concentric circular pattern that is covered by sturdy sapphire glass.
+                                                            </div>
+                                                            <div class="bottom-part flex justify-between items-center gap-[20px] ">
+                                                                <div class="btn-wraper flex gap-[10px] *:px-[30px] *:py-[9px] *:rounded-[8px] *:text-[13px] *:leading-[20px] *:font-[600] *:text-color31 *:border-[1px]">
+                                                                    <a href="javascript:void(0)" class="bg-color32 border-[transparent]">Helpful?</a>
+                                                                    <a href="javascript:void(0)" class="border-[1f36504d]">Not helpful?</a>
+                                                                </div>
+                                                                <div class="report-btn">
+                                                                    <a href="javascript:void(0)" class="font-[600] text-[13px] text-color27">Report</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review pb-[15px] border-b-[1px] border-[#EBEAE6] last:border-b-[0]">
+                                                            <div class="top-part flex items-center flex-wrap gap-[16px]">
+                                                                <div class="img h-[50px] w-[50px] rounded-[50%] bg-color32">
+                                                                    <img src="" alt="reviewr-img" class="w-full rounded-[50%]">
+                                                                </div>
+                                                                <div class="text flex-1">
+                                                                    <h3 class="reviewer-name text-[1rem] font-[700] leading-[1.3] text-[#272833]">Mike Flexin</h3>
+                                                                    <div class="review-date flex gap-[10px] justify-between items-center flex-wrap mt-[8px]">
+                                                                        <div class="review">
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-color27"></i> 
+                                                                            <i class="fa-solid fa-star text-[#EBDFC7]"></i> 
+                                                                        </div>
+                                                                        <div class="date text-[#A5A6AE] font-[600]">27 November 2019</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-text text-color31 text-[13px] leading-[20px] my-[22px]">
+                                                                The dial on this timepiece is extremely unique, as it is a concentric circular pattern that is covered by sturdy sapphire glass.
+                                                            </div>
+                                                            <div class="bottom-part flex justify-between items-center gap-[20px] ">
+                                                                <div class="btn-wraper flex gap-[10px] *:px-[30px] *:py-[9px] *:rounded-[8px] *:text-[13px] *:leading-[20px] *:font-[600] *:text-color31 *:border-[1px]">
+                                                                    <a href="javascript:void(0)" class="bg-color32 border-[transparent]">Helpful?</a>
+                                                                    <a href="javascript:void(0)" class="border-[1f36504d]">Not helpful?</a>
+                                                                </div>
+                                                                <div class="report-btn">
+                                                                    <a href="javascript:void(0)" class="font-[600] text-[13px] text-color27">Report</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item product-review-wraper pb-[16px] border-b-[1px] border-[#EBEAE6]">
+                                                <div class="faq-title title-wraper flex items-center justify-between gap-[20px] cursor-pointer">
+                                                    <h3 class="text-color5 font-[700] text-[12px]">Store Profile</h3>
+                                                    <div class="icon">
+                                                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1 1L7 7L13 1" stroke="#A3A3A0"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="faq-ans store-profile-wraper pt-[12px] hidden">
+                                                    <div class="store-des text-color31 leading-[20px] mb-[8px]">
+                                                        Rolex SA is a Swiss watch brand and manufacturer based in Geneva, Switzerland. Founded in 1905 as Wilsdorf and Davis by German businessman Hans Wilsdorf and his brother-in-law Alfred Davis in London, the company registered Rolex as the brand name of its watches in 1908 and became Rolex Watch Co. Ltd. in 1915.
+                                                    </div>
+                                                    <div class="py-[12px] view-profile-wraper">
+                                                        <a href="javascript:void(0)" class="view-profile text-color27 font-[600] text-[13px]">View Profile</a>
+                                                    </div>
+                                                    <div class="shopping-experience-wraper">
+                                                        <div class="title text-color5 text-[12px] font-[700] tracking-[1px] mb-[20px]">Book a live video shopping experience</div>
+                                                        <div class="book-video-call mb-[12px] flex gap-[12px] p-[8px] rounded-[8px] bg-[#fff] shadow-[0_7px_64px_0_#00000012]">
+                                                            <div class="main-icon w-[48px] h-[48px] flex justify-center items-center rounded-[16px] bg-color4 shrink-0">
+                                                                <img src="./assets/images/icon-shopping-bag.png" alt="videocall">
+                                                            </div>
+                                                            <div class="text">
+                                                                <div class="title flex justify-between items-center gap-[12px]">
+                                                                    <h3 class="font-[600] text-color31">Book a Video Call</h3>
+                                                                    <div class="icon">
+                                                                        <img src="./assets/images/icon-double-arrows.svg" alt="double-arrow">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info flex gap-[5px]">
+                                                                    <span class="info-icon mt-[3px]">
+                                                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5013 0.166504C3.2847 0.166504 0.667969 2.78324 0.667969 5.99984C0.667969 9.21643 3.2847 11.8332 6.5013 11.8332C9.7179 11.8332 12.3346 9.21643 12.3346 5.99984C12.3346 2.78324 9.7179 0.166504 6.5013 0.166504ZM7.79339 9.05456C7.76772 9.06465 7.73701 9.07733 7.70188 9.09183C7.29719 9.2589 6.30714 9.6676 5.71672 9.14741C5.52519 8.97921 5.42991 8.76581 5.42991 8.50671C5.42991 8.11988 5.53129 7.7726 5.71802 7.13293C5.76547 6.97037 5.81844 6.78894 5.87665 6.58317C5.92721 6.39116 5.98894 6.14227 5.98894 5.94491C5.98894 5.60414 5.85964 5.51373 5.50915 5.51373C5.33804 5.51373 5.14845 5.57449 4.97686 5.63866L5.07165 5.25025C5.45422 5.0947 5.9345 4.90512 6.34575 4.90512C6.96262 4.90512 7.41665 5.21282 7.41665 5.7981C7.41665 5.96678 7.38748 6.26234 7.32623 6.4665L6.97137 7.72164C6.89797 7.97539 6.76526 8.53491 6.97089 8.70067C7.17311 8.86449 7.65193 8.77748 7.88818 8.66616L7.79339 9.05456ZM6.47797 3.32623C6.47797 3.72873 6.80464 4.05539 7.20714 4.05539C7.60964 4.05539 7.9363 3.72873 7.9363 3.32623C7.9363 2.92373 7.60964 2.59706 7.20714 2.59706C6.80464 2.59706 6.47797 2.92373 6.47797 3.32623Z" fill="#4B4B51"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="info-text text-[#4B4B51]">Book personalised live shopping experience with local retailers.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="book-video-call mb-[12px] flex gap-[12px] p-[8px] rounded-[8px] bg-[#fff] shadow-[0_7px_64px_0_#00000012]">
+                                                            <div class="main-icon w-[48px] h-[48px] flex justify-center items-center rounded-[16px] bg-color4 shrink-0">
+                                                                <img src="./assets/images/massege.png" alt="videocall">
+                                                            </div>
+                                                            <div class="text">
+                                                                <div class="title flex justify-between items-center gap-[12px]">
+                                                                    <h3 class="font-[600] text-color31">Send message</h3>
+                                                                    <div class="icon">
+                                                                        <img src="./assets/images/icon-double-arrows.svg" alt="double-arrow">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="info flex gap-[5px]">
+                                                                    <span class="info-icon mt-[3px]">
+                                                                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5013 0.166504C3.2847 0.166504 0.667969 2.78324 0.667969 5.99984C0.667969 9.21643 3.2847 11.8332 6.5013 11.8332C9.7179 11.8332 12.3346 9.21643 12.3346 5.99984C12.3346 2.78324 9.7179 0.166504 6.5013 0.166504ZM7.79339 9.05456C7.76772 9.06465 7.73701 9.07733 7.70188 9.09183C7.29719 9.2589 6.30714 9.6676 5.71672 9.14741C5.52519 8.97921 5.42991 8.76581 5.42991 8.50671C5.42991 8.11988 5.53129 7.7726 5.71802 7.13293C5.76547 6.97037 5.81844 6.78894 5.87665 6.58317C5.92721 6.39116 5.98894 6.14227 5.98894 5.94491C5.98894 5.60414 5.85964 5.51373 5.50915 5.51373C5.33804 5.51373 5.14845 5.57449 4.97686 5.63866L5.07165 5.25025C5.45422 5.0947 5.9345 4.90512 6.34575 4.90512C6.96262 4.90512 7.41665 5.21282 7.41665 5.7981C7.41665 5.96678 7.38748 6.26234 7.32623 6.4665L6.97137 7.72164C6.89797 7.97539 6.76526 8.53491 6.97089 8.70067C7.17311 8.86449 7.65193 8.77748 7.88818 8.66616L7.79339 9.05456ZM6.47797 3.32623C6.47797 3.72873 6.80464 4.05539 7.20714 4.05539C7.60964 4.05539 7.9363 3.72873 7.9363 3.32623C7.9363 2.92373 7.60964 2.59706 7.20714 2.59706C6.80464 2.59706 6.47797 2.92373 6.47797 3.32623Z" fill="#4B4B51"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="info-text text-[#4B4B51]">Inquire about products directly from sellers with instant messaging.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="contact-details-wraper">
+                                                        <div class="title text-color5 text-[12px] font-[700] tracking-[1px] mt-[20px] pb-[20px] border-b-[1px] border-[#EBEAE6]">Contact Details</div>
+                                                        <div class="contact-details mt-[16px]">
+                                                            <div class="flex flex-col gap-[10px]">
+                                                                <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Company Name</p>
+                                                                    <p class="text-color31 font-[600] text-[14px]">Rolex SA</p>
+                                                                </div>
+                                                                <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Website</p>
+                                                                    <p class="text-color31 font-[600] text-[14px]">www.rolex.com</p>
+                                                                </div>
+                                                                <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">WhatsApp Number</p>
+                                                                    <p class="text-color31 font-[600] text-[14px]">1234 5678 9000</p>
+                                                                </div>
+                                                                <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Phone Number</p>
+                                                                    <p class="text-color31 font-[600] text-[14px]">+44 123 4567 890</p>
+                                                                </div>
+                                                                <div class="flex items-center justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Facetime Number</p>
+                                                                    <p class="text-color31 font-[600] text-[14px]">1234 5678 9000</p>
+                                                                </div>
+                                                                <div class="flex justify-between gap-[10px] flex-wrap *:leading-[20px]">
+                                                                    <p class="text-color31 opacity-[.5] font-[400] text-[14px]">Location</p>
+                                                                    <p class="text-color31 font-[600] text-[14px] text-end">2 Church View High Street <br> Mayfield, England <br>
+                                                                        TN20 6AB<br>United Kingdom</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="geo-location mt-[12px]">
+                                                            <iframe width="100%" height="180" src="https://www.openstreetmap.org/export/embed.html?bbox=26.07180655002594%2C44.42399971886347%2C26.07888758182526%2C44.427279097811635&amp;layer=mapnik"></iframe>
+                                                        </div>
+                                                        <div class="view-on-google-maps mt-[12px]">
+                                                            <a href="javascript:void(0)" class="text-color27 font-[600] leading-[20px]">View on Google Maps</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
