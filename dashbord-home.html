@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="group relative">
-                                <a href="javscript:void(0)" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
+                                <a href="./dashboard-wallet-page.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 7C2 4.79086 3.79086 3 6 3H18C20.2091 3 22 4.79086 22 7V17C22 19.2091 20.2091 21 18 21H6C3.79086 21 2 19.2091 2 17V7Z" stroke="#0F172A" stroke-width="1.5" stroke-linejoin="round"/>
@@ -50,7 +50,7 @@
                                 <div class="absolute top-[0] right-0 h-[20px] w-[20px] rounded-[50%] bg-color21 items-center justify-center flex text-[#fff]">10</div>
                             </li>
                             <li class="group">
-                                <a href="javscript:void(0)" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
+                                <a href="dashboard-order-page.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -125,7 +125,7 @@
                                 </div>
                             </li>
                             <li class="relative group">
-                                <a href="javscript:void(0)" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
+                                <a href="dashboard-inbox-page.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g  >
@@ -138,7 +138,7 @@
                                 <div class="absolute top-[0] right-0 h-[20px] w-[20px] rounded-[50%] bg-color21 items-center justify-center flex text-[#fff]">10</div>
                             </li>
                             <li class="relative group">
-                                <a href="javscript:void(0)" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
+                                <a href="dashboard-notification-page.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g>
@@ -378,13 +378,13 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex-1">
+                            <div class="">
                                 <div class="custom-table-wraper overflow-x-auto w-full">
                                     <table class="border-collapse min-w-full *:text-[1rem] *:font-[600] *:leading-[1.5rem]">
                                         <thead class="*:text-color2">
                                             <tr class="first:*:px-[24px] *:py-[22px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
                                                 <td>
-                                                    <input type="radio" name="" id="" class="h-[20px] w-[20px]">
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
                                                 </td>
                                                 <td>Customer name <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
                                                 <td>Date <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
@@ -395,8 +395,10 @@
                                             </tr>
                                         </thead>
                                         <tbody class="*:text-color0">
-                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
                                                 <td>
                                                     <div class="customer-name flex gap-[16px] items-center">
                                                         <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
@@ -409,10 +411,37 @@
                                                 <td>£3,987.00</td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                                <td>...</td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </td>
                                             </tr>
-                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
                                                 <td>
                                                     <div class="customer-name flex gap-[16px] items-center">
                                                         <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
@@ -425,10 +454,37 @@
                                                 <td>£7,987.00</td>
                                                 <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Pending</span></td>
                                                 <td><span class="green-badge text-color29 text-[14px] font-[600] leading-[1.6] bg-color30 px-[16px] py-[5px] rounded-[4px]">Processing</span></td>
-                                                <td>...</td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </td>
                                             </tr>
-                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
                                                 <td>
                                                     <div class="customer-name flex gap-[16px] items-center">
                                                         <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
@@ -441,10 +497,37 @@
                                                 <td>£3,987.00</td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                                <td>...</td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </td>
                                             </tr>
-                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
                                                 <td>
                                                     <div class="customer-name flex gap-[16px] items-center">
                                                         <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
@@ -457,10 +540,37 @@
                                                 <td>£7,987.00</td>
                                                 <td><span class="green-badge text-color27 text-[14px] font-[600] leading-[1.6] bg-color28 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
                                                 <td><span class="green-badge text-color25 text-[14px] font-[600] leading-[1.6] bg-color26 px-[16px] py-[5px] rounded-[4px]">Shiped</span></td>
-                                                <td>...</td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </td>
                                             </tr>
-                                            <tr class="*:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
-                                                <td><input type="radio" name="" id="" class="h-[20px] w-[20px]"></td>
+                                            <tr class="*:has-[:checked]:bg-[#F8FAFC] *:py-[22px] first:*:px-[24px] last:*:px-[24px] *:px-[12px] *:border-y-[1px] *:border-[#F1F5F9] *:whitespace-nowrap">
+                                                <td>
+                                                    <input type="checkbox" name="" id="" class="custom-checkbox">
+                                                </td>
                                                 <td>
                                                     <div class="customer-name flex gap-[16px] items-center">
                                                         <div class="img h-[40px] w-[40px] rounded-[50%] bg-[#C4C4C4] shrink-0">
@@ -473,7 +583,32 @@
                                                 <td>£3,987.00</td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Paid</span></td>
                                                 <td><span class="green-badge text-color23 text-[14px] font-[600] leading-[1.6] bg-color24 px-[16px] py-[5px] rounded-[4px]">Success</span></td>
-                                                <td>...</td>
+                                                <td>
+                                                    <div class="relative actions-wraper">
+                                                        <span class="text-[#96A3BE] actions-btn cursor-pointer">...</span>
+                                                        <span class="actions-options hidden absolute w-[200px] top-[calc(100%_+_10px)] right-[0] flex flex-col gap-[12px] p-[24px] rounded-[10px] shadow-[0px_4px_20px_0px_#0000001A] bg-color22">
+                                                            <span class="text-[0.75rem] text-color2 font-[400]">Action</span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="qr-code flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">View QR Code</span>
+                                                                    <span><img src="./assets/images/qr-code.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="edit flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Edit</span>
+                                                                    <span><img src="./assets/images/edit.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                            <span>
+                                                                <a href="javascript:void(0)" class="remove flex justify-between items-center gap-[8px]">
+                                                                    <span class="text-color8 font-[400]">Remove</span>
+                                                                    <span><img src="./assets/images/remove.png" alt="qr-code"></span>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>

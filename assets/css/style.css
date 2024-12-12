@@ -98,6 +98,7 @@ a{
   width: 20px;
   border-radius: 50%;
   border: 2px solid var(--color-5);
+  cursor: pointer;
   position: relative;
   transition: all 0.3s ease-in-out;
   &::after {
@@ -115,6 +116,18 @@ a{
   &:checked {
     background-color: var(--color-5);
     color: #fff;
+  }
+  &.style-two {
+    height: 16px;
+    width: 16px;
+    border: 1.5px solid #96A3BE;
+    &::after{
+      font-size: 9px;
+    }
+    &:checked{
+      background-color:#28B636;
+      border-color: #28B636;
+    }
   }
 }
 .custom-table-wraper {
