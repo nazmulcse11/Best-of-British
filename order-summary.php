@@ -27,7 +27,7 @@
                         <h3 class="text-color19 pb-[10px] border-b-[1px] border-[#F2F6FF]">Menu</h3>
                     </div>
                     <ul class="menu flex flex-col gap-[24px] mt-[20px]">
-                            <li class="group active">
+                            <li class="group">
                                 <a href="dashbord-home.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +49,7 @@
                                 </a>
                                 <div class="absolute top-[0] right-0 h-[20px] w-[20px] rounded-[50%] bg-color21 items-center justify-center flex text-[#fff]">10</div>
                             </li>
-                            <li class="group">
+                            <li class="group  active">
                                 <a href="dashboard-order-page.html" class="group-[.active]:*:opacity-100 *:opacity-[0.7] active flex items-center gap-[10px] *:text-color20 *:text-[16px]">
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -195,10 +195,10 @@
                     </div>
                 </div>
             </div>
-            <div class="dashboard-right overflow-x-hiddenflex-1 lg:w-[auto] w-[100%] lg:ml-[290px] lg:peer-[.open]:ml-[0]">
+            <div class="dashboard-right overflow-x-hidden lg:w-[auto] w-[100%] flex-1 lg:ml-[290px] lg:peer-[.open]:ml-[0]">
                 <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px] flex-wrap">
                      <div class="text-part">
-                        <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Dashboard</h4>
+                        <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Orders</h4>
                         <p class="text-[#96A3BE] text-[1rem] mt-[4px]">Let's check your store today</p>
                      </div>
                      <div class="search-part flex gap-[14px]">
@@ -217,139 +217,11 @@
                         </div>
                      </div>
                 </div>      
-                <div class="dasboard-wraper-main bg-color22 p-[40px] flex gap-[30px] xl:flex-row flex-col-reverse xl:w-[100%]">
-                    <div class="main-body flex-1 xl:w-[calc(100%-400px)]">
-                        <div class="single-cards-wraper grid grid-cols-[repeat(auto-fill,minmax(270px,_1fr))] gap-[30px]">
-                            <div class="single-card rounded-[12px] p-[20px] bg-[#fff]">
-                                <div class="title-part flex items-center gap-[6px]">
-                                    <div class="icon h-[44px] w-[44px] rounded-[50%] flex justify-center items-center bg-[#2374E7]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0004 18H14.0004M20.0004 18C21.1049 18 22.0004 18.8954 22.0004 20C22.0004 21.1046 21.1049 22 20.0004 22H14.0004C12.8958 22 12.0004 21.1046 12.0004 20C12.0004 18.8954 12.8958 18 14.0004 18M20.0004 18C21.1049 18 22.0004 17.1046 22.0004 16C22.0004 14.8954 21.1049 14 20.0004 14H19.3337M14.0004 18C12.8958 18 12.0004 17.1046 12.0004 16C12.0004 14.8954 12.8958 14 14.0004 14H19.3337M13.6758 22H10.3249C6.22957 22 3.33775 17.9878 4.63281 14.1026L5.63281 11.1026C6.4495 8.65258 8.74233 7 11.3249 7H12.6758C15.2584 7 17.5512 8.65258 18.3679 11.1026L19.3337 14" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                            <path d="M14.0859 7L9.91411 7L8.51303 5.39296C7.13959 3.81763 8.74185 1.46298 10.7471 2.10985L11.6748 2.40914C11.8861 2.47728 12.1139 2.47728 12.3252 2.40914L13.2529 2.10985C15.2582 1.46298 16.8604 3.81763 15.487 5.39296L14.0859 7Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <h4 class="text-[#000929] dm-serif text-[1.25rem]">Total Income</h4>
-                                </div>
-                                <div class="text-part mt-[16px]">
-                                    <div class="ammount text-[#000929] dm-serif text-[1.75rem]">£8, 55,450</div>
-                                    <div class="ups-downs flex gap-[8px]">
-                                        <div class="icon">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1_40491)">
-                                                <path d="M8.97756 11.9763L12.8976 6.63393C13.2031 6.21667 13.3871 5.72293 13.4292 5.20748C13.4713 4.69202 13.3698 4.17498 13.1359 3.71369C12.9021 3.2524 12.5451 2.86489 12.1044 2.59412C11.6638 2.32335 11.1568 2.1799 10.6396 2.17969L2.79965 2.17969C2.28224 2.17978 1.77498 2.32323 1.33416 2.59413C0.893338 2.86502 0.536198 3.25277 0.302374 3.71432C0.068551 4.17588 -0.0328103 4.6932 0.00953852 5.20887C0.0518874 5.72453 0.236292 6.21838 0.542285 6.63561L4.46228 11.978C4.72235 12.3326 5.06229 12.621 5.45457 12.8198C5.84685 13.0186 6.28044 13.1222 6.7202 13.1222C7.15997 13.1222 7.59356 13.0186 7.98584 12.8198C8.37812 12.621 8.71806 12.3326 8.97812 11.978L8.97756 11.9763ZM5.36556 11.3133L1.44557 5.97089C1.26265 5.72058 1.15257 5.42453 1.1275 5.11553C1.10243 4.80652 1.16336 4.49661 1.30353 4.22009C1.44371 3.94356 1.65766 3.71122 1.92172 3.54878C2.18577 3.38633 2.48962 3.30012 2.79965 3.29969L10.6396 3.29969C10.9503 3.29658 11.2554 3.38116 11.5201 3.54372C11.7848 3.70628 11.9983 3.94022 12.136 4.21865C12.2564 4.45547 12.3194 4.71735 12.3196 4.98305C12.3183 5.33915 12.2027 5.68541 11.9898 5.97089L8.0698 11.3133C7.91373 11.5258 7.70983 11.6986 7.4746 11.8177C7.23936 11.9368 6.97939 11.9989 6.71572 11.9989C6.45206 11.9989 6.19209 11.9368 5.95685 11.8177C5.72161 11.6986 5.51771 11.5258 5.36164 11.3133L5.36556 11.3133Z" fill="#BBF7D0"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_1_40491)">
-                                                <path d="M12.023 10.0248L8.10634 15.3661C7.80085 15.7833 7.61685 16.2769 7.57473 16.7922C7.53262 17.3076 7.63403 17.8246 7.86773 18.2858C8.10143 18.7471 8.45828 19.1346 8.89875 19.4054C9.33921 19.6763 9.84607 19.8199 10.3631 19.8203L18.2003 19.8203C18.7179 19.8211 19.2256 19.6783 19.6668 19.4077C20.108 19.1371 20.4655 18.7494 20.6994 18.2876C20.9333 17.8259 21.0345 17.3084 20.9918 16.7926C20.949 16.2768 20.7639 15.7829 20.4571 15.3661L16.5405 10.0248C16.2804 9.67038 15.9405 9.38218 15.5484 9.18354C15.1562 8.9849 14.7228 8.88139 14.2831 8.88139C13.8435 8.88139 13.4101 8.9849 13.0179 9.18354C12.6258 9.38218 12.2859 9.67038 12.0258 10.0248L12.023 10.0248Z" fill="#28B636"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(13.4395 0.5) rotate(90)"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(7.56055 21.5) rotate(-90)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="parcentege text-[#BBF7D0]">+12%</div>
-                                        <div class="text-[#475569]">From last month </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-card rounded-[12px] p-[20px] bg-[#fff]">
-                                <div class="title-part flex items-center gap-[6px]">
-                                    <div class="icon h-[44px] w-[44px] rounded-[50%] flex justify-center items-center bg-[#2374E7]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0004 18H14.0004M20.0004 18C21.1049 18 22.0004 18.8954 22.0004 20C22.0004 21.1046 21.1049 22 20.0004 22H14.0004C12.8958 22 12.0004 21.1046 12.0004 20C12.0004 18.8954 12.8958 18 14.0004 18M20.0004 18C21.1049 18 22.0004 17.1046 22.0004 16C22.0004 14.8954 21.1049 14 20.0004 14H19.3337M14.0004 18C12.8958 18 12.0004 17.1046 12.0004 16C12.0004 14.8954 12.8958 14 14.0004 14H19.3337M13.6758 22H10.3249C6.22957 22 3.33775 17.9878 4.63281 14.1026L5.63281 11.1026C6.4495 8.65258 8.74233 7 11.3249 7H12.6758C15.2584 7 17.5512 8.65258 18.3679 11.1026L19.3337 14" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                            <path d="M14.0859 7L9.91411 7L8.51303 5.39296C7.13959 3.81763 8.74185 1.46298 10.7471 2.10985L11.6748 2.40914C11.8861 2.47728 12.1139 2.47728 12.3252 2.40914L13.2529 2.10985C15.2582 1.46298 16.8604 3.81763 15.487 5.39296L14.0859 7Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <h4 class="text-[#000929] dm-serif text-[1.25rem]">Total Income</h4>
-                                </div>
-                                <div class="text-part mt-[16px]">
-                                    <div class="ammount text-[#000929] dm-serif text-[1.75rem]">£8, 55,450</div>
-                                    <div class="ups-downs flex gap-[8px]">
-                                        <div class="icon">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1_40491)">
-                                                <path d="M8.97756 11.9763L12.8976 6.63393C13.2031 6.21667 13.3871 5.72293 13.4292 5.20748C13.4713 4.69202 13.3698 4.17498 13.1359 3.71369C12.9021 3.2524 12.5451 2.86489 12.1044 2.59412C11.6638 2.32335 11.1568 2.1799 10.6396 2.17969L2.79965 2.17969C2.28224 2.17978 1.77498 2.32323 1.33416 2.59413C0.893338 2.86502 0.536198 3.25277 0.302374 3.71432C0.068551 4.17588 -0.0328103 4.6932 0.00953852 5.20887C0.0518874 5.72453 0.236292 6.21838 0.542285 6.63561L4.46228 11.978C4.72235 12.3326 5.06229 12.621 5.45457 12.8198C5.84685 13.0186 6.28044 13.1222 6.7202 13.1222C7.15997 13.1222 7.59356 13.0186 7.98584 12.8198C8.37812 12.621 8.71806 12.3326 8.97812 11.978L8.97756 11.9763ZM5.36556 11.3133L1.44557 5.97089C1.26265 5.72058 1.15257 5.42453 1.1275 5.11553C1.10243 4.80652 1.16336 4.49661 1.30353 4.22009C1.44371 3.94356 1.65766 3.71122 1.92172 3.54878C2.18577 3.38633 2.48962 3.30012 2.79965 3.29969L10.6396 3.29969C10.9503 3.29658 11.2554 3.38116 11.5201 3.54372C11.7848 3.70628 11.9983 3.94022 12.136 4.21865C12.2564 4.45547 12.3194 4.71735 12.3196 4.98305C12.3183 5.33915 12.2027 5.68541 11.9898 5.97089L8.0698 11.3133C7.91373 11.5258 7.70983 11.6986 7.4746 11.8177C7.23936 11.9368 6.97939 11.9989 6.71572 11.9989C6.45206 11.9989 6.19209 11.9368 5.95685 11.8177C5.72161 11.6986 5.51771 11.5258 5.36164 11.3133L5.36556 11.3133Z" fill="#BBF7D0"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_1_40491)">
-                                                <path d="M12.023 10.0248L8.10634 15.3661C7.80085 15.7833 7.61685 16.2769 7.57473 16.7922C7.53262 17.3076 7.63403 17.8246 7.86773 18.2858C8.10143 18.7471 8.45828 19.1346 8.89875 19.4054C9.33921 19.6763 9.84607 19.8199 10.3631 19.8203L18.2003 19.8203C18.7179 19.8211 19.2256 19.6783 19.6668 19.4077C20.108 19.1371 20.4655 18.7494 20.6994 18.2876C20.9333 17.8259 21.0345 17.3084 20.9918 16.7926C20.949 16.2768 20.7639 15.7829 20.4571 15.3661L16.5405 10.0248C16.2804 9.67038 15.9405 9.38218 15.5484 9.18354C15.1562 8.9849 14.7228 8.88139 14.2831 8.88139C13.8435 8.88139 13.4101 8.9849 13.0179 9.18354C12.6258 9.38218 12.2859 9.67038 12.0258 10.0248L12.023 10.0248Z" fill="#28B636"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(13.4395 0.5) rotate(90)"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(7.56055 21.5) rotate(-90)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="parcentege text-[#BBF7D0]">+12%</div>
-                                        <div class="text-[#475569]">From last month </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-card rounded-[12px] p-[20px] bg-[#fff]">
-                                <div class="title-part flex items-center gap-[6px]">
-                                    <div class="icon h-[44px] w-[44px] rounded-[50%] flex justify-center items-center bg-[#2374E7]">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.0004 18H14.0004M20.0004 18C21.1049 18 22.0004 18.8954 22.0004 20C22.0004 21.1046 21.1049 22 20.0004 22H14.0004C12.8958 22 12.0004 21.1046 12.0004 20C12.0004 18.8954 12.8958 18 14.0004 18M20.0004 18C21.1049 18 22.0004 17.1046 22.0004 16C22.0004 14.8954 21.1049 14 20.0004 14H19.3337M14.0004 18C12.8958 18 12.0004 17.1046 12.0004 16C12.0004 14.8954 12.8958 14 14.0004 14H19.3337M13.6758 22H10.3249C6.22957 22 3.33775 17.9878 4.63281 14.1026L5.63281 11.1026C6.4495 8.65258 8.74233 7 11.3249 7H12.6758C15.2584 7 17.5512 8.65258 18.3679 11.1026L19.3337 14" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                            <path d="M14.0859 7L9.91411 7L8.51303 5.39296C7.13959 3.81763 8.74185 1.46298 10.7471 2.10985L11.6748 2.40914C11.8861 2.47728 12.1139 2.47728 12.3252 2.40914L13.2529 2.10985C15.2582 1.46298 16.8604 3.81763 15.487 5.39296L14.0859 7Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-                                        </svg>
-                                    </div>
-                                    <h4 class="text-[#000929] dm-serif text-[1.25rem]">Total Income</h4>
-                                </div>
-                                <div class="text-part mt-[16px]">
-                                    <div class="ammount text-[#000929] dm-serif text-[1.75rem]">£8, 55,450</div>
-                                    <div class="ups-downs flex gap-[8px]">
-                                        <div class="icon">
-                                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_1_40491)">
-                                                <path d="M8.97756 11.9763L12.8976 6.63393C13.2031 6.21667 13.3871 5.72293 13.4292 5.20748C13.4713 4.69202 13.3698 4.17498 13.1359 3.71369C12.9021 3.2524 12.5451 2.86489 12.1044 2.59412C11.6638 2.32335 11.1568 2.1799 10.6396 2.17969L2.79965 2.17969C2.28224 2.17978 1.77498 2.32323 1.33416 2.59413C0.893338 2.86502 0.536198 3.25277 0.302374 3.71432C0.068551 4.17588 -0.0328103 4.6932 0.00953852 5.20887C0.0518874 5.72453 0.236292 6.21838 0.542285 6.63561L4.46228 11.978C4.72235 12.3326 5.06229 12.621 5.45457 12.8198C5.84685 13.0186 6.28044 13.1222 6.7202 13.1222C7.15997 13.1222 7.59356 13.0186 7.98584 12.8198C8.37812 12.621 8.71806 12.3326 8.97812 11.978L8.97756 11.9763ZM5.36556 11.3133L1.44557 5.97089C1.26265 5.72058 1.15257 5.42453 1.1275 5.11553C1.10243 4.80652 1.16336 4.49661 1.30353 4.22009C1.44371 3.94356 1.65766 3.71122 1.92172 3.54878C2.18577 3.38633 2.48962 3.30012 2.79965 3.29969L10.6396 3.29969C10.9503 3.29658 11.2554 3.38116 11.5201 3.54372C11.7848 3.70628 11.9983 3.94022 12.136 4.21865C12.2564 4.45547 12.3194 4.71735 12.3196 4.98305C12.3183 5.33915 12.2027 5.68541 11.9898 5.97089L8.0698 11.3133C7.91373 11.5258 7.70983 11.6986 7.4746 11.8177C7.23936 11.9368 6.97939 11.9989 6.71572 11.9989C6.45206 11.9989 6.19209 11.9368 5.95685 11.8177C5.72161 11.6986 5.51771 11.5258 5.36164 11.3133L5.36556 11.3133Z" fill="#BBF7D0"/>
-                                                </g>
-                                                <g clip-path="url(#clip1_1_40491)">
-                                                <path d="M12.023 10.0248L8.10634 15.3661C7.80085 15.7833 7.61685 16.2769 7.57473 16.7922C7.53262 17.3076 7.63403 17.8246 7.86773 18.2858C8.10143 18.7471 8.45828 19.1346 8.89875 19.4054C9.33921 19.6763 9.84607 19.8199 10.3631 19.8203L18.2003 19.8203C18.7179 19.8211 19.2256 19.6783 19.6668 19.4077C20.108 19.1371 20.4655 18.7494 20.6994 18.2876C20.9333 17.8259 21.0345 17.3084 20.9918 16.7926C20.949 16.2768 20.7639 15.7829 20.4571 15.3661L16.5405 10.0248C16.2804 9.67038 15.9405 9.38218 15.5484 9.18354C15.1562 8.9849 14.7228 8.88139 14.2831 8.88139C13.8435 8.88139 13.4101 8.9849 13.0179 9.18354C12.6258 9.38218 12.2859 9.67038 12.0258 10.0248L12.023 10.0248Z" fill="#28B636"/>
-                                                </g>
-                                                <defs>
-                                                <clipPath id="clip0_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(13.4395 0.5) rotate(90)"/>
-                                                </clipPath>
-                                                <clipPath id="clip1_1_40491">
-                                                <rect width="13.44" height="13.44" fill="white" transform="translate(7.56055 21.5) rotate(-90)"/>
-                                                </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </div>
-                                        <div class="parcentege text-[#BBF7D0]">+12%</div>
-                                        <div class="text-[#475569]">From last month </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sales-analysis bg-[#fff] p-[24px] rounded-[8px] mt-[30px]">
-                            <div class="top-part flex flex-wrap justify-between items-center gap-[20px] ">
-                                <div class="title dm-serif text-[24px] text-color0">Sales Analysis</div>
-                                <div class="side-btn-wraper flex gap-[24px] flex-wrap">
-                                    <div class="calender border-[1px] border-[#CBD5E1] text-color2 rounded-[8px]">
-                                        <span class="flex items-center gap-[6px] px-[16px] py-[10px] max-w-[200px]">
-                                            <img src="./assets/images/calender.svg" alt="">    
-                                            <input type="text" id="calender-dd" class="date-picker w-full font-[400] text-[1rem] text-color2 placeholder:text-color2" placeholder="April 11 - April 24">
-                                        </span>
-                                    </div>
-                                    <div class="download border-[1px] border-[#CBD5E1] text-color2 px-[16px] py-[10px] rounded-[8px] shrink-[0]">
-                                        <a href="javascript:void(0)" class="flex items-center gap-[6px]">
-                                            <img src="./assets/images/download.svg" alt="">
-                                            <span class="font-[400] text-[1rem] text-color2">Download</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chart-part-wraper mt-[30px]">
-                                <canvas id="salesAnalysisChart"></canvas> 
-                            </div>
+                <div class="dasboard-wraper-main bg-color22 p-[40px]">
+                    <div class="main-body">
+                        <div class="btn-wraper">
+                            <a href="javascript:void(0)" class="rounded-[8px] bg-[#2F4A69] text-[#fff] px-[20px] py-[14px] text-[1rem] font-[400] leading-[1.4] "><i></i>Order Details</a>
+                            <a href="javascript:void(0)" class="rounded-[8px] bg-[#2F4A69] text-[#fff] px-[20px] py-[14px] text-[1rem] font-[400] leading-[1.4] ">Add Sale</a>
                         </div>
                         <div class="table-wraper bg-[#fff] mt-[30px] block max:width-[100%]">
                             <div class="top-part p-[24px] flex gap-[16px] flex-wrap">
@@ -378,7 +250,43 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="">
+                            <div class="second-top-filter p-[24px] flex gap-[16px] justify-between flex-wrap mt-[16px]">
+                                <div class="order-date flex-[1_1_200px] date-flat-picker-custom style_2" id="order_date_picker">
+                                    <label for="order-date" class="font-[700] text-color0 text-[1rem] leading-[1.5] mb-[8px] block">Order date</label>
+                                    <div class="input-wraper relative">
+                                        <input type="text" id="order-date" class="w-[100%] py-[10px] pl-[16px] pr-[35px] rounded-[8px] bg-color22 text-[1rem] leading-[1.5] text-color2 placeholder:text-color2 order_date_picker" placeholder="Select date">
+                                        <img src="./assets/images/calender.svg" alt="calender" class="absolute right-[16px] top-[50%] translate-y-[-50%]">
+                                    </div>
+                                </div>
+                                <div class="order_status flex-[1_1_200px]">
+                                    <label for="order_status" class="font-[700] text-color0 text-[1rem] leading-[1.5] mb-[8px] block">Order Status</label>
+                                    <select name="order_status" id="order_status" class="custom-select2 style_2">
+                                        <option value="">View All</option>
+                                        <option value="1">Shipped</option>
+                                        <option value="2">Processing</option>
+                                        <option value="3">Cancelled</option>
+                                    </select>
+                                </div>
+                                <div class="product_type flex-[1_1_200px]">
+                                    <label for="product_type" class="font-[700] text-color0 text-[1rem] leading-[1.5] mb-[8px] block">Types of Product</label>
+                                    <select name="product_type" id="product_type" class="custom-select2 style_2">
+                                        <option value="">View All</option>
+                                        <option value="1">Shipped</option>
+                                        <option value="2">Processing</option>
+                                        <option value="3">Cancelled</option>
+                                    </select>
+                                </div>
+                                <div class="order_amount flex-[1_1_200px]">
+                                    <label for="order_amount" class="font-[700] text-color0 text-[1rem] leading-[1.5] mb-[8px] block">Amount </label>
+                                    <select name="order_amount" id="order_amount" class="custom-select2 style_2">
+                                        <option value="">View All</option>
+                                        <option value="1">Shipped</option>
+                                        <option value="2">Processing</option>
+                                        <option value="3">Cancelled</option>
+                                    </select>
+                                </div>
+                            </div>        
+                            <div class="table_part">
                                 <div class="custom-table-wraper overflow-x-auto w-full">
                                     <table class="border-collapse min-w-full *:text-[1rem] *:font-[600] *:leading-[1.5rem]">
                                         <thead class="*:text-color2">
@@ -386,6 +294,7 @@
                                                 <td>
                                                     <input type="checkbox" name="" id="" class="custom-checkbox">
                                                 </td>
+                                                <td>Order ID <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
                                                 <td>Customer name <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
                                                 <td>Date <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
                                                 <td>Amount <img class="inline-block ms-[8px]" src="./assets/images/updown.svg" alt="updown"></td>
@@ -635,70 +544,6 @@
                                         <a href="javscript:void(0)" class="">4</a>
                                     </div>
                                     <div class="right-icon"><a href="javascript:void(0)" class="text-[#96A3BE] px-[10px]"><i class="fa-solid fa-chevron-right"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-sidebar bg-[#fff] p-[28px] rounded-[8px] xl:w-[400px]">
-                        <div class="my-balance">
-                            <div class="heading-part flex justify-between mb-[20px]">
-                                <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">My Balance</h4>
-                                <div class="option text-[#96A3BE] text-[20px]"><i class="fa-solid fa-ellipsis"></i></div>
-                            </div>
-                            <div class="balance-wraper min-h-[216px] w-[100%] px-[28px] py-[33px] bg-[url(./assets/images/my-balance.png)] bg-cover bg-center rounded-[12px]">
-                                <div class="top-part flex justify-between items-center mb-[11px]">
-                                    <div class="name lato font-[700] text-[#fff] text-[1.125rem]">Best of British</div>
-                                    <div class="icon">
-                                        <img src="./assets/images/Statics.png" alt="stat">
-                                    </div>
-                                </div>
-                                <div class="my-balance text-[#fff]">
-                                    <div class="text-[20px]">My Balance</div>
-                                    <div class="flex justify-between items-center">
-                                        <div class="amount text-[32px] font-[700]">£3,987.00</div>
-                                        <div class="percent text-[1rem] font-[700]"><img src="./assets/images/previous-arrow.png" class="inline-block" alt="icon"> +2.5%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="withdraw-btn max-w-[300px] mx-auto relative top-[-24px]">
-                                <a href="javascript:void(0)" class="flex items-center p-[14px] rounded-[10px] justify-center gap-[10px] bg-color27 text-[#fff] text-[16px]"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 13L6 17L18 17L18 5C18 3.89543 17.1046 3 16 3L8 3C6.89543 3 6 3.89543 6 5L6 13ZM6 13C3.79086 13 2 14.7909 2 17C2 19.2091 3.79086 21 6 21L18 21C20.2091 21 22 19.2091 22 17C22 14.7909 20.2091 13 18 13" stroke="#191B23" stroke-width="1.5" stroke-linejoin="round"/>
-                                    <path d="M10 11.4142L11.2929 12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L14 11.4142M12 7.41421L12 12.4142" stroke="#191B23" stroke-width="1.5" stroke-linecap="round"/>
-                                    </svg><span class="text-[#191B23!important] font-[600]">Withdraw Balance</span></a>
-                            </div>
-                        </div>
-                        <div class="latest-sale-rate">
-                            <div class="heading-part flex justify-between mb-[20px]">
-                                <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Latest Sale Rate</h4>
-                                <div class="option text-[#96A3BE] text-[20px]"><i class="fa-solid fa-ellipsis"></i></div>
-                            </div>
-                            <div class="single-sale-wraper flex flex-col gap-[24px] *:pb-[24px] *:border-b-[1px] *:border-color7 *:last:border-b-0 *:last:pb-0">
-                                <div class="single-sale flex gap-[16px]">
-                                    <div class="img-part h-[64px] w-[64px] bg-[#C4C4C4] rounded-[8px]">
-                                        <img src="" alt="" class="rounded-[8px]">
-                                    </div>
-                                    <div class="text-part flex justufy-between items-center flex-1">
-                                        <div class="left-part flex-1">
-                                            <h3 class="text-color0 text-[1.125rem] font-[700] leading-[1.5] mb-[6px]">Rompi Berkancing</h3>
-                                            <div class="font-[600] text-[14px] leading-[1.5]">
-                                                <span class="text-color6">£400.98</span>
-                                                <span class="text-[#D8E3F8] text-[20px!important]"> &middot;</span>
-                                                <span class="text-[#96A3BE]">April 29, 2022</span>
-                                            </div>
-                                        </div>
-                                        <div class="right-part text-[#C10E0E]">
-                                            +324.75%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-flat-picker-custom mt-[38px]" id="datepicker">
-                            <div class="heading-part flex justify-between mb-[20px] items-center">
-                                <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">Select Date</h4>
-                                <div class="select-date relative max-w-[125px]">
-                                    <input type="text" placeholder="02 June 2024" class="date-picker w-full plaaceholder:text-[1rem] placeholder:text-color0">
-                                    <div class="icon absolute top-[0px] right-[10px]"><i class="fa-solid fa-angle-down"></i></div>
                                 </div>
                             </div>
                         </div>

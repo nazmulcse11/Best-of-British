@@ -175,6 +175,12 @@
         $('#add-p-delivary-options').select2({ 
             placeholder: 'Please Select',
         });
+        $('#order_status').select2({
+        });
+        $('#product_type').select2({
+        });
+        $('#order_amount').select2({
+        });
 
         //custom select function
         function initializeCustomDropdown(dropdownSelector, hiddenSelectSelector) {
@@ -239,7 +245,7 @@
             enableTime: false,
             dateFormat: "d-m-Y",
             altInput: true,
-            altFormat: "F j, Y",
+            altFormat: "j F, Y",
             time_12hr: false,
             appendTo:document.querySelector('#datepicker'),
         });
@@ -248,7 +254,7 @@
             enableTime: false,
             dateFormat: "d-m-Y",
             altInput: true,
-            altFormat: "F j, Y",
+            altFormat: "j F, Y",
             time_12hr: false,
         });
         $(".date-picker2").flatpickr({
@@ -256,8 +262,18 @@
             enableTime: false,
             dateFormat: "d-m-Y",
             altInput: true,
-            altFormat: "F j, Y",
+            altFormat: "j F, Y",
             time_12hr: false,
+        });
+        //oder page order date
+        $(".date-flat-picker-custom .order_date_picker").flatpickr({
+            mode: "single",
+            enableTime: false,
+            dateFormat: "d-m-Y",
+            altInput: true,
+            altFormat: "j F, Y",
+            time_12hr: false,
+            appendTo:document.querySelector('#order_date_picker'),
         });
         function salesAnalysisChart() {
             // Chart js 
