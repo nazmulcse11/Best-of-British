@@ -220,7 +220,7 @@
                 <div class="dasboard-wraper-main bg-color22 p-[40px]">
                     <div class="main-body">
                         <div class="left_part_details_wraper p-[30px] rounded-[8px] bg-[#fff]">
-                            <div class="buyer-details accordion_item">
+                            <div class="buyer_details accordion_item">
                                 <div class="accordion_title open cursor-pointer flex justify-between items-center py-[12px] border-b-[1px] border-[#E2E8F0]">
                                     <h3 class="dm-serif text-color5 text-[1.25rem] leading-[1.4] font-[400]">Buyer Details</h3>
                                     <div class="icon text-[1.25rem] text-[#1E293B] cursor-pointer"><i class="fa-solid fa-minus"></i></div>
@@ -248,31 +248,160 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="buyer-details accordion_item">
+                            <div class="shipping_details accordion_item">
                                 <div class="accordion_title open cursor-pointer flex justify-between items-center py-[12px] border-b-[1px] border-[#E2E8F0]">
-                                    <h3 class="dm-serif text-color5 text-[1.25rem] leading-[1.4] font-[400]">Buyer Details</h3>
+                                    <h3 class="dm-serif text-color5 text-[1.25rem] leading-[1.4] font-[400]">Shipping Address</h3>
                                     <div class="icon text-[1.25rem] text-[#1E293B] cursor-pointer"><i class="fa-solid fa-minus"></i></div>
                                 </div>
                                 <div class="accordiaon_body py-[30px]">
                                     <div class="flex flex-wrap gap-[24px]">
                                         <div class="input_wraper flex-[1_1_180px]">
-                                            <label for="first_name" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">First Name <span class="text-color14">*</span></label>
-                                            <input type="text" id="first_name" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="John" required>
+                                            <label for="shipping_country" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Country<span class="text-color14">*</span></label>
+                                            <select name="shipping_country" id="shipping_country" class="custom-select2 w-[100%] ">
+                                                <option value="0">Select Country</option>
+                                                <option value="1">United Kingdom</option>
+                                                <option value="2">United States</option>
+                                                <option value="2">Canada</option>
+                                            </select>
                                         </div>
                                         <div class="input_wraper flex-[1_1_180px]">
-                                            <label for="last_name" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">First Name <span class="text-color14">*</span></label>
-                                            <input type="text" id="last_name" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="Doe" required>
+                                            <label for="shipping_city" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">First Name <span class="text-color14">*</span></label>
+                                            <select name="shipping_city" id="shipping_city" class="custom-select2 w-[100%] ">
+                                                <option value="0">Select City</option>
+                                                <option value="1">United Kingdom</option>
+                                                <option value="2">United States</option>
+                                                <option value="2">Canada</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="flex flex-wrap gap-[24px] mt-[20px]">
                                         <div class="input_wraper flex-[1_1_180px]">
-                                            <label for="email" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Email<span class="text-color14">*</span></label>
-                                            <input type="email" id="email" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="neurotic@taildo.com" required>
+                                            <label for="shipping_address" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Address<span class="text-color14">*</span></label>
+                                            <input type="text" id="shipping_address" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="46 The Crescent" required>
                                         </div>
                                         <div class="input_wraper flex-[1_1_180px]">
-                                            <label for="phone_number" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Phone Number<span class="text-color14">*</span></label>
-                                            <input type="text" id="phone_number" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="Doe" required>
+                                            <label for="shipping_postcode" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Postcode<span class="text-color14">*</span></label>
+                                            <input type="text" id="shipping_postcode" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="SW04 8DL" required>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="billing_details accordion_item">
+                                <div class="accordion_title open cursor-pointer flex justify-between items-center py-[12px] border-b-[1px] border-[#E2E8F0]">
+                                    <h3 class="dm-serif text-color5 text-[1.25rem] leading-[1.4] font-[400]">Billing Address</h3>
+                                    <div class="icon text-[1.25rem] text-[#1E293B] cursor-pointer"><i class="fa-solid fa-minus"></i></div>
+                                </div>
+                                <div class="accordiaon_body py-[30px]">
+                                    <div class="flex flex-wrap gap-[24px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="billing_country" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Country<span class="text-color14">*</span></label>
+                                            <select name="billing_country" id="billing_country" class="custom-select2 w-[100%] ">
+                                                <option value="0">Select Country</option>
+                                                <option value="1">United Kingdom</option>
+                                                <option value="2">United States</option>
+                                                <option value="2">Canada</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="billing_city" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">First Name <span class="text-color14">*</span></label>
+                                            <select name="billing_city" id="billing_city" class="custom-select2 w-[100%] ">
+                                                <option value="0">Select City</option>
+                                                <option value="1">United Kingdom</option>
+                                                <option value="2">United States</option>
+                                                <option value="2">Canada</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-[24px] mt-[20px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="shipping_address" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Address<span class="text-color14">*</span></label>
+                                            <input type="text" id="shipping_address" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="46 The Crescent" required>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="shipping_postcode" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Postcode<span class="text-color14">*</span></label>
+                                            <input type="text" id="shipping_postcode" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="SW04 8DL" required>
+                                        </div>
+                                    </div>
+                                    <div class="same_shipping_address mt-[20px] flex">
+                                        <input type="checkbox" name="same_shipping_address" id="same_shipping_address" class="custom-checkbox style-two square">
+                                        <label for="same_shipping_address" class="text-[1rem] leading-[1.5] text-color15 mt-[-3px] ml-[8px]"> Same as shipping address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_details accordion_item">
+                                <div class="accordion_title open cursor-pointer flex justify-between items-center py-[12px] border-b-[1px] border-[#E2E8F0]">
+                                    <h3 class="dm-serif text-color5 text-[1.25rem] leading-[1.4] font-[400]">Order Details</h3>
+                                    <div class="icon text-[1.25rem] text-[#1E293B] cursor-pointer"><i class="fa-solid fa-minus"></i></div>
+                                </div>
+                                <div class="accordiaon_body py-[30px]">
+                                    <div class="flex flex-wrap gap-[24px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_date" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Order Date<span class="text-color14">*</span></label>
+                                            <div class="relative">
+                                                <img src="./assets/images/calender.svg" alt="" class="absolute top-[50%] right-[16px] translate-y-[-50%]">
+                                                <input type="text" id="order_date" class="date-picker2 border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] pr-[40px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="Please select" required>
+                                            </div>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_number" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Order Number <span class="text-color14">*</span></label>
+                                            <input type="text" id="order_number" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="ABC1234567" required>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-[24px] mt-[20px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_product_number" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Product Number<span class="text-color14">*</span></label>
+                                            <select name="order_product_number" id="order_product_number" class="custom-select2 w-[100%] ">
+                                                <option value="0">#123456</option>
+                                                <option value="1">#123457</option>
+                                                <option value="2">#123458</option>
+                                                <option value="2">#123459</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_product_name" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Product Name<span class="text-color14">*</span></label>
+                                            <input type="text" id="order_product_name" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="Rolex Submariner" required>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-[24px] mt-[20px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_product_description" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Description<span class="text-color14">*</span></label>
+                                            <input type="text" id="order_product_description" class="border-[1px] border-[#E2E8F0] bg-[#fff] p-[12px_16px] rounded-[8px] focus:outline-0 focus:border-[#486789] text-color16 text-[1rem] leading-[1.5] placeholder:text-color16 placeholder:text-[1rem] w-full" placeholder="Rolex Submariner" required>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_product_quantity" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Quantity<span class="text-color14">*</span></label>
+                                            <select name="order_product_quantity" id="order_product_quantity" class="custom-select2 w-[100%]">
+                                                <option value="0">1</option>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="2">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-[24px] mt-[20px]">
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_price_per_unit" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Price Per Unit<span class="text-color14">*</span></label>
+                                            <select name="order_price_per_unit" id="order_price_per_unit" class="custom-select2 w-[100%]">
+                                                <option value="0">£7,500.00</option>
+                                                <option value="1">£8,500.00</option>
+                                                <option value="2">£9,500.00</option>
+                                                <option value="2">£10,500.00</option>
+                                            </select>
+                                        </div>
+                                        <div class="input_wraper flex-[1_1_180px]">
+                                            <label for="order_price_discount" class="block mb-[8px] text-color15 text-[1rem] leading-[1.5] font-[600]">Discount Percentage (if applicable)</label>
+                                            <div class="relative">
+                                                <span class="absolute top-1/2 left-[10px] -translate-y-1/2 text-[#5D6A83]">%</span>
+                                                <select name="order_price_discount" id="order_price_discount" class="custom-select2 w-[100%]">
+                                                    <option value="0">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="2">3</option>
+                                                    <option value="2">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add_morre_order mt-[20px] flex">
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -297,6 +426,33 @@
                 $(this).addClass('open');
                 $(this).siblings('.accordiaon_body').slideDown(300);
             }
+        });
+        // select2
+        $(document).ready(function() {
+            $('#shipping_country').select2({
+                
+            });
+            $('#shipping_city').select2({
+               
+            });
+            $('#billing_country').select2({
+                
+            });
+            $('#billing_city').select2({
+               
+            });
+            $('#order_product_number').select2({
+               
+            });
+            $('#order_product_quantity').select2({
+               
+            });
+            $('#order_price_per_unit').select2({
+               
+            });
+            $('#order_price_discount').select2({
+               
+            });
         });
     </script>
 </body>

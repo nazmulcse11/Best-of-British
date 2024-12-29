@@ -129,6 +129,10 @@ a{
       border-color: #28B636;
     }
   }
+  &.square{
+    border-radius: 3px;
+    border-width: 2px;
+  }
 }
 .custom-table-wraper {
   .custom-checkbox {
