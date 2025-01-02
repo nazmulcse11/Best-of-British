@@ -400,7 +400,20 @@ canvas {
     color: #191B23;
   }
 }
-
+/*table*/
+.with-action-btn-table {
+  tbody {
+    tr:last-child {
+      td:last-child {
+        .actions-options {
+          bottom: -35px;
+          top: auto;
+          right: calc(100% + 5px);
+        }
+      }
+    }
+  }
+}
 /*FAQ Accordion*/
 .faq-item-wraper {
   .faq-header.active{

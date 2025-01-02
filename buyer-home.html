@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default  py-[36px]">
+            <div class=" container-1440">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative">
+                    <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
+                        <div class="logo-wraper leading-[1] shrink-0 flex gap-[24px]">
+                            <div class="buyer_control_menu relative">
+                                <div class="icon_menu cursor-pointer">
+                                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="0.5" x2="20" y2="0.5" stroke="#1F3650"/>
+                                        <line y1="6.5" x2="20" y2="6.5" stroke="#1F3650"/>
+                                        <line y1="12.5" x2="11.7241" y2="12.5" stroke="#1F3650"/>
+                                    </svg>
+                                </div>
+                                <div class="shadow_bg fixed inset-0 z-[3] bg-[#1f36501a] hidden"></div>
+                                <div class="buyer_menu_items absolute p-[40px] z-[4] w-[270px] bg-[#fff] top-[calc(100%+12px)] left-0 right-0 transition-all duration-[.3s] ease-in-out hidden">
+                                    <div class="text-[#A3A3A0] text-[0.625rem] font-[600] mb-[12px] tracking-[1.5px] uppercase">Menu</div>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase">
+                                        <li><a href="buyer-home.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Home</a></li>
+                                        <li><a href="buyer-listing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Messages <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">29</span></a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Notifications <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">99</span></a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">My Profile</a></li>
+                                    </ul>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase mt-[42px]">
+                                        <li><a href="buyer-home.html" class="font-[600] flex justify-between items-center traking-[1.5px]">About</a></li>
+                                        <li><a href="buyer-listing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Faq</a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="index.html"><img src="./assets/images/Best of British.png" alt="Best Of British"></a>
+                        </div>
+                        <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[1] md:transition-none transition-all duration-[.8s] ease-in-out">
+                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap *:items-center *:flex md:py-[0px] py-[12px] md:gap-[0px] gap-[12px]">
+                            <li class="group/home menu-item active">
+                                <a href="./index.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">Home<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/about menu-item">
+                                <a href="./about.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/about:font-[600] group-hover/about:font-[600]">About<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/about:opacity-100 group-hover/about:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/recomender menu-item">
+                                <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Recommender<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/seller menu-item">
+                                <a href="./seller.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/seller:font-[600] group-hover/seller:font-[600]">Seller<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/seller:opacity-100 group-hover/seller:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/buyer menu-item">
+                                <a href="./buyer.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Buyer<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/faq menu-item">
+                                <a href="./faq.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/faq:font-[600] group-hover/faq:font-[600]">FAQ<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/faq:opacity-100 group-hover/faq:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                            <li class="group/contact-us menu-item">
+                                <a href="./contact-us.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/contact-us:font-[600] group-hover/contact-us:font-[600]">Contact Us<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/contact-us:opacity-100 group-hover/contact-us:opacity-100"></span></a>
+                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
+                        <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
+                        <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-1">
+                                <a href="login.html" class="px-[12px] text-color5">Log in </a>
+                            </div>
+                            <div class="right-icon-2">
+                                <a href="signup-as.html" class="px-[12px] text-color5">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main bg-[#F7F7F5]">
+        <section class="hero_section">
+            <div class="container-1440">
+                <div class="hero_section-bg relative bg-[url('./assets/images/banner-bg.png')] bg-no-repeat bg-center bg-cover before:content-[''] before:bg-[#1f365080] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0">
+                    <div class="hero_section_wraper pt-[197px] pb-[197px] max-w-[1145px] mx-auto relative">
+                        <div class="text_part">
+                            <h1 class="dm-serif italic text-[4rem] leading-[1.2] text-center text-[#ffffff]">Welcome to Best of British</h1>
+                            <p class="max-w-[475px] mx-auto text-center text-[1.25rem] text-[#ffffff] mt-[24px]">Discover & Shop British Retailers, Earn Commissions, and Grow Your Store!</p>
+                        </div>
+                        <div class="search_part mt-[30px]">
+                            <div class="search_wraper flex flex-wrap gap-[12px]">
+                                <div class="input_wraper relative flex-[1_1_250px]">
+                                    <input type="text" class="search_box w-full rounded-[10px] py-[20px] pl-[58px] pr-[20px] text-[.875rem] font-[600] leading-[1.4] text-color1 placeholder:text-color1" placeholder="What are you looking for?">
+                                    <div class="icon absolute left-[20px] top-[50%] translate-y-[-50%]">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.3754 17.0004L13.3254 12.9504M13.3254 12.9504C13.9754 12.3003 14.491 11.5286 14.8428 10.6793C15.1946 9.82995 15.3757 8.91966 15.3757 8.00036C15.3757 7.08106 15.1946 6.17076 14.8428 5.32144C14.491 4.47211 13.9754 3.7004 13.3254 3.05036C12.6753 2.40031 11.9036 1.88467 11.0543 1.53287C10.205 1.18107 9.29466 1 8.37536 1C7.45606 1 6.54576 1.18107 5.69644 1.53287C4.84711 1.88467 4.0754 2.40031 3.42536 3.05036C2.11254 4.36318 1.375 6.14375 1.375 8.00036C1.375 9.85697 2.11254 11.6375 3.42536 12.9504C4.73818 14.2632 6.51875 15.0007 8.37536 15.0007C10.232 15.0007 12.0125 14.2632 13.3254 12.9504Z" stroke="#666562" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>   
+                                <div class="input_wraper relative flex-[1_1_250px]">
+                                    <input type="text" class="search_box w-full rounded-[10px] py-[20px] pl-[58px] pr-[20px] text-[.875rem] font-[600] leading-[1.4] text-color1 placeholder:text-color1" placeholder="What are you looking for?">
+                                    <div class="icon absolute left-[20px] top-[50%] translate-y-[-50%]">
+                                        <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6484 9.27148C13.6484 10.3324 13.227 11.3498 12.4769 12.0999C11.7267 12.8501 10.7093 13.2715 9.64844 13.2715C8.58757 13.2715 7.57016 12.8501 6.82001 12.0999C6.06986 11.3498 5.64844 10.3324 5.64844 9.27148C5.64844 8.21062 6.06986 7.1932 6.82001 6.44306C7.57016 5.69291 8.58757 5.27148 9.64844 5.27148C10.7093 5.27148 11.7267 5.69291 12.4769 6.44306C13.227 7.1932 13.6484 8.21062 13.6484 9.27148ZM11.6484 9.27148C11.6484 9.80192 11.4377 10.3106 11.0627 10.6857C10.6876 11.0608 10.1789 11.2715 9.64844 11.2715C9.118 11.2715 8.6093 11.0608 8.23422 10.6857C7.85915 10.3106 7.64844 9.80192 7.64844 9.27148C7.64844 8.74105 7.85915 8.23234 8.23422 7.85727C8.6093 7.4822 9.118 7.27148 9.64844 7.27148C10.1789 7.27148 10.6876 7.4822 11.0627 7.85727C11.4377 8.23234 11.6484 8.74105 11.6484 9.27148Z" fill="#666562"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.169 15.5181C1.87984 14.2907 0.983609 12.7085 0.593639 10.9717C0.20367 9.23492 0.337479 7.42149 0.978146 5.76074C1.61881 4.1 2.73756 2.66652 4.19292 1.6416C5.64828 0.61668 7.37488 0.0463399 9.15438 0.00270542C10.9339 -0.040929 12.6864 0.444102 14.1902 1.39646C15.6941 2.34882 16.8817 3.72574 17.603 5.35309C18.3243 6.98044 18.5468 8.78514 18.2425 10.539C17.9381 12.2928 17.1205 13.917 15.893 15.2061L9.68701 21.7241L3.169 15.5181ZM14.445 13.8271L9.618 18.8971L4.548 14.0701C3.54537 13.1154 2.84834 11.8849 2.54505 10.5341C2.24176 9.18326 2.34584 7.77285 2.84412 6.48119C3.3424 5.18953 4.2125 4.07462 5.34441 3.27746C6.47631 2.4803 7.81918 2.03668 9.2032 2.00269C10.5872 1.96871 11.9502 2.3459 13.1199 3.08655C14.2896 3.8272 15.2133 4.89806 15.7744 6.16371C16.3355 7.42936 16.5086 8.83297 16.272 10.197C16.0354 11.5611 15.3996 12.8244 14.445 13.8271Z" fill="#666562"/>
+                                        </svg>
+                                    </div>
+                                </div> 
+                                <div class="search-btn">
+                                    <a href="javascript:void(0)" class="text-[1rem] text-[#fff] leading-[1.5] text-center font-[600] bg-[#1F3650] p-[17px_50px] rounded-[10px]">Search</a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-[#EBEAE6]">
+        <div class="footer-top-part md:py-[120px] py-[50px]">
+            <div class="container-1440">
+                <div class="footer-widget-wraper flex sm:flex-row flex-col gap-[30px] flex-wrap justify-between">
+                    <div class="left-part sm:max-w-[302px] text-color5">
+                        <p class="lato font-[700] tracking-[1px]">Sign up For Early Access and get updates from Best of British</p>
+                        <form action="#" method="get" class="mt-[20px] pb-[10px] flex *:text-color5 *:text-[18px] border-b-[1px] border-[#CCCBC8]">
+                            <input type="email" placeholder="Email" class="flex-1 placeholder:text-color5 placeholder:text-[18px] pe-[10px]">
+                            <a href="javascript:void(0)" class="underline">Join</a>
+                        </form>
+                    </div>
+                    <div class="right-part-wraper flex-1 flex justify-center">
+                        <div class="right-part max-w-[500px] flex gap-[20px] flex-wrap justify-between flex-1">
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Shop</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Company</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">About Us</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Our Mission</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Info</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-part pb-[38px]">
+            <div class="container-1440">
+                <div class="footer-bottom-part-wraper flex lg:justify-between justify-center gap-[30px] flex-wrap">
+                    <div class="social-links flex gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <a href="javascript:void(0)" class="">Facebook</a>
+                        <a href="javascript:void(0)" class="">Instagram</a>
+                        <a href="javascript:void(0)" class="">LinkedIn</a>
+                    </div>
+                    <div class="coppyright-div flex justify-center flex-wrap gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <p class="text-center">©2024 <a href="javascript:void(0)">BEST OF BRITISH</a>. ALL RIGHTS RESERVED</p>
+                        <a href="javascript:void(0)">PRIVACY POLICY</a>
+                        <a href="javascript:void(0)">TERMS OF USES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.buyer_control_menu .icon_menu').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').removeClass('hidden');              
+            })
+            $('.shadow_bg').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
+            })
+        })
+    </script>
+</body>
+</html>

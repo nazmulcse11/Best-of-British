@@ -368,11 +368,24 @@
         });
 
         // Product page table action
-        $(document).on('click', '.actions-btn', function(){
+        // $(document).on('click', '.actions-btn', function(){
+        //     $(this).closest('tr').siblings('tr').find(".actions-options").addClass("hidden");
+        //     $(this).siblings(".actions-options").toggleClass("hidden");
+        // });
+        $(document).on('click', function(event) {
+            // Close all .actions-options when clicking anywhere
+            $(".actions-options").addClass("hidden");
+        });
+        
+        $(document).on('click', '.actions-btn', function(event) {
+            // Prevent the click event from bubbling up to the document
+            event.stopPropagation();
+            
+            // Close other .actions-options and toggle the clicked one
             $(this).closest('tr').siblings('tr').find(".actions-options").addClass("hidden");
             $(this).siblings(".actions-options").toggleClass("hidden");
         });
-
+        
         //====Product preview page ======//
         //faq part open close
         $(document).on('click', '.faq-item .faq-title', function(){
