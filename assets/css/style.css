@@ -221,6 +221,9 @@ canvas {
 .slick-list {
   width: 100%;
 }
+.slick-slide {
+  margin: 0 10px;
+}
 .custom-slick-dots {
   .slick-dots {
     margin-top: 50px;
@@ -286,6 +289,18 @@ canvas {
       }
     }
   }
+}
+.slick_custom_arrows {
+  svg.slick-arrow {
+    g{
+      transition: all 0.3s ease-in-out;
+    }
+  }
+    svg.slick-arrow:hover {
+      g{
+        opacity: 1;
+      }
+    }
 }
 @keyframes left-right {
  0%{

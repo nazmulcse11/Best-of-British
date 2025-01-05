@@ -41,6 +41,8 @@
                     var rtl = typeof allData.rtl == 'undefined' ? false : allData.rtl;
                     var variableWidth = typeof allData.variablewidth == 'undefined' ? false : allData.variablewidth;
                     var responsive = typeof $(this).data('responsive') == 'undefined' ? false : $(this).data('responsive');
+                    // console.log(typeof responsive);
+
                     //slider settings object setup
                     sliderSettings.infinite = infinite;
                     sliderSettings.arrows = arrows;
@@ -84,13 +86,21 @@
                         sliderSettings.fade = fade;
                     }
                     if (responsive != false) {
+                        // console.log('ddd',responsive);
+                        // JSON.parse(responsive);
                         sliderSettings.responsive = responsive;
                     }
                     $(this).slick(sliderSettings);
+                    console.log(sliderSettings);
                 }
             });
         }
         // }, 500);
+
+
+        
+
+
 
 
 
