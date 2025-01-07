@@ -95,8 +95,8 @@
     <div class="main bg-[#F7F7F5] py-[60px]">
         <div class="container-1440">
             <div class="shop_grid flex gap-[40px] justify-between">
-                <div class="backdrop z-[1] md:hidden fixed left-0 top-0 bottom-0 right-[100%] bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-[.3s]"></div>
-                <div class="group shop_grid_menu_wraper shrink-0 md:static fixed z-[2] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-auto h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
+                <div class="backdrop z-[3] md:hidden fixed left-0 top-0 bottom-0 right-[100%] bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-[.3s]"></div>
+                <div class="group shop_grid_menu_wraper shrink-0 md:static fixed z-[4] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-auto h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
                     <div class="shop_grid_menu_inner flex flex-col gap-[40px] w-[190px]">
                         <div class="item_menu_list_wraper">
                             <div class="title active flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Product type</span><span><i class="fa-solid fa-plus"></i></span></div>
@@ -212,17 +212,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="shop_grid_content_wraper max-w-[1000px] flex-1">
+                <div class="shop_grid_content_wraper max-w-[1000px] md:w-[calc(100%_-_190px)] w-[100%] overflow-hidden flex-1">
                     <div class="heading flex gap-[20px] items-center  mb-[32px]">
                         <div class="shop_filter-icon text-color-5 cursor-pointer md:hidden">
                             <i class="fa-solid fa-bars"></i>
                         </div>
                         <div class="items_title text-color5 font-[700] text-[1.125rem] leading-[1.5] tracking-[1px]">Clothing & Accessories</div>
                     </div>
-                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative overflow-hidden" id="product_subcta_wraper">
+                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative" id="product_subcta_wraper">
                         <div class="product_subcta_arrow">
-                            <span class="custom_prev_icon bg-[#F7F7F5] z-[2] absolute px-[10px] cursor-pointer left-0"><i class="fa-solid fa-angle-left"></i></span>
-                            <span class="custom_next_icon bg-[#F7F7F5] z-[2] absolute px-[10px] cursor-pointer right-0"> <i class="fa-solid fa-angle-right"></i></span>
+                            <span class="custom_prev_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer left-0"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="custom_next_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer right-0"> <i class="fa-solid fa-angle-right"></i></span>
                         </div>
                         <div class="product_subcta_inner flex gap-[32px] *:text-nowrap *:shrink-0 flex" id="product_subcta_inner">
                             <div class="group product_subcta_item">
