@@ -92,11 +92,11 @@
             </div>
         </nav>
     </header>
-    <div class="main bg-[#F7F7F5] pt-[60px]">
+    <div class="main bg-[#F7F7F5] py-[60px]">
         <div class="container-1440">
             <div class="shop_grid flex gap-[40px] justify-between">
                 <div class="backdrop z-[1] md:hidden fixed left-0 top-0 bottom-0 right-[100%] bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-[.3s]"></div>
-                <div class="group shop_grid_menu_wraper md:static fixed z-[2] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-scroll h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
+                <div class="group shop_grid_menu_wraper shrink-0 md:static fixed z-[2] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-auto h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
                     <div class="shop_grid_menu_inner flex flex-col gap-[40px] w-[190px]">
                         <div class="item_menu_list_wraper">
                             <div class="title active flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Product type</span><span><i class="fa-solid fa-plus"></i></span></div>
@@ -218,6 +218,38 @@
                             <i class="fa-solid fa-bars"></i>
                         </div>
                         <div class="items_title text-color5 font-[700] text-[1.125rem] leading-[1.5] tracking-[1px]">Clothing & Accessories</div>
+                    </div>
+                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative overflow-hidden" id="product_subcta_wraper">
+                        <div class="product_subcta_arrow">
+                            <span class="custom_prev_icon bg-[#F7F7F5] z-[2] absolute px-[10px] cursor-pointer left-0"><i class="fa-solid fa-angle-left"></i></span>
+                            <span class="custom_next_icon bg-[#F7F7F5] z-[2] absolute px-[10px] cursor-pointer right-0"> <i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <div class="product_subcta_inner flex gap-[32px] *:text-nowrap *:shrink-0 flex" id="product_subcta_inner">
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">All</a>
+                            </div>
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Women’s Clothing</a>
+                            </div>
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Men’s Clothing</a>
+                            </div>
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Kids Clothing</a>
+                            </div> 
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Shoes & Footwear</a>
+                            </div>
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Jewellry</a>
+                            </div> 
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Bags & Wallet</a>
+                            </div>
+                            <div class="group product_subcta_item">
+                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Watches</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="shop_grid_list_wraper grid lg:grid-cols-3 md:grid-cols-2 mobile:grid-cols-2 grid-cols-1 gap-[30px]">
                         <div class="single_product-card">
@@ -390,6 +422,42 @@
                 $('.shop_grid_menu_wraper').toggleClass('left-[-100%] left-0');
                 $('.shop_grid .backdrop').toggleClass('right-[100%] right-0');
             })
+            //product product_subcta_wraper on click add active class
+            $('.product_subcta_item a').on('click',function(){
+                $(this).toggleClass('active');
+            })
+            //product_subcta_inner custom slider
+            let sliding_item_wraper = document.querySelector('#product_subcta_wraper').clientWidth;
+            let sliding_item_inner_wraper = document.querySelector('#product_subcta_inner').clientWidth;
+            let click_prev_icon = document.querySelector('.custom_prev_icon');
+            let click_next_icon = document.querySelector('.custom_next_icon');
+
+            console.log(sliding_item_wraper, sliding_item_inner_wraper);
+
+            let forword_x = 0; // Initialize the translation offset
+            let max_translate = sliding_item_wraper - sliding_item_inner_wraper; // Max allowed translate
+
+            function forword() {
+                if (Math.abs(forword_x) < max_translate + 90) { // Prevent exceeding the forward limit
+                    forword_x += 30; // Increment offset
+                    let innerWraper = document.querySelector('#product_subcta_inner');
+                    innerWraper.style.transform = `translateX(-${forword_x}px)`; // Apply forward transform
+                }
+            }
+
+            function backward() {
+                if (forword_x > 0) { // Prevent exceeding the backward limit (starting position)
+                    forword_x -= 30; // Decrement offset
+                    let innerWraper = document.querySelector('#product_subcta_inner');
+                    innerWraper.style.transform = `translateX(-${forword_x}px)`; // Apply backward transform
+                }
+            }
+
+            // Add event listeners for forward and backward buttons
+            click_next_icon.addEventListener('click', forword);
+            click_prev_icon.addEventListener('click', backward);
+
+
         })
     </script>
 </body>
