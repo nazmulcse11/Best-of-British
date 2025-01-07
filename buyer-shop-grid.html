@@ -46,17 +46,13 @@
                         <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
                     </div>
                     <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out">
-                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap *:items-center *:flex md:py-[0px] py-[12px] md:gap-[0px] gap-[12px]">
+                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap max-w-[600px] md:gap-y-[9px] *:items-center *:flex md:py-[0px] py-[12px] md:gap-x-[0px] gap-[12px]">
                             <li class="group group/home menu-item menu-item-has-children active relative">
                                 <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">View all<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
                                 <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
                                 <div class="mega_menu absolute">
 
                                 </div>
-                            </li>
-                            <li class="group/about menu-item">
-                                <a href="./about.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/about:font-[600] group-hover/about:font-[600]">About<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/about:opacity-100 group-hover/about:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
                             </li>
                             <li class="group/recomender menu-item">
                                 <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Clothing & Accessories<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
@@ -83,15 +79,23 @@
                                 <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
                             </li>
                         </ul>
+                        <div class="search_bar_input_wraper xl:w-[600px] md:w-[450px] w-full relative hidden" id="navbar_search_bar">
+                            <input type="text" name="navbar_search_bar_input" id="navbar_search_bar_input" class="w-full bg-[transparent] text-[1rem] font-[600] leading-[1.25] text-[#272833] placeholder:text-[#272833]" placeholder="What are you looking for?">
+                            <span class="icon absolute top-0 right-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <div class="underline absolute left-0 right-0 h-[1px] bottom-[-10px] bg-[#0203061a]"></div>
+                        </div>
                     </div>
                     <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
                         <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
                         <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-0">
+                                <a href="javascript:void(0)" class="px-[12px] text-color5">Search </a>
+                            </div>
                             <div class="right-icon-1">
-                                <a href="login.html" class="px-[12px] text-color5">Log in </a>
+                                <a href="javascript:void(0)" class="px-[12px] text-color5">Log Out </a>
                             </div>
                             <div class="right-icon-2">
-                                <a href="signup-as.html" class="px-[12px] text-color5">Register Now</a>
+                                <a href="cart" class="px-[12px] text-color5">Cart <span>(0)</span></a>
                             </div>
                         </div>
                     </div>
@@ -463,8 +467,10 @@
             // Add event listeners for forward and backward buttons
             click_next_icon.addEventListener('click', forword);
             click_prev_icon.addEventListener('click', backward);
-
-
+            //navbar item and search bar toggle
+            $('.right-icon-0').on('click', function(){
+                $('.navbar-nav, .search_bar_input_wraper').toggleClass("hidden");
+            })
         })
     </script>
 </body>
