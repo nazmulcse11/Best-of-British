@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar__main  navbar-expand-lg navbar-default  py-[36px]">
+    <header class="bg-[#F7F7F5]">
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default">
             <div class=" container-1440">
-                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative border-b-[1px] border-[#EBEAE6] py-[18px]">
                     <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
                         <div class="logo-wraper leading-[1] shrink-0 flex gap-[24px]">
                             <div class="buyer_control_menu relative">
@@ -45,40 +45,96 @@
                         </div>
                         <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
                     </div>
-                    <div class="navbar-collapse group bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out">
-                        <ul class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap max-w-[600px] md:gap-y-[9px] *:items-center *:flex md:py-[0px] py-[12px] md:gap-x-[0px] gap-[12px]">
-                            <li class="group group/home menu-item menu-item-has-children active relative">
-                                <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/home:font-[600] group-hover/home:font-[600]">View all<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/home:opacity-100 group-hover/home:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                                <div class="mega_menu absolute">
-
+                    <div class="navbar-collapse group md:bg-[transparent] bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out inline-block">
+                        <div class="navbar_nav_menu_wraper flex md:flex-row flex-col tracking-[1px] md:gap-y-[9px]  mt:py-[0px] pt-[12px]">
+                            <div class="group menu-item menu-item-has-children active relative shrink-0">
+                                <a href="javascript:void(0)" class="mega_menu_trigger px-[12px] relative text-color5 transition-all duration-[.1s]">
+                                    View all
+                                    <i class="fa-solid fa-angle-down text-color5 ms-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </a>
+                                <div class="mega_menu absolute grid sm:grid-cols-3 gap-[40px] bg-[#F7F7F5] p-[60px] shadow-[0_4px_4px_0px_#00000040] xl:w-[970px] lg:w-[770px] md:w-[570px] w-full md:max-h-[unset] max-h-[400px] overflow-y-auto left-0 right-0 top-[calc(100%+12px)] z-[3] hidden">
+                                    <div class="mega_menu_group_wraper flex flex-col gap-[40px]">
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">Home & Kitchen</a>
+                                            <a href="javascript:void(0)" class="text-color11">Groceries & Gourmet Food</a>
+                                            <a href="javascript:void(0)" class="text-color11">Pet Supplies</a>
+                                            <a href="javascript:void(0)" class="text-color11">Arts, Crafts & Sewing</a>
+                                            <a href="javascript:void(0)" class="text-color11">Seasonal & Gifts</a>
+                                        </div>
+                                    </div>
+                                    <div class="mega_menu_group_wraper flex flex-col gap-[40px]">
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">Home & Kitchen</a>
+                                            
+                                            <a href="javascript:void(0)" class="text-color11">Seasonal & Gifts</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                    </div>
+                                    <div class="mega_menu_group_wraper flex flex-col gap-[40px]">
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">Home & Kitchen</a>
+                                            <a href="javascript:void(0)" class="text-color11">Groceries & Gourmet Food</a>
+                                            <a href="javascript:void(0)" class="text-color11">Pet Supplies</a>
+                                            <a href="javascript:void(0)" class="text-color11">Arts, Crafts & Sewing</a>
+                                            <a href="javascript:void(0)" class="text-color11">Seasonal & Gifts</a>
+                                        </div>
+                                        <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                            <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                            <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                            <li class="group/recomender menu-item">
-                                <a href="./recomender.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/recomender:font-[600] group-hover/recomender:font-[600]">Clothing & Accessories<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/recomender:opacity-100 group-hover/recomender:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                            <li class="group/seller menu-item">
-                                <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/seller:font-[600] group-hover/seller:font-[600]">Home & Kitchen<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/seller:opacity-100 group-hover/seller:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                            <li class="group/buyer menu-item">
-                                <a href="#/" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Electronics<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                            <li class="group/buyer menu-item">
-                                <a href="#/" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/buyer:font-[600] group-hover/buyer:font-[600]">Electronics <span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/buyer:opacity-100 group-hover/buyer:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                            <li class="group/faq menu-item">
-                                <a href="./faq.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/faq:font-[600] group-hover/faq:font-[600]">Health & Wellness<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/faq:opacity-100 group-hover/faq:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                            <li class="group/contact-us menu-item">
-                                <a href="./contact-us.html" class="px-[12px] relative text-color5 transition-all duration-[.1s]  group-[.active]/contact-us:font-[600] group-hover/contact-us:font-[600]">Sports & Outdoors<span class="absolute opacity-0 h-[1px] transition-all duration-[.3s] bg-color5 bottom-[3px] left-[12px] right-[12px] group-[.active]/contact-us:opacity-100 group-hover/contact-us:opacity-100"></span></a>
-                                <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap max-w-[600px] md:gap-y-[9px] *:items-center *:flex md:py-[0px] py-[12px] md:gap-x-[0px] gap-[12px]">
+                                <div class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Clothing & Accessories</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </div>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Home & Kitchen</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Electronics</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Beauty</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Health & Wellness</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Sports & Outdoors</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Books & Media</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                            </div>
+                        </div>
                         <div class="search_bar_input_wraper xl:w-[600px] md:w-[450px] w-full relative hidden" id="navbar_search_bar">
                             <input type="text" name="navbar_search_bar_input" id="navbar_search_bar_input" class="w-full bg-[transparent] text-[1rem] font-[600] leading-[1.25] text-[#272833] placeholder:text-[#272833]" placeholder="What are you looking for?">
                             <span class="icon absolute top-0 right-0"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -87,7 +143,7 @@
                     </div>
                     <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
                         <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
-                        <div class="navbar-right-icon bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                        <div class="navbar-right-icon md:bg-[transparent] bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
                             <div class="right-icon-0">
                                 <a href="javascript:void(0)" class="px-[12px] text-color5">Search </a>
                             </div>
@@ -469,7 +525,11 @@
             click_prev_icon.addEventListener('click', backward);
             //navbar item and search bar toggle
             $('.right-icon-0').on('click', function(){
-                $('.navbar-nav, .search_bar_input_wraper').toggleClass("hidden");
+                $('.navbar_nav_menu_wraper, .search_bar_input_wraper').toggleClass("hidden");
+            })
+            //Mega Menu toggle
+            $('.mega_menu_trigger').on('click', function(){
+                $('.mega_menu').toggleClass("hidden");
             })
         })
     </script>
