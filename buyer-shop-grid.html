@@ -151,7 +151,90 @@
                                 <a href="javascript:void(0)" class="px-[12px] text-color5">Log Out </a>
                             </div>
                             <div class="right-icon-2">
-                                <a href="cart" class="px-[12px] text-color5">Cart <span>(0)</span></a>
+                                <a href="javascript:void(0)" class="nav_cart_icon px-[12px] text-color5">Cart <span>(0)</span></a>
+                            </div>
+                            <!-- //cart part -->
+                            <div class="cart_backdrop hidden z-[3] fixed left-0 top-0 bottom-0 right-[0] bg-[#1f36501a] transition-all ease-in-out duration-[.3s]"></div>
+                            <div class="shopping_cart_wraper hidden max-h-[90svh] overflow-y-auto sm:w-[480px] w-[280px] fixed top-0 right-0 z-[4] bg-[#FFFFFF] sm:px-[30px] px-[20px] py-[40px]">
+                                <div class="shopping_cart_title flex justify-between items-center gap-[20px] mb-[30px]">
+                                    <div class="title text-color5 text-[10px] leading-[2] tracking-[2px] uppercase">Order summary</div>
+                                    <div class="cart_close_btn cursor-pointer"><i class="fa-solid fa-xmark text-[14px] text-[#A3A3A0]"></i></div>
+                                </div>
+                                <div class="shopping_cart_product_wraper flex flex-col gap-[30px]">
+                                    <div class="cart_single_product flex gap-[35px]">
+                                        <div class="cart_product_image h-[200px] w-[144px] full_image">
+                                            <img src="./assets/images/cart_img1.png" alt="product-1"> 
+                                        </div>
+                                        <div class="cart_product_details text-color5 leading-[1.4] tracking-[1px] w-[150px]">
+                                            <div class="cart_product_title tracking-[1px]">Product Title</div>
+                                            <div class="cart_product_ammount font-[700]">£150</div>
+                                            <div class="my-[20px]">
+                                                <div class="size flex justify-between">
+                                                    <label for="cpsize">Size</label>
+                                                    <select name="size" id="cpsize" class="font-[700]">
+                                                        <option value="extrasmall">XS</option>
+                                                        <option value="small">S</option>
+                                                        <option value="medium">M</option>
+                                                        <option value="large">L</option>
+                                                        <option value="extralarge">XL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity flex justify-between">
+                                                    <label for="cpquantity">Quantity</label>
+                                                    <div class="cpquantity text-[700] flex gap-[8px]">
+                                                        <div class="decrease_quantity"><i class="fa-solid fa-minus"></i></div>
+                                                        <div class="number font-[700]">1</div>
+                                                        <div class="increase_quantity"><i class="fa-solid fa-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="remove_cart_item font-[700]">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart_single_product flex gap-[35px]">
+                                        <div class="cart_product_image h-[200px] w-[144px] full_image">
+                                            <img src="./assets/images/cart_img1.png" alt="product-1"> 
+                                        </div>
+                                        <div class="cart_product_details text-color5 leading-[1.4] tracking-[1px] w-[150px]">
+                                            <div class="cart_product_title tracking-[1px]">Product Title</div>
+                                            <div class="cart_product_ammount font-[700]">£150</div>
+                                            <div class="my-[20px]">
+                                                <div class="size flex justify-between">
+                                                    <label for="cpsize">Size</label>
+                                                    <select name="size" id="cpsize" class="font-[700]">
+                                                        <option value="extrasmall">XS</option>
+                                                        <option value="small">S</option>
+                                                        <option value="medium">M</option>
+                                                        <option value="large">L</option>
+                                                        <option value="extralarge">XL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity flex justify-between">
+                                                    <label for="cpquantity">Quantity</label>
+                                                    <div class="cpquantity text-[700] flex gap-[8px]">
+                                                        <div class="decrease_quantity"><i class="fa-solid fa-minus"></i></div>
+                                                        <div class="number font-[700]">1</div>
+                                                        <div class="increase_quantity"><i class="fa-solid fa-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="remove_cart_item font-[700]">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_footer_part mt-[40px] pt-[24px] flex flex-col gap-[24px] border-t-[1px] border-[#EBEAE6]">
+                                    <div class="cart_subtotal flex justify-between items-center text-color5 text-[12px] leading-[2] tracking-[2px] font-[700]">
+                                        <div class="subtotal_title">Subtotal</div>
+                                        <div class="subtotal_ammount">$150</div>
+                                    </div>
+                                    <div class="shipping_cost flex justify-between items-center text-color5 text-[12px] leading-[2] tracking-[2px] font-[700]">
+                                        <div class="shipping_title">Shipping</div>
+                                        <div class="shipping_ammount">$150</div>
+                                    </div>
+                                    <div class="cart_checkout_btn"> 
+                                        <a href="checkout.html" class="text-[#000000] text-[12px] leading-[1.5] tracking-[1.5px] bg-color4 py-[12px] px-[30px] block text-center">Checkout</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,7 +249,7 @@
                 <div class="group shop_grid_menu_wraper shrink-0 md:static fixed md:z-[0] z-[4] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-auto h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
                     <div class="shop_grid_menu_inner flex flex-col gap-[40px] w-[190px]">
                         <div class="item_menu_list_wraper">
-                            <div class="title active flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Product type</span><span><i class="fa-solid fa-plus"></i></span></div>
+                            <div class="title active flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Product type</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
                             <div class="item_menu_list">
                                 <ul class="pt-[16px] flex flex-col gap-[12px]">
                                     <li class="item_menu_list_item group">
@@ -194,7 +277,7 @@
                             </div>
                         </div>
                         <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Style</span><span><i class="fa-solid fa-plus"></i></span></div>
+                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Style</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
                             <div class="item_menu_list">
                                 <ul class="pt-[16px] flex flex-col gap-[12px]">
                                     <li class="item_menu_list_item group">
@@ -222,7 +305,7 @@
                             </div>
                         </div>
                         <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Color</span><span><i class="fa-solid fa-plus"></i></span></div>
+                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Color</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
                             <div class="item_menu_list">
                                 <ul class="pt-[16px] flex flex-col gap-[12px]">
                                     <li class="item_menu_list_item group">
@@ -250,7 +333,7 @@
                             </div>
                         </div>
                         <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Size</span><span><i class="fa-solid fa-plus"></i></span></div>
+                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Size</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
                             <div class="item_menu_list">
                                 <ul class="pt-[16px] flex flex-col gap-[12px]">
                                     <li class="item_menu_list_item group">
@@ -286,7 +369,7 @@
                         </div>
                         <div class="items_title text-color5 font-[700] text-[1.125rem] leading-[1.5] tracking-[1px]">Clothing & Accessories</div>
                     </div>
-                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative" id="product_subcta_wraper">
+                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative z-[0]" id="product_subcta_wraper">
                         <div class="product_subcta_arrow">
                             <span class="custom_prev_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer left-0"><i class="fa-solid fa-angle-left"></i></span>
                             <span class="custom_next_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer right-0"> <i class="fa-solid fa-angle-right"></i></span>
@@ -321,14 +404,16 @@
                     <div class="shop_grid_list_wraper grid lg:grid-cols-3 md:grid-cols-2 mobile:grid-cols-2 grid-cols-1 gap-[30px]">
                         <div class="single_product-card">
                             <div class="img_part h-[400px] relative">
-                                <img src="./assets/images/product1.png" alt="product1">
+                                <a href="product-details.html" class="w-full">
+                                    <img src="./assets/images/product1.png" alt="product1">
+                                </a>
                                 <div class="best_seller absolute text-center w-full bottom-[0] bg-[#F7F7F5E5] py-[15px] text-color5 text-[10px] leading-[20px] tracking-[2px] uppercase">BESTSELLER</div>
                                 <div class="fvt_icon absolute top-[20px] right-[20px] w-[40px] h-[40px] rounded-[50%] bg-[#fff] flex justify-center items-center">
                                     <i class="fa-regular fa-heart"></i>
                                 </div>
                             </div>
                             <div class="txt_part my-[16px] flex justify-between items-center gap-[10px] flex-wrap">
-                                <div class="product_name text-color5 text-[1.125rem] leading-[1.5] tracking-[1px]">Product Name</div>
+                                <div class="product_name text-color5 text-[1.125rem] leading-[1.5] tracking-[1px]"><a href="product-details.html">Product Name</a></div>
                                 <div class="product_price flex gap-[8px] font-[700] text-[1.125rem] leading-[1.5]">
                                     <del class="main_price text-[#A3A3A0]">$145</del>
                                     <span class="offer_price text-color5">$29.99</span>
@@ -462,6 +547,7 @@
     <script src="./assets/js/main.js"></script>
     <script>
         $(document).ready(function(){
+            //in nav buyer menu control
             $('.buyer_control_menu .icon_menu').on('click',function(){
                 $('.shadow_bg, .buyer_menu_items').removeClass('hidden');              
             })
@@ -470,8 +556,9 @@
             })
             //====Shop Grid page ======//
             //item_menu_list_wraper accordion type 
-            $('.item_menu_list_wraper .title').on('click',function(){
+            $('.shop_grid_menu_inner .item_menu_list_wraper .title').on('click',function(){
                 $(this).toggleClass('active');
+                $(this).find('i').toggleClass('hidden');
                 $(this).next('.item_menu_list').slideToggle();
             })
             //menu list item click active class toggle
@@ -530,6 +617,14 @@
             //Mega Menu toggle
             $('.mega_menu_trigger').on('click', function(){
                 $('.mega_menu').toggleClass("hidden");
+            })
+
+            //navbar cart Item open close
+            $(".nav_cart_icon").on('click', function(){
+                $(".shopping_cart_wraper , .cart_backdrop").toggleClass("hidden");
+            })
+            $(".cart_close_btn , .cart_backdrop").on('click', function(){
+                $(".shopping_cart_wraper , .cart_backdrop").addClass("hidden");
             })
         })
     </script>
