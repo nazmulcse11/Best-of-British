@@ -450,6 +450,11 @@ canvas {
     border-color: transparent !important;
   }
 }
+/* MEGA MENU */
+.menga_menu_group:has(+ .menga_menu_group) {
+  margin-bottom: 40px;
+
+}
 /* Container */
 .container-1440{
   max-width: 100%;

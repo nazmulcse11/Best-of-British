@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+   
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            //in nav buyer menu control
+            $('.buyer_control_menu .icon_menu').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').removeClass('hidden');              
+            })
+                $('.shadow_bg').on('click',function(){
+                    $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
+            })
+            //navbar item and search bar toggle
+            $('.right-icon-0').on('click', function(){
+                $('.navbar_nav_menu_wraper, .search_bar_input_wraper').toggleClass("hidden");
+            })
+            //Mega Menu toggle
+            $('.mega_menu_trigger').on('click', function(){
+                $('.mega_menu').toggleClass("hidden");
+            })
+        })
+    </script>
+</body>
+</html>
