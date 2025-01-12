@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
     Google Fonts
 --------------------------------------------------------------*/
+/* DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 /* DM Serif Display */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 /* Lato */
@@ -37,6 +39,7 @@
 --------------------------------------------------------------*/
 :root {
   /* fonts */
+  --dm-sans: "DM Sans", sans-serif;
   --dm-serif: "DM Serif Display", serif;
   --soruce-serif: "SourceSerifPro", serif;
   --lato: "Lato", sans-serif;
@@ -72,6 +75,9 @@ body {
   font-family: var(--soruce-serif);  
   font-size: 0.875rem;
   line-height: 1.5;
+}
+.dm-sans {
+  font-family: var(--dm-sans);
 }
 .dm-serif{
   font-family: var(--dm-serif);

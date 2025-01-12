@@ -243,7 +243,7 @@
                             </div>
                             <div class="withdraw mt-[30px]">
                                 <h3 class="title dm-serif text-[1.25rem] leading-[1.6]">Withdraw Funds</h3>
-                                <div class="cards-wraper flex felx-col gap-[18px]">
+                                <div class="cards-wraper flex flex-col gap-[18px]">
                                     <div class="cards w-full p-[16px] rounded-[8px] border-[1px] border-[#F2F6FF] flex items-center justify-between">
                                         <div class="cara-des flex items-center gap-[8px]">
                                             <span class="card-img"><img src="./assets/images/masterd-card.png" alt="masterd-card"></span>
@@ -579,13 +579,130 @@
         </div>
     </div>
     <div class="seller_modal">
-        <div class="modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+        <div class="modal-overlay fixed inset-0 bg-[#00020b66] z-[10] hidden">
             <div class="modal-content flex min-h-full items-center justify-center">
-                <div class="bg-[#fff] p-[20px] rounded-[10px] h-[200px] w-[300px]"></div>
+                <div class="bg-[#fff] p-[20px] rounded-[10px] max-w-[400px] dm-sans">
+                    <div class="close_modal_btn text-end">
+                        <a href="javascript:void(0)" class="close-modal cursor-pointer"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="modal_body">
+                        <div class="del_icon h-[80px] w-[80px] flex justify-center items-center rounded-full bg-[#FEE2E2] mx-auto"><img src="./assets/images/fi-sr-trash.svg" alt="trash"></div>
+                        <div class="text text-center">
+                            <h3 class="font-[700] text-[#000929] text-[1.25rem] leading-[1.5]">Delete Product</h3>
+                            <p class="text-[#475569] text-[1rem] leading-[1.25] mt-[8px] pb-[32px]">Do you want to delete this product? This action can’t be undone</p>
+                        </div>
+                        <div class="btn-wraper flex justify-center gap-[20px]">
+                            <a href="javascript:void(0)" class="cursor-pointer font-[700] py-[10px] px-[36px] rounded-[8px] text-[#000929] border-[1px] border-[#E2E8F0]">Cancel</a>
+                            <a href="javascript:void(0)" class="cursor-pointer font-[700] py-[10px] px-[36px] rounded-[8px] text-[#FFF] border-[1px] border-[transparent] bg-[#EF4444]">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay fixed inset-0 bg-[#00020b66] z-[10] hidden">
+            <div class="modal-content flex min-h-full items-center justify-center">
+                <div class="bg-[#fff] p-[20px] rounded-[10px] max-w-[545px] dm-serif max-h-[500px] overflow-y-auto scrollbar-none">
+                    <div class="close_modal_btn text-end">
+                        <a href="javascript:void(0)" class="close-modal cursor-pointer"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="modal_body">
+                        <div class="del_icon h-[80px] w-[80px] flex justify-center items-center rounded-full bg-[#FEE2E2] mx-auto"><img src="./assets/images/fi-sr-trash.svg" alt="trash"></div>
+                        <div class="header_text text-center">
+                            <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Withdraw Funds</h3>
+                            <p class="text-[#5D6A83] text-[1rem] leading-[1.25] mt-[10px] pb-[40px]">Withdraw your funds to a linked bank account or PayPal</p>
+                        </div>
+                        <div class="chose_method">
+                            <div class="title flex justify-between items-center  ">
+                                <h3 class="font-[700] text-[#191B23] text-[1rem] leading-[1.5]">Choose Method</h3>
+                                <div class="add_method"><a href="javascript:void(0)" class="text-[#191B23] border-[#C1D5ED] border-[1px] py-[5px] px-[10px] rounded-[100px]">Add +</a></div>
+                            </div>
+                            <div class="method_option mt-[20px]">
+                                <div class="cards-wraper flex flex-col gap-[12px]">
+                                    <label class="cards cursor-pointer w-full px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#C1D5ED] transition-all has-[:checked]:border-[#011F53] flex items-center justify-between">
+                                        <div for="masterd-card" class="cara-des flex items-center gap-[8px]">
+                                            <span class="card-img h-[40px] w-[40px] rounded-full flex justify-center items-center bg-[#F7FAFC]"><img src="./assets/images/visa.png" alt="visa"></span>
+                                            <div class="flex flex-col">
+                                                <span class="card-name text-[1rem] text-color0 font-[600] leading-[1.5]">Visa</span>
+                                                <span class="card-name text-[#96A3BE] leading-[1.5]">Default</span>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="masterd-card" class="custom-checkbox style-two ">
+                                        </div>
+                                    </label>
+                                    <label class="cards cursor-pointer w-full px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#C1D5ED] transition-all has-[:checked]:border-[#011F53] flex items-center justify-between">
+                                        <div for="masterd-card" class="cara-des flex items-center gap-[8px]">
+                                            <span class="card-img h-[40px] w-[40px] rounded-full flex justify-center items-center bg-[#F7FAFC]"><img src="./assets/images/masterd-card.png" alt="masterd-card"></span>
+                                            <div class="flex flex-col">
+                                                <span class="card-name text-[1rem] text-color0 font-[600] leading-[1.5]">Mastercard</span>
+                                                <span class="card-name text-[#96A3BE] leading-[1.5]">Default</span>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="masterd-card" class="custom-checkbox style-two ">
+                                        </div>
+                                    </label>
+                                    <label class="cards cursor-pointer w-full px-[16px] py-[8px] rounded-[8px] border-[1px] border-[#C1D5ED] transition-all has-[:checked]:border-[#011F53] flex items-center justify-between">
+                                        <div for="masterd-card" class="cara-des flex items-center gap-[8px]">
+                                            <span class="card-img h-[40px] w-[40px] rounded-full flex justify-center items-center bg-[#F7FAFC]"><img src="./assets/images/pyoneer.png" alt="payoneer"></span>
+                                            <div class="flex flex-col">
+                                                <span class="card-name text-[1rem] text-color0 font-[600] leading-[1.5]">Payoneer</span>
+                                                <span class="card-name text-[#96A3BE] leading-[1.5]">Set as default</span>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="masterd-card" class="custom-checkbox style-two ">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wraper flex justify-center gap-[20px] mt-[40px]">
+                            <a href="javascript:void(0)" class="dm-sans cursor-pointer w-full text-center font-[700] py-[10px] px-[36px] rounded-[8px] text-[#fff] bg-[#2F4A69]">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-overlay fixed inset-0 bg-[#00020b66] z-[10] hidden">
+            <div class="modal-content flex min-h-full items-center justify-center">
+                <div class="bg-[#fff] p-[20px] rounded-[10px] max-w-[545px] max-h-[500px] overflow-y-auto scrollbar-none border-y-[19px] border-[#2F4A69]">
+                    <div class="close_modal_btn text-end">
+                        <a href="javascript:void(0)" class="close-modal cursor-pointer"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                    <div class="modal_body">
+                        <div class="header_text text-center">
+                            <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Product QR Code</h3>
+                            <p class="text-[#5D6A83] text-[1rem] leading-[1.25] mt-[10px] pb-[40px]">Download or Print QR Code</p>
+                        </div>
+                        <div class="qr_code">
+                            <div class="qr_code_imge">
+                                <img src="/assets/images/qrcode.png" alt="">
+                            </div>
+                        </div>
+                        <div class="btn-wraper flex justify-center gap-[20px] mt-[40px]">
+                            <a href="javascript:void(0)" class="dm-sans cursor-pointer text-center font-[700] py-[10px] px-[30px] rounded-[8px] text-[#1F3650] bg-[#F1F5F9]">Download</a>
+                            <a href="javascript:void(0)" class="dm-sans cursor-pointer text-center font-[700] py-[10px] px-[30px] rounded-[8px] text-[#fff] bg-[#2F4A69]">Print</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="./assets/js/plugin.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script>
+        //modal on and close
+        $(document).ready(function () {
+            $('.withdraw-btn a').click(function () {    
+                $('.modal-overlay').show();
+            });
+            $('.modal-overlay').click(function () {   
+                if($(event.target).is('.modal-content')){
+                    $('.modal-overlay').hide();
+                } 
+            });
+        });
+    </script>
 </body>
 </html> 
