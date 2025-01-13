@@ -146,6 +146,18 @@ a{
     border-radius: 3px;
     border-width: 2px;
   }
+  &.gray_border {
+    height: 18px;
+    width: 18px;
+    border-radius:4px;
+    border: 1px solid #CCCBC8;
+    &::after{
+      font-size: 9px;
+    }
+    &:checked{
+      background-color:#CCCBC8;
+    }
+  }
 }
 .custom-table-wraper {
   .custom-checkbox {
@@ -155,6 +167,36 @@ a{
     }
   }
   
+}
+/* cuystom radio chekbox */
+.custom-radio{
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid #CCCBC8;
+  background: #F7F7F5;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &:checked{
+    border:6px solid #1F3650;
+  }
+}
+/*bradecrumb*/
+.bradecrumb {
+  li:last-child a::after{  
+    display: none; 
+  }
+}
+/*delivary method wraper*/
+.delevary_method_wraper {
+  input:checked + label {
+    color: #1F3650;
+    svg {
+      fill: #1F3650;
+    }
+  }
 }
 /*Flat picker*/
 .date-flat-picker-custom {
