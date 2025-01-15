@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <!-- using the modal need to give the class (modal_btn) in button and data-target the id give in the modal -->
+    <button class="modal_btn" data-target="buyer_home_address">home</button>
+    <button class="modal_btn" data-target="buyer_work_address">work</button>
+    <div id="buyer_home_address" class="hidden modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+        <div class="modal-content flex min-h-full items-center justify-center">
+            <div class="bg-[#fff] p-[20px] rounded-[10px] mobilexl:min-w-[400px] max-w-[545px] dm-serif max-h-[500px] overflow-y-auto scrollbar-none">
+                <div class="close_modal_btn text-end">
+                    <a href="javascript:void(0)" class="close-modal cursor-pointer"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="modal_body">
+                    <div class="header_text text-center">
+                        <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Home Address</h3>
+                    </div>
+                    <div class="buyer_home_address mt-[34px]">
+                        <form action="#" class="flex flex-col gap-[14px]">
+                            <div>
+                                <input type="text" class="address_line bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562]" placeholder="Address">
+                            </div>
+                            <div>
+                                <select name="buyer_home_region" id="buyer_home_region" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                    <option value="0">Region</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Sylhet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="buyer_home_country" id="buyer_home_country" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                    <option value="0">Country</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Sylhet</option>
+                                </select>
+                            </div>
+                            <div class="flex gap-[12px] flex-wrap">
+                                <div class="flex-[1_1_150px]">
+                                    <select name="buyer_home_city" id="buyer_home_city" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                        <option value="0">City</option>
+                                        <option value="1">Dhaka</option>
+                                        <option value="2">Sylhet</option>
+                                    </select>
+                                </div>
+                                <div class="flex-[1_1_150px]">
+                                    <input type="text" class="buyer_home_postcode bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562]" placeholder="Postcode">                       
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="btn-wraper flex justify-center gap-[20px] mt-[40px]">
+                        <a href="javascript:void(0)" class="dm-sans cursor-pointer w-full text-center font-[700] py-[10px] px-[36px] rounded-[8px] text-[#fff] bg-[#2F4A69]">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buyer_work_address" class="hidden modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+        <div class="modal-content flex min-h-full items-center justify-center">
+            <div class="bg-[#fff] p-[20px] rounded-[10px] mobilexl:min-w-[400px] max-w-[545px] dm-serif max-h-[500px] overflow-y-auto scrollbar-none">
+                <div class="close_modal_btn text-end">
+                    <a href="javascript:void(0)" class="close-modal cursor-pointer"><i class="fa-solid fa-xmark"></i></a>
+                </div>
+                <div class="modal_body">
+                    <div class="header_text text-center">
+                        <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Work Address</h3>
+                    </div>
+                    <div class="buyer_work_address mt-[34px]">
+                        <form action="#" class="flex flex-col gap-[14px]">
+                            <div>
+                                <input type="text" class="address_line bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562]" placeholder="Address">
+                            </div>
+                            <div>
+                                <select name="buyer_work_region" id="buyer_work_region" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                    <option value="0">Region</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Sylhet</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select name="buyer_work_country" id="buyer_work_country" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                    <option value="0">Country</option>
+                                    <option value="1">Dhaka</option>
+                                    <option value="2">Sylhet</option>
+                                </select>
+                            </div>
+                            <div class="flex gap-[12px] flex-wrap">
+                                <div class="flex-[1_1_150px]">
+                                    <select name="buyer_work_city" id="buyer_work_city" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562] custom-select2 style_3 before:content-['ddd']">
+                                        <option value="0">City</option>
+                                        <option value="1">Dhaka</option>
+                                        <option value="2">Sylhet</option>
+                                    </select>
+                                </div>
+                                <div class="flex-[1_1_150px]">
+                                    <input type="text" class="buyer_work_postcode bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[#666562] placeholder:text-[#666562]" placeholder="Postcode">                       
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="btn-wraper flex justify-center gap-[20px] mt-[40px]">
+                        <a href="javascript:void(0)" class="dm-sans cursor-pointer w-full text-center font-[700] py-[10px] px-[36px] rounded-[8px] text-[#fff] bg-[#2F4A69]">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+         $(document).ready(function(){
+          $('#referral_select').select2();  
+          $('#buyer_home_city').select2();  
+          $('#buyer_home_region').select2();  
+          $('#buyer_home_country').select2();  
+        })
+
+
+        //modal on and close
+        $(document).ready(function () {
+            let modal_btn = document.querySelectorAll('.modal_btn');
+            modal_btn.forEach(e => {
+                e.addEventListener('click',function(){
+                    let modal_name = '#' + e.dataset.target;
+                    let close_icon = document.querySelector(`${modal_name} .close_modal_btn`);
+                    $(modal_name).show();
+                    $(modal_name).click(function () {   
+                        if($(event.target).is('.modal-content')){
+                            $(modal_name).hide();
+                        } 
+                    });
+                    $(close_icon).click(function(){
+                        $(modal_name).hide();
+                    });
+                });
+            });
+            
+        });
+    </script>
+</body>
+</html>
