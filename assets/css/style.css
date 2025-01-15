@@ -183,6 +183,19 @@ a{
     border:6px solid #1F3650;
   }
 }
+.custom-radio-two {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid #CCCBC8;
+  outline-offset: 3px;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:checked{
+   outline: 1px solid #666562;
+  }
+}
 /*bradecrumb*/
 .bradecrumb {
   li:last-child a::after{  
