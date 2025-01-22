@@ -41,7 +41,7 @@
                         <div class="customer_information border-[1px] border-[#CCCBC8] rounded-[5px] mt-[34px]">
                             <div class="customer_information_inner p-[14px]">
                                 <div class="title text-[#1F3650] text-[1.125rem] tracking-[1px]">Customer information</div>
-                                <div class="info_wraper mt-[10px] grid grid-cols-2">
+                                <div class="info_wraper mt-[10px] grid grid-cols-2 gap-[14px]">
                                     <div class="contact_info">
                                         <div class="title text-[#000000] font-[700] tracking-[1px] mb-[8px]">Contact information</div>
                                         <div class="value flex flex-col gap-[10px]">
@@ -54,136 +54,41 @@
                                             <p class="text-[#666562] tracking-[1px] flex gap-[5px]"><span><img src="./assets/images/PaymentIcon.png" alt="card"></span><span>ending with 4242 - £336.80</span></p>
                                         </div>
                                     </div>
-                                    <div class="payment_info">
-                                        <div class="title text-[#000000] font-[700] tracking-[1px] mb-[8px]">Payment method</div>
+                                    <div class="shipping_address">
+                                        <div class="title text-[#000000] font-[700] tracking-[1px] mb-[8px]">Shipping address</div>
                                         <div class="value flex flex-col gap-[10px]">
-                                            <p class="text-[#666562] tracking-[1px] flex gap-[5px]"><span><img src="./assets/images/PaymentIcon.png" alt="card"></span><span>ending with 4242 - £336.80</span></p>
+                                            <p class="text-[#666562] tracking-[1px]">John Smith</p>
+                                            <p class="text-[#666562] tracking-[1px]">38 Chester Road</p>
+                                            <p class="text-[#666562] tracking-[1px]">London</p>
+                                            <p class="text-[#666562] tracking-[1px]">SW46 3TC</p>
+                                        </div>
+                                    </div>
+                                    <div class="shipping_address">
+                                        <div class="title text-[#000000] font-[700] tracking-[1px] mb-[8px]">Billing address</div>
+                                        <div class="value flex flex-col gap-[10px]">
+                                            <p class="text-[#666562] tracking-[1px]">John Smith</p>
+                                            <p class="text-[#666562] tracking-[1px]">38 Chester Road</p>
+                                            <p class="text-[#666562] tracking-[1px]">London</p>
+                                            <p class="text-[#666562] tracking-[1px]">SW46 3TC</p>
+                                        </div>
+                                    </div>
+                                    <div class="shipping_method">
+                                        <div class="title text-[#000000] font-[700] tracking-[1px] mb-[8px]">Shipping method</div>
+                                        <div class="value flex flex-col gap-[10px]">
+                                            <p class="text-[#666562] tracking-[1px]">Same Day Delivery</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="shipping_info mt-[34px]">
-                            <div class="shhiping_info_wraper border-[1px] border-[#CCCBC8] rounded-[5px] px-[16px] py-[12px] flex flex-col gap-[12px]">
-                                <div class="email flex justify-between">
-                                    <div class="text_part flex">
-                                        <span class="text-[#666562] tracking-[1px] w-[70px]">Email</span>
-                                        <span class="text-[#000000] tracking-[1px]">name@example.com</span>
-                                    </div>
-                                    <div class="change_btn">
-                                        <a href="javascript:void(0)" class="text-[#1F3650] text-[12px] font-[700] leading-[1.3] tracking-[1px]">Change</a>
-                                    </div>
-                                </div>
-                                <div class="devider h-[1px] w-full bg-[#CCCBC8]"></div>
-                                <div class="referral flex justify-between">
-                                    <div class="text_part flex">
-                                        <span class="text-[#666562] tracking-[1px] w-[70px]">Referral</span>
-                                        <span class="text-[#000000] tracking-[1px]">N/A</span>
-                                    </div>
-                                    <div class="change_btn">
-                                        <a href="javascript:void(0)" class="text-[#1F3650] text-[12px] font-[700] leading-[1.3] tracking-[1px]">Change</a>
-                                    </div>
-                                </div>
-                                <div class="devider h-[1px] w-full bg-[#CCCBC8]"></div>
-                                <div class="ship_address flex justify-between">
-                                    <div class="text_part flex">
-                                        <span class="text-[#666562] tracking-[1px] w-[70px]">Ship to</span>
-                                        <span class="text-[#000000] tracking-[1px]">38 Chester Road London SW46 3TC</span>
-                                    </div>
-                                    <div class="change_btn">
-                                        <a href="javascript:void(0)" class="text-[#1F3650] text-[12px] font-[700] leading-[1.3] tracking-[1px]">Change</a>
-                                    </div>
-                                </div>
-                                <div class="devider h-[1px] w-full bg-[#CCCBC8]"></div>
-                                <div class="ship_method flex justify-between">
-                                    <div class="text_part flex">
-                                        <span class="text-[#666562] tracking-[1px] w-[70px]">Method</span>
-                                        <span class="text-[#000000] tracking-[1px]">Same Day Delivery</span>
-                                    </div>
-                                    <div class="change_btn">
-                                        <a href="javascript:void(0)" class="text-[#1F3650] text-[12px] font-[700] leading-[1.3] tracking-[1px]">Change</a>
-                                    </div>
-                                </div>
+                            <div class="save_information flex gap-[8px] items-center p-[14px] border-t-[1px] border-[#CCCBC8]">
+                                <input type="checkbox" name="save_information" id="save_information" class="custom-checkbox gray_border">
+                                <label for="save_information" class="text-[#666562] cursor-pointer">Save my information for a faster checkout</label>
                             </div>
-                        </div>
-                        <div class="payment_info mt-[34px]">
-                            <div class="title_with_text mb-[14px]">
-                                <h2 class="title text-[1.125rem] text-[#1F3650] font-[700] leading-[1.5] tracking-[1px]">Payment</h2>
-                                <p class="text-[#666562] tracking-[1px]">All transactions are secure and encrypted.</p>
-                            </div>
-                            <div class="payment_process_wraper border-[1px] border-[#CCCBC8] rounded-[8px]">
-                                <div class="payment_cradit_card_wraper">
-                                    <div class="payment_cradit_card flex gap-[14px] p-[17px] border-b-[1px] border-[#CCCBC8]">
-                                        <input type="radio" name="billing_address" id="payment_cradit_card" class="custom-radio">
-                                        <label for="payment_cradit_card" class="text-[#666562] cursor-pointer flex justify-between flex-1 items-center gap-[8px]">
-                                            <div class="font-[700] text-[#1F3650] tracking-[1px]">Credit card</div>
-                                        </label>
-                                    </div>
-                                    <div class="payment_credit_card_info flex flex-col gap-[14px] p-[17px] border-b-[1px] border-[#CCCBC8]">
-                                        <div class="relative">
-                                            <input type="text" placeholder="Card number" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] pr-[40px] rounded-[5px] text-[#666562] placeholder:text-[#666562]">
-                                            <div class="icon text-[#666562] absolute right-[11px] top-[50%] translate-y-[-50%]">
-                                                <i class="fa-solid fa-lock"></i>
-                                            </div>
-                                        </div>
-                                        <div class="relative">
-                                            <input type="text" placeholder="Name on card" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] pr-[40px] rounded-[5px] text-[#666562] placeholder:text-[#666562]">
-                                        </div>
-                                        <div class="flex gap-[14px] flex-wrap">
-                                            <div class="relative flex-[1_1_150px]">
-                                                <input type="date" placeholder="Expiration date (MM / YY)" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] pr-[40px] rounded-[5px] text-[#666562] placeholder:text-[#666562]">
-                                            </div>
-                                            <div class="relative flex-[1_1_150px]">
-                                                <input type="text" placeholder="Security code" class="bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] pr-[40px] rounded-[5px] text-[#666562] placeholder:text-[#666562]">
-                                                <div class="icon text-[#F7F7F5] bg-[#666562] rounded-full h-[18px] w-[18px] text-center absolute right-[11px] top-[50%] translate-y-[-50%]">
-                                                    <i class="fa-solid fa-question"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="payment_paypal flex gap-[14px] p-[17px] border-b-[1px] border-[#CCCBC8]">
-                                    <input type="radio" name="billing_address" id="payment_paypal" class="custom-radio">
-                                    <label for="payment_paypal" class="text-[#666562] cursor-pointer flex justify-between flex-1 items-center gap-[8px]">
-                                        <img src="./assets/images/paypal.png" alt="paypla">
-                                    </label>
-                                </div>
-                                <div class="payment_affirm flex gap-[14px] p-[17px]">
-                                    <input type="radio" name="billing_address" id="payment_affirm" class="custom-radio">
-                                    <label for="payment_affirm" class="text-[#666562] cursor-pointer flex justify-between flex-1 items-center gap-[8px]">
-                                        <img src="./assets/images/paypal.png" alt="paypla">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="billing_address mt-[34px]">
-                            <div class="title_with_text mb-[14px]">
-                                <h2 class="title text-[1.125rem] text-[#1F3650] font-[700] leading-[1.5] tracking-[1px]">Shipping method</h2>
-                                <p class="text-[#666562] tracking-[1px]">Select the address that matches your card of payment method.</p>
-                            </div>
-                            <div class="billing_address_wraper border-[1px] border-[#CCCBC8] rounded-[8px] bg-[#fff]">
-                                <div class="same_as_shipping_address flex gap-[14px] p-[17px] border-b-[1px] border-[#CCCBC8]">
-                                    <input type="radio" name="billing_address" id="same_as_shipping_address" class="custom-radio">
-                                    <label for="same_as_shipping_address" class="text-[#666562] cursor-pointer flex justify-between flex-1 items-center gap-[8px]">
-                                        <div class="font-[700] text-[#666562] tracking-[1px]"> Same as shipping address </div>
-                                    </label>
-                                </div>
-                                <div class="different_shipping_address flex gap-[14px] p-[17px]">
-                                    <input type="radio" name="billing_address" id="different_shipping_address" class="custom-radio">
-                                    <label for="different_shipping_address" class="text-[#666562] cursor-pointer flex justify-between flex-1 items-center gap-[8px]">
-                                        <div class="font-[700] text-[#666562] tracking-[1px]"> Use a different billing address </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="save_information flex gap-[8px] items-center p-[17px] border-[1px] border-[#CCCBC8] rounded-[5px] mt-[34px]">
-                            <input type="checkbox" name="save_information" id="save_information" class="custom-checkbox gray_border">
-                            <label for="save_information" class="text-[#666562] cursor-pointer">Save this information for next time</label>
                         </div>
                         <div class="return_shipping mt-[34px]">
                             <div class="btn_wrapper flex justify-between items-center">
-                                <a href="javascript:void(0)" class="px-[24px] pl-[0] py-[12px] text-[14px] leading-[2] tracking-[1.5px] uppercase text-[#1F3650]">Return to cart</a>
-                                <a href="javascript:void(0)" class="px-[24px] py-[12px] text-[14px] leading-[2] tracking-[1.5px] uppercase bg-[#1F3650] text-[#FFFFFD]">continue to shipping</a>
+                                <a href="javascript:void(0)" class="px-[24px] pl-[0] py-[12px] text-[14px] leading-[2] tracking-[1.5px] uppercase text-[#1F3650]">NEED HELP?</a>
+                                <a href="javascript:void(0)" class="px-[24px] py-[12px] text-[14px] leading-[2] tracking-[1.5px] uppercase bg-[#1F3650] text-[#FFFFFD]">Continue shopping</a>
                             </div>
                         </div>
                         <div class="footer-part mt-[98px]">

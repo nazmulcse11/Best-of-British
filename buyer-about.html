@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header class="bg-[#F7F7F5]">
+        <nav class="navbar navbar__main  navbar-expand-lg navbar-default">
+            <div class=" container-1440">
+                <div class="nav-container flex items-center justify-between w-[100%] gap-[20px] relative border-b-[1px] border-[#EBEAE6] py-[18px]">
+                    <div class="responsive-mobile-menu flex shrink-0 items-center justify-between md:grow-0 md:basis-auto flex-1 gap-[20px]">
+                        <div class="logo-wraper leading-[1] shrink-0 flex gap-[24px]">
+                            <div class="buyer_control_menu relative">
+                                <div class="icon_menu cursor-pointer">
+                                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="0.5" x2="20" y2="0.5" stroke="#1F3650"/>
+                                        <line y1="6.5" x2="20" y2="6.5" stroke="#1F3650"/>
+                                        <line y1="12.5" x2="11.7241" y2="12.5" stroke="#1F3650"/>
+                                    </svg>
+                                </div>
+                                <div class="shadow_bg fixed inset-0 z-[3] bg-[#1f36501a] hidden"></div>
+                                <div class="buyer_menu_items absolute p-[40px] z-[4] w-[270px] bg-[#fff] top-[calc(100%+12px)] left-0 right-0 transition-all duration-[.3s] ease-in-out hidden">
+                                    <div class="text-[#A3A3A0] text-[0.625rem] font-[600] mb-[12px] tracking-[1.5px] uppercase">Menu</div>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase">
+                                        <li><a href="buyer-home.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Home</a></li>
+                                        <li><a href="buyer-listing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Messages <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">29</span></a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Notifications <span class="bg-[#CD1313] text-[#fff] w-[20px] h-[20px] flex items-center justify-center rounded-full">99</span></a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">My Profile</a></li>
+                                    </ul>
+                                    <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase mt-[42px]">
+                                        <li><a href="buyer-about.html" class="font-[600] flex justify-between items-center traking-[1.5px]">About</a></li>
+                                        <li><a href="buyer-listing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Faq</a></li>
+                                        <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="index.html"><img src="./assets/images/Best of British.png" alt="Best Of British"></a>
+                        </div>
+                        <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                    <div class="navbar-collapse group md:bg-[transparent] bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out inline-block">
+                        <div class="navbar_nav_menu_wraper flex md:flex-row flex-col tracking-[1px] md:gap-y-[9px]  mt:py-[0px] pt-[12px]">
+                            <div class="group menu-item menu-item-has-children active relative shrink-0">
+                                <a href="javascript:void(0)" class="mega_menu_trigger px-[12px] relative text-color5 transition-all duration-[.1s]">
+                                    View all
+                                    <i class="fa-solid fa-angle-down text-color5 ms-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </a>
+                                <div class="mega_menu absolute sm:columns-3 gap-[40px] bg-[#F7F7F5] p-[60px] pb-[20px] shadow-[0_4px_4px_0px_#00000040] xl:w-[970px] lg:w-[770px] md:w-[570px] w-full md:max-h-[unset] max-h-[400px] overflow-y-auto left-0 right-0 top-[calc(100%+12px)] z-[3] hidden">
+                                    <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                        <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                        <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                    </div>
+                                    <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                        <a href="javascript:void(0)" class="text-color11">MOST RECOMMENDED</a>
+                                        <a href="javascript:void(0)" class="text-color11">ON SALE</a>
+                                    </div>
+                                    <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                        <a href="javascript:void(0)" class="text-color11">Home & Kitchen</a>
+                                        <a href="javascript:void(0)" class="text-color11">Groceries & Gourmet Food</a>
+                                        <a href="javascript:void(0)" class="text-color11">Pet Supplies</a>
+                                        <a href="javascript:void(0)" class="text-color11">Arts, Crafts & Sewing</a>
+                                        <a href="javascript:void(0)" class="text-color11">Seasonal & Gifts</a>
+                                    </div>
+                                    <div class="menga_menu_group *:font-[600] *:text-[0.812rem] *:leading-[1.5 *:uppercase] flex flex-col gap-[12px]">
+                                        <a href="javascript:void(0)" class="text-color11">Home & Kitchen</a>
+                                        <a href="javascript:void(0)" class="text-color11">Groceries & Gourmet Food</a>
+                                        <a href="javascript:void(0)" class="text-color11">Pet Supplies</a>
+                                        <a href="javascript:void(0)" class="text-color11">Arts, Crafts & Sewing</a>
+                                        <a href="javascript:void(0)" class="text-color11">Seasonal & Gifts</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-nav flex md:flex-row flex-col tracking-[1px] flex-wrap max-w-[600px] md:gap-y-[9px] *:items-center *:flex md:py-[0px] py-[12px] md:gap-x-[0px] gap-[12px]">
+                                <div class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Clothing & Accessories</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </div>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Home & Kitchen</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Electronics</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Beauty</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Health & Wellness</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Sports & Outdoors</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                                <li class="group menu-item">
+                                    <a href="javascript:void(0)" class="px-[12px] relative text-color5 transition-all duration-[.1s]">Books & Media</a>
+                                    <i class="fa-solid fa-angle-down text-color5 me-2 leading-[1.5] hidden group-[.menu-item-has-children]:inline-block"></i>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="search_bar_input_wraper xl:w-[600px] md:w-[450px] w-full relative hidden" id="navbar_search_bar">
+                            <input type="text" name="navbar_search_bar_input" id="navbar_search_bar_input" class="w-full bg-[transparent] text-[1rem] font-[600] leading-[1.25] text-[#272833] placeholder:text-[#272833]" placeholder="What are you looking for?">
+                            <span class="icon absolute top-0 right-0"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <div class="underline absolute left-0 right-0 h-[1px] bottom-[-10px] bg-[#0203061a]"></div>
+                        </div>
+                    </div>
+                    <div class="group/navbar-right-icon-wraper shrink-[0] rlative">
+                        <div class="icon md:hidden"><i class="fa-solid fa-user"></i></div>
+                        <div class="navbar-right-icon md:bg-[transparent] bg-[#fff] md:p-0 p-[12px] rounded-[5px] md:flex md:flex-row flex-col md:static absolute right-0 top-[calc(100%+40px)] z-[1] hidden group-hover/navbar-right-icon-wraper:flex">
+                            <div class="right-icon-0">
+                                <a href="javascript:void(0)" class="px-[12px] text-color5">Search </a>
+                            </div>
+                            <div class="right-icon-1">
+                                <a href="javascript:void(0)" class="px-[12px] text-color5">Log Out </a>
+                            </div>
+                            <div class="right-icon-2">
+                                <a href="javascript:void(0)" class="nav_cart_icon px-[12px] text-color5">Cart <span>(0)</span></a>
+                            </div>
+                            <!-- //cart part -->
+                            <div class="cart_backdrop hidden z-[3] fixed left-0 top-0 bottom-0 right-[0] bg-[#1f36501a] transition-all ease-in-out duration-[.3s]"></div>
+                            <div class="shopping_cart_wraper hidden max-h-[90svh] overflow-y-auto sm:w-[480px] w-[280px] fixed top-0 right-0 z-[4] bg-[#FFFFFF] sm:px-[30px] px-[20px] py-[40px]">
+                                <div class="shopping_cart_title flex justify-between items-center gap-[20px] mb-[30px]">
+                                    <div class="title text-color5 text-[10px] leading-[2] tracking-[2px] uppercase">Order summary</div>
+                                    <div class="cart_close_btn cursor-pointer"><i class="fa-solid fa-xmark text-[14px] text-[#A3A3A0]"></i></div>
+                                </div>
+                                <div class="shopping_cart_product_wraper flex flex-col gap-[30px]">
+                                    <div class="cart_single_product flex gap-[35px]">
+                                        <div class="cart_product_image h-[200px] w-[144px] full_image">
+                                            <img src="./assets/images/cart_img1.png" alt="product-1"> 
+                                        </div>
+                                        <div class="cart_product_details text-color5 leading-[1.4] tracking-[1px] w-[150px]">
+                                            <div class="cart_product_title tracking-[1px]">Product Title</div>
+                                            <div class="cart_product_ammount font-[700]">£150</div>
+                                            <div class="my-[20px]">
+                                                <div class="size flex justify-between">
+                                                    <label for="cpsize">Size</label>
+                                                    <select name="size" id="cpsize" class="font-[700]">
+                                                        <option value="extrasmall">XS</option>
+                                                        <option value="small">S</option>
+                                                        <option value="medium">M</option>
+                                                        <option value="large">L</option>
+                                                        <option value="extralarge">XL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity flex justify-between">
+                                                    <label for="cpquantity">Quantity</label>
+                                                    <div class="cpquantity text-[700] flex gap-[8px]">
+                                                        <div class="decrease_quantity"><i class="fa-solid fa-minus"></i></div>
+                                                        <div class="number font-[700]">1</div>
+                                                        <div class="increase_quantity"><i class="fa-solid fa-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="remove_cart_item font-[700]">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart_single_product flex gap-[35px]">
+                                        <div class="cart_product_image h-[200px] w-[144px] full_image">
+                                            <img src="./assets/images/cart_img1.png" alt="product-1"> 
+                                        </div>
+                                        <div class="cart_product_details text-color5 leading-[1.4] tracking-[1px] w-[150px]">
+                                            <div class="cart_product_title tracking-[1px]">Product Title</div>
+                                            <div class="cart_product_ammount font-[700]">£150</div>
+                                            <div class="my-[20px]">
+                                                <div class="size flex justify-between">
+                                                    <label for="cpsize">Size</label>
+                                                    <select name="size" id="cpsize" class="font-[700]">
+                                                        <option value="extrasmall">XS</option>
+                                                        <option value="small">S</option>
+                                                        <option value="medium">M</option>
+                                                        <option value="large">L</option>
+                                                        <option value="extralarge">XL</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity flex justify-between">
+                                                    <label for="cpquantity">Quantity</label>
+                                                    <div class="cpquantity text-[700] flex gap-[8px]">
+                                                        <div class="decrease_quantity"><i class="fa-solid fa-minus"></i></div>
+                                                        <div class="number font-[700]">1</div>
+                                                        <div class="increase_quantity"><i class="fa-solid fa-plus"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="remove_cart_item font-[700]">Remove</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_footer_part mt-[40px] pt-[24px] flex flex-col gap-[24px] border-t-[1px] border-[#EBEAE6]">
+                                    <div class="cart_subtotal flex justify-between items-center text-color5 text-[12px] leading-[2] tracking-[2px] font-[700]">
+                                        <div class="subtotal_title">Subtotal</div>
+                                        <div class="subtotal_ammount">$150</div>
+                                    </div>
+                                    <div class="shipping_cost flex justify-between items-center text-color5 text-[12px] leading-[2] tracking-[2px] font-[700]">
+                                        <div class="shipping_title">Shipping</div>
+                                        <div class="shipping_ammount">$150</div>
+                                    </div>
+                                    <div class="cart_checkout_btn"> 
+                                        <a href="checkout.html" class="text-[#000000] text-[12px] leading-[1.5] tracking-[1.5px] bg-color4 py-[12px] px-[30px] block text-center">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main bg-[#FFFFFD]">
+        <div class="container-1440">
+            <div class="buyer_about_wraper_inner py-[40px] flex gap-[100px]">
+                <div class="img_part w-[160px] h-[160px] overflow-hidden rounded-full *:w-full *:h-full *:object-cover">
+                    <img src="./assets/images/buyer.png" alt="Buyer">
+                </div>
+                <div class="right_part_wraper flex-1 max-w-[850px]">
+                    <div class="buyer_option_links flex gap-[32px]">
+                        <a href="buyer-about.html" class="font-[600] text-[13px] text-[#8F9BA7] leading-[19px] tracking-[1.5px] uppercase text-color5">store profile</a>
+                        <a href="./buyer-shop-grid.html" class="font-[600] text-[13px] text-[#8F9BA7] leading-[19px] tracking-[1.5px] uppercase">Items</a>
+                        <a href="buyer-about-reviews.html" class="font-[600] text-[13px] text-[#8F9BA7] leading-[19px] tracking-[1.5px] uppercase">Reviews</a>
+                    </div>
+                    <div class="buyer_about_details mt-[34px]">
+                        <div class="name dm-serif text-[2rem] text-[#272833] tracking-[-0.4px] leading-[1]">ROLEX SA</div>
+                        <p class="title text-[1rem] text-[#4B4B51] leading-[1.25] tracking-[-0.2px] mt-[10px]">Business Provider</p>
+                        <div class="des text-[1.125rem] text-[#1F3650] leading-[1.5] tracking-[1px] my-[26px]">
+                            Rolex SA is a Swiss watch brand and manufacturer based in Geneva, Switzerland. Founded in 1905 as Wilsdorf and Davis by German businessman Hans Wilsdorf and his brother-in-law Alfred Davis in London, the company registered Rolex as the brand name of its watches in 1908 and became Rolex Watch Co. Ltd. in 1915.
+                        </div>
+                    </div>
+                    <div class="booking_shopping">
+                        <h5 class="sec_title font-[700] text-[#1F3650] tracking-[1px]">Book a Live Video Shopping experience</h5>
+                        <div class="booking_card_wraper mt-[31px] flex gap-[28px]">
+                            <a href="./buyer-video-call-booking.html">
+                                <div class="vedio_call_booking_card flex gap-[12px] p-[14px] pl-[8px] rounded-[8px] bg-[#fff] shadow-[0_7px_64px_0_#00000012]">
+                                    <div class="icon_part h-[48px] w-[48px] rounded-[16px] flex justify-center items-center bg-[#CEA65D] *:max-h-[24px] *:max-w-[24px]">
+                                        <img src="./assets/images/icon-shopping-bag.png" alt="bag icon">
+                                    </div>
+                                    <div class="text_part">
+                                        <div class="h3 font-[600] text-[#020306] flex justify-between"><span>Book a Video Call</span><i class="fa-solid fa-angles-right"></i></div>
+                                        <div class="info flex gap-[4px] opacity-[0.8]">
+                                            <div class="icon mt-[1.5px]">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39193 0.166626C3.17533 0.166626 0.558594 2.78336 0.558594 5.99996C0.558594 9.21656 3.17533 11.8333 6.39193 11.8333C9.60852 11.8333 12.2253 9.21656 12.2253 5.99996C12.2253 2.78336 9.60852 0.166626 6.39193 0.166626ZM7.68401 9.05468C7.65835 9.06478 7.62763 9.07746 7.5925 9.09196C7.18781 9.25902 6.19776 9.66772 5.60734 9.14753C5.41582 8.97933 5.32054 8.76593 5.32054 8.50683C5.32054 8.12 5.42191 7.77272 5.60864 7.13305C5.6561 6.9705 5.70906 6.78906 5.76727 6.58329C5.81783 6.39128 5.87957 6.14239 5.87957 5.94503C5.87957 5.60426 5.75026 5.51385 5.39977 5.51385C5.22866 5.51385 5.03908 5.57461 4.86748 5.63878L4.96227 5.25038C5.34484 5.09482 5.82512 4.90524 6.23637 4.90524C6.85325 4.90524 7.30727 5.21295 7.30727 5.79822C7.30727 5.9669 7.27811 6.26246 7.21686 6.46663L6.862 7.72176C6.78859 7.97551 6.65589 8.53503 6.86151 8.70079C7.06373 8.86461 7.54255 8.7776 7.7788 8.66628L7.68401 9.05468ZM6.36859 3.32635C6.36859 3.72885 6.69526 4.05551 7.09776 4.05551C7.50026 4.05551 7.82693 3.72885 7.82693 3.32635C7.82693 2.92385 7.50026 2.59718 7.09776 2.59718C6.69526 2.59718 6.36859 2.92385 6.36859 3.32635Z" fill="#4B4B51"/>
+                                                </svg>
+                                            </div>
+                                            <div class="text-[#4B4B51] text-[12px] leading-[16px]">Book personalised live shopping experience with local retailers.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)">
+                                <div class="send_message_booking_card flex gap-[12px] p-[14px] pl-[8px] rounded-[8px] bg-[#fff] shadow-[0_7px_64px_0_#00000012]">
+                                    <div class="icon_part h-[48px] w-[48px] rounded-[16px] flex justify-center items-center bg-[#CEA65D] *:max-h-[24px] *:max-w-[24px]">
+                                        <img src="./assets/images/chat.png" alt="chat icon">
+                                    </div>
+                                    <div class="text_part">
+                                        <div class="h3 font-[600] text-[#020306] flex justify-between"><span>Send message</span><i class="fa-solid fa-angles-right"></i></div>
+                                        <div class="info flex gap-[4px] opacity-[0.8]">
+                                            <div class="icon mt-[1.5px]">
+                                                <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.39193 0.166626C3.17533 0.166626 0.558594 2.78336 0.558594 5.99996C0.558594 9.21656 3.17533 11.8333 6.39193 11.8333C9.60852 11.8333 12.2253 9.21656 12.2253 5.99996C12.2253 2.78336 9.60852 0.166626 6.39193 0.166626ZM7.68401 9.05468C7.65835 9.06478 7.62763 9.07746 7.5925 9.09196C7.18781 9.25902 6.19776 9.66772 5.60734 9.14753C5.41582 8.97933 5.32054 8.76593 5.32054 8.50683C5.32054 8.12 5.42191 7.77272 5.60864 7.13305C5.6561 6.9705 5.70906 6.78906 5.76727 6.58329C5.81783 6.39128 5.87957 6.14239 5.87957 5.94503C5.87957 5.60426 5.75026 5.51385 5.39977 5.51385C5.22866 5.51385 5.03908 5.57461 4.86748 5.63878L4.96227 5.25038C5.34484 5.09482 5.82512 4.90524 6.23637 4.90524C6.85325 4.90524 7.30727 5.21295 7.30727 5.79822C7.30727 5.9669 7.27811 6.26246 7.21686 6.46663L6.862 7.72176C6.78859 7.97551 6.65589 8.53503 6.86151 8.70079C7.06373 8.86461 7.54255 8.7776 7.7788 8.66628L7.68401 9.05468ZM6.36859 3.32635C6.36859 3.72885 6.69526 4.05551 7.09776 4.05551C7.50026 4.05551 7.82693 3.72885 7.82693 3.32635C7.82693 2.92385 7.50026 2.59718 7.09776 2.59718C6.69526 2.59718 6.36859 2.92385 6.36859 3.32635Z" fill="#4B4B51"/>
+                                                </svg>
+                                            </div>
+                                            <div class="text-[#4B4B51] text-[12px] leading-[16px]">Inquire about products directly from sellers with instant messaging.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact_details mt-[33px]">
+                        <h5 class="sec_title font-[700] text-[#1F3650] tracking-[1px] pb-[20px] border-b-[1px] border-[#EBEAE6]">Contact Details</h5>
+                        <div class="contact_details_wraper mt-[12px] flex flex-col gap-[12px]">
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">Company Name</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">Rolex SA</div>
+                            </div> 
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">Website</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">www.rolex.com</div>
+                            </div> 
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">WhatsApp Number</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">1234 5678 9000</div>
+                            </div> 
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">Phone Number</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">+44 123 4567 890</div>
+                            </div> 
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">Facetime Number</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">1234 5678 9000</div>
+                            </div> 
+                            <div class="flex justify-between">
+                                <div class="title text-[#020306] opacity-[0.5]">Location</div>
+                                <div class="value max-w-[360px] text-end font-[600] text-[#020306]">2 Church View High Street Mayfield, England  TN20 6AB United Kingdom</div>
+                            </div> 
+                        </div>
+                        <div class="buyer_location_map rounded-[8px] mt-[33px]">
+                            <iframe width="100%" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=26.05240881443024%2C44.40786065575857%2C26.06136739253998%2C44.41114093994929&amp;layer=mapnik"></iframe>
+                            <div>
+                                <a href="javascript:void(0)" class="text-color4 font-[600] tracking-[-0.3px] mt-[20px]">View on Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#EBEAE6]">
+        <div class="footer-top-part md:py-[120px] py-[50px]">
+            <div class="container-1440">
+                <div class="footer-widget-wraper flex sm:flex-row flex-col gap-[30px] flex-wrap justify-between">
+                    <div class="left-part sm:max-w-[302px] text-color5">
+                        <p class="lato font-[700] tracking-[1px]">Sign up For Early Access and get updates from Best of British</p>
+                        <form action="#" method="get" class="mt-[20px] pb-[10px] flex *:text-color5 *:text-[18px] border-b-[1px] border-[#CCCBC8]">
+                            <input type="email" placeholder="Email" class="flex-1 placeholder:text-color5 placeholder:text-[18px] pe-[10px]">
+                            <a href="javascript:void(0)" class="underline">Join</a>
+                        </form>
+                    </div>
+                    <div class="right-part-wraper flex-1 flex justify-center">
+                        <div class="right-part max-w-[500px] flex gap-[20px] flex-wrap justify-between flex-1">
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Shop</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Collections</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Company</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">About Us</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Our Mission</a>
+                                    </li>
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-widget widget">
+                                <h4 class="footerTitle text-color5 font-[700] text-[1rem] sm:text-[1.2rem] tracking-[1px] mb-[10px]">Info</h4>
+                                <ul class="listing flex flex-col gap-[12px] *:text-color5 *:text-[1rem] sm:*:text-[18px] *:tracking-[1px]">
+                                    <li class="listitem">
+                                        <a href="javascript:void(0)" class="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-part pb-[38px]">
+            <div class="container-1440">
+                <div class="footer-bottom-part-wraper flex lg:justify-between justify-center gap-[30px] flex-wrap">
+                    <div class="social-links flex gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <a href="javascript:void(0)" class="">Facebook</a>
+                        <a href="javascript:void(0)" class="">Instagram</a>
+                        <a href="javascript:void(0)" class="">LinkedIn</a>
+                    </div>
+                    <div class="coppyright-div flex justify-center flex-wrap gap-[24px] font-[300] text-[12px] text-color5 tracking-[1px]">
+                        <p class="text-center">©2024 <a href="javascript:void(0)">BEST OF BRITISH</a>. ALL RIGHTS RESERVED</p>
+                        <a href="javascript:void(0)">PRIVACY POLICY</a>
+                        <a href="javascript:void(0)">TERMS OF USES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            //in nav buyer menu control
+            $('.buyer_control_menu .icon_menu').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').removeClass('hidden');              
+            })
+            $('.shadow_bg').on('click',function(){
+                $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
+            })
+        })
+    </script>
+</body>
+</html>
