@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
-<body>
+<body> 
     <header class="bg-[#F7F7F5]">
         <nav class="navbar navbar__main  navbar-expand-lg navbar-default">
             <div class=" container-1440">
@@ -243,10 +243,10 @@
                             <li class="group">
                                 <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Order History</a>
                             </li>
-                            <li class="group active">
+                            <li class="group">
                                 <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">My Addresses</a>
                             </li>
-                            <li class="group">
+                            <li class="group active">
                                 <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Payment Method</a>
                             </li>
                             <li class="group">
@@ -271,31 +271,41 @@
                     </div>
                 </div>
                 <div class="right_part_wraper flex-1">
-                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>My Addresses</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
-                    <div class="my_address_wraper_part flex flex-col gap-[30px]">
-                        <div class="my_address_part flex-1 pb-[10px] border-b-[1px] border-[#E6E6E4]">
-                            <div class="title text-[#4B4B51] uppercase mb-5 flex justify-between">
-                                <span>home address</span>
-                                <span><a href="#/" class="font-[600] text-color4 normal-case">Change</a></span>
+                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>Add New Payment Method</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
+                    <div class="new_payment_method_wraper_part flex flex-col gap-[16px]">
+                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
+                            <div class="card_image">
+                                <img src="./assets/images/visa2.png" alt="visa">
                             </div>
-                            <div class="address_detials max-w-[210px] font-[600] text-[#272833]">
-                                Kings Street 20,
-                                Southfield, Michingan (MI), 48075
-                            </div>
+                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Visa</a></div>
                         </div>
-                        <div class="my_address_part flex-1 pb-[10px] border-b-[1px] border-[#E6E6E4]">
-                            <div class="title text-[#4B4B51] uppercase mb-5 flex justify-between">
-                                <span>work address</span>
-                                <span><a href="#/" class="font-[600] text-color4 normal-case">Change</a></span>
+                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
+                            <div class="card_image">
+                                <img src="./assets/images/mastercard.png" alt="visa">
                             </div>
-                            <div class="address_detials max-w-[210px] font-[600] text-[#272833]">
-                                Kings Street 20,
-                                Southfield, Michingan (MI), 48075
+                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Mastercard</a></div>
+                        </div>
+                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
+                            <div class="card_image">
+                                <img src="./assets/images/paypal.png" alt="visa">
                             </div>
+                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Paypal</a></div>
+                        </div>
+                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
+                            <div class="card_image">
+                                <img src="./assets/images/google-pay.png" alt="visa">
+                            </div>
+                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Google Pay</a></div>
+                        </div>
+                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
+                            <div class="card_image">
+                                <img src="./assets/images/apple-pay.png" alt="visa">
+                            </div>
+                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Apple Pay</a></div>
                         </div>
                     </div>
                     <div class="add_new_address_btn mt-[17px]">
-                        <a href="./buyer-profile-new-address.html" class="bg-color4 px-[24px] py-[12px] font-[400] text-[#000000] text-[.875rem] leading-[2] tracking-[1.5px] uppercase">add another address</a>
+                        <a href="./buyer-profile-new-address.html" class="bg-color4 text-center px-[24px] py-[12px] font-[400] text-[#000000] text-[.875rem] leading-[2] tracking-[1.5px] uppercase">add new payment method</a>
                     </div>
                 </div>
             </div>
