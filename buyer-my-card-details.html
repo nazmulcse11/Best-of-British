@@ -271,41 +271,33 @@
                     </div>
                 </div>
                 <div class="right_part_wraper flex-1">
-                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>Add New Payment Method</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
-                    <div class="new_payment_method_wraper_part flex flex-col gap-[16px]">
-                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
-                            <div class="card_image">
-                                <img src="./assets/images/visa2.png" alt="visa">
+                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>My Card Details</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
+                    <div class="card_details_wraper_part">
+                        <form action="#" class="grid gap-[30px] md:grid-cols-3">
+                            <div class="input_wraper  border-b-[1px] border-[#EBEAE6] pb-[16px]">
+                                <label for="address_title" class="text-[#02030680] text-[0.75rem] leading-[1.4]">Cardholder Name</label>  
+                                <input type="text" id="card_holdername" class="w-full font-[600] text-[#020306] text-[1rem] leaading-[1.25] mt-[4px] focus:outline-none placeholder:text-[#020306]" placeholder="321">
                             </div>
-                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Visa</a></div>
-                        </div>
-                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
-                            <div class="card_image">
-                                <img src="./assets/images/mastercard.png" alt="visa">
+                            <div class="input_wraper  border-b-[1px] border-[#EBEAE6] pb-[16px]">
+                                <label for="address_title" class="text-[#02030680] text-[0.75rem] leading-[1.4]">Year</label>  
+                                <input type="text" id="card_year" class="w-full font-[600] text-[#020306] text-[1rem] leaading-[1.25] mt-[4px] focus:outline-none placeholder:text-[#020306]" placeholder="2025">
                             </div>
-                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Mastercard</a></div>
-                        </div>
-                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
-                            <div class="card_image">
-                                <img src="./assets/images/paypal.png" alt="visa">
+                            <div class="input_wraper  border-b-[1px] border-[#EBEAE6] pb-[16px]">
+                                <label for="address_title" class="text-[#02030680] text-[0.75rem] leading-[1.4]">Month</label>  
+                                <input type="text" id="card_month" class="w-full font-[600] text-[#020306] text-[1rem] leaading-[1.25] mt-[4px] focus:outline-none placeholder:text-[#020306]" placeholder="05">
                             </div>
-                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Paypal</a></div>
-                        </div>
-                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
-                            <div class="card_image">
-                                <img src="./assets/images/google-pay.png" alt="visa">
+                            <div class="input_wraper  border-b-[1px] border-[#EBEAE6] pb-[16px]">
+                                <label for="address_title" class="text-[#02030680] text-[0.75rem] leading-[1.4]">Card Number </label>  
+                                <input type="text" id="card_number" class="w-full font-[600] text-[#020306] text-[1rem] leaading-[1.25] mt-[4px] focus:outline-none placeholder:text-[#020306]" placeholder="1234 5783 1231 9123">
                             </div>
-                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Google Pay</a></div>
-                        </div>
-                        <div class="payment_method_card flex items-center gap-[24px] pb-[18px] border-b-[1px] border-[#EBEAE6]">
-                            <div class="card_image">
-                                <img src="./assets/images/apple-pay.png" alt="visa">
-                            </div>
-                            <div class="text dm-serif text-[1rem] leading-[1.25] text-[#272833]"><a href="./buyer-card-details.html">Apple Pay</a></div>
+                        </form>
+                        <div class="set_default_payment mt-[24px] flex items-center gap-[24px]">
+                            <label for="set_default_payment" class="text-[#272833] text-[1rem] leading-[1.25]">Set Default Payment</label>
+                            <input type="checkbox" name="set_default_payment" id="set_default_payment" class="switcher_checkbox">
                         </div>
                     </div>
-                    <div class="add_new_address_btn mt-[39px]">
-                        <a href="./buyer-profile-new-address.html" class="bg-color4 text-center px-[24px] py-[12px] font-[400] text-[#000000] text-[.875rem] leading-[2] tracking-[1.5px] uppercase">add new payment method</a>
+                    <div class="add_new_address_btn mt-[50px]">
+                        <a href="javascript:void(0)" class="bg-color4 text-center px-[24px] py-[12px] font-[400] text-[#000000] text-[.875rem] leading-[2] tracking-[1.5px] uppercase">remove card</a>
                     </div>
                 </div>
             </div>

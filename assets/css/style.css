@@ -196,6 +196,36 @@ a{
    outline: 1px solid #666562;
   }
 }
+/*switcher checkbox*/
+.switcher_checkbox {
+  -webkit-appearance: none;
+  height: 22px;
+  width: 37px;
+  border-radius: 100px;
+  border: 1px solid #CEA65D;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #CEA65D;
+    transition: all 0.3s ease-in-out;
+  }
+  &:checked {
+   background: #CEA65D;
+   &::after {
+     left: calc(100% - 16px - 2px);
+     background: #ffffff;
+   } 
+  }
+}
 /*bradecrumb*/
 .bradecrumb {
   li:last-child a::after{  
