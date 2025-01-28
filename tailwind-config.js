@@ -5,5 +5,7 @@ tailwind.config = {
         clifford: '#da373d',
       }
     }
-  }
+  },
+  plugins: [],
+
 }
