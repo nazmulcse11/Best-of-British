@@ -35,7 +35,7 @@
                                         <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">My Profile</a></li>
                                     </ul>
                                     <ul class="flex flex-col gap-[12px] *:text-color11 *:font-[600] *:text-[0.8125rem] *:leading-[1.5] *:uppercase mt-[42px]">
-                                        <li><a href="buyer-home.html" class="font-[600] flex justify-between items-center traking-[1.5px]">About</a></li>
+                                        <li><a href="buyer-about.html" class="font-[600] flex justify-between items-center traking-[1.5px]">About</a></li>
                                         <li><a href="buyer-listing.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Faq</a></li>
                                         <li><a href="buyer-profile.html" class="font-[600] flex justify-between items-center traking-[1.5px]">Log Out</a></li>
                                     </ul>
@@ -45,7 +45,7 @@
                         </div>
                         <button class="navbar-toggler md:hidden"><i class="fa-solid fa-bars"></i></button>
                     </div>
-                    <div class="navbar-collapse group md:bg-[transparent] bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out inline-block">
+                    <div class="navbar-collapse group md:bg-[transparent] bg-[#fff] hidden opacity-0 md:opacity-100 md:block absolute top-[calc(100%+40px)] left-0 right-0  md:static md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out">
                         <div class="navbar_nav_menu_wraper flex md:flex-row flex-col tracking-[1px] md:gap-y-[9px]  mt:py-[0px] pt-[12px]">
                             <div class="group menu-item menu-item-has-children active relative shrink-0">
                                 <a href="javascript:void(0)" class="mega_menu_trigger px-[12px] relative text-color5 transition-all duration-[.1s]">
@@ -215,165 +215,63 @@
             </div>
         </nav>
     </header>
-    <div class="main bg-[#F7F7F5] py-[60px]">
+    <div class="main bg-[#FFFFFD] py-[40px]">
         <div class="container-1440">
-            <div class="shop_grid flex gap-[40px] justify-between">
-                <div class="backdrop z-[3] md:hidden fixed left-0 top-0 bottom-0 right-[100%] bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-[.3s]"></div>
-                <div class="group shop_grid_menu_wraper shrink-0 md:static fixed md:z-[0] z-[4] md:w-[190px] md:h-auto md:p-[0] md:bg-transparent bg-[#fff] w-[250px] overflow-y-auto h-[100vh] p-[20px] top-0 left-[-100%] transition-all ease-in-out duration-[.3s]">
-                    <div class="shop_grid_menu_inner flex flex-col gap-[40px] w-[190px]">
-                        <div class="item_menu_list_wraper">
-                            <div class="title active flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Product type</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
-                            <div class="item_menu_list">
-                                <ul class="pt-[16px] flex flex-col gap-[12px]">
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Dress</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tshirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Schirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Pants</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tops</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Hoodies</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Accessories</a>
-                                    </li>
-                                </ul>
+            <div class="buyer_profile_wraper flex lg:gap-[100px] gap-[30px]">
+                <div class="buyer_profile_menu md:w-[190px] w-[220px] p-[24px] md:static md:bg-[#FFFFFD] bg-[#fff] absolute left-[-100%] md:z-auto z-[2] md:transition-none transition-all duration-[.8s] ease-in-out md:shadow-none shadow-[0px_0px_20px_rgba(0,0,0,0.1)]">
+                    <div class="profile_top_part">
+                        <div class="relative buyer_image mx-auto bg-[#E4E4E4] w-[80px] aspect-[1] rounded-full *:rounded-full *:max-w-full *:aspect-[1] flex justify-center items-center">
+                            <img src="./assets/images/icon-user.png" alt="buyer">
+                            <div class="image_upload_icon w-[24px] h-[24px] rounded-full bg-color4 flex justify-center items-center absolute bottom-0 right-[0] cursor-pointer">
+                                <img src="./assets/images/camera-icon.png" alt="cameraicon">
                             </div>
                         </div>
-                        <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Style</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
-                            <div class="item_menu_list">
-                                <ul class="pt-[16px] flex flex-col gap-[12px]">
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Dress</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tshirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Schirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Pants</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tops</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Hoodies</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Accessories</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="buyer_des mt-[20px]">
+                            <div class="name dm-serif text-[1.25rem] text-[#272833] text-center leading-[1.1]">Mike Flexin</div>
+                            <div class="mail text-center text-[#4B4B51] mt-2">mike@flexinstudio.com</div>
                         </div>
-                        <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Color</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
-                            <div class="item_menu_list">
-                                <ul class="pt-[16px] flex flex-col gap-[12px]">
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Dress</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tshirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Schirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Pants</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tops</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Hoodies</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Accessories</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="side_menu_wraper mt-6">
+                        <div class="menu_title flex justify-between itemsc-center text-[#1F3650] pb-4 border-b-[1px] border-[#EBEAE6]">
+                            <span>My Account</span> 
+                            <span><i class="fa-solid fa-minus"></i></span>
                         </div>
-                        <div class="item_menu_list_wraper">
-                            <div class="title flex justify-between items-center gap-[20px] cursor-pointer pb-[16px] border-b-[1px] border-[#EBEAE6]"><span class="font-[400] text-color5 leading-[1.5] tracking-[1px]">Size</span><span><i class="fa-solid fa-plus hidden"></i> <i class="fa-solid fa-minus"></i></span></div>
-                            <div class="item_menu_list">
-                                <ul class="pt-[16px] flex flex-col gap-[12px]">
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Dress</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tshirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Schirt</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Pants</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Tops</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Hoodies</a>
-                                    </li>
-                                    <li class="item_menu_list_item group">
-                                        <a href="javascript:void(0)" class="text-color11 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase border-b-[1px] border-[transparent] group-[.active]:text-color5 group-[.active]:border-[#000000]">Accessories</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="side_menu mt-4 flex flex-col gap-6">
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Referral History</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Order History</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">My Addresses</a>
+                            </li>
+                            <li class="group active">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Payment Method</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Bookings</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Nearby Sellers</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Favourites</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Settings</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Help & Support</a>
+                            </li>
+                            <li class="group">
+                                <a href="#/" class="text-color11 text-[1rem] leading-[1.25] tracking-[-0.1px] group-[.active]:text-[#1F3650] group-[.active]:underline group-[.active]:font-[600]">Logout</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="shop_grid_content_wraper max-w-[1000px] md:w-[calc(100%_-_190px)] w-[100%] overflow-hidden flex-1">
-                    <div class="heading flex gap-[20px] items-center  mb-[32px]">
-                        <div class="shop_filter-icon text-color-5 cursor-pointer md:hidden">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                        <div class="items_title text-color5 font-[700] text-[1.125rem] leading-[1.5] tracking-[1px]">Clothing & Accessories</div>
-                    </div>
-                    <div class="product_subcta_wraper mb-[32px] px-[30px] relative z-[0]" id="product_subcta_wraper">
-                        <div class="product_subcta_arrow">
-                            <span class="custom_prev_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer left-0"><i class="fa-solid fa-angle-left"></i></span>
-                            <span class="custom_next_icon bg-[#F7F7F5] z-[1] absolute px-[10px] cursor-pointer right-0"> <i class="fa-solid fa-angle-right"></i></span>
-                        </div>
-                        <div class="product_subcta_inner flex gap-[32px] *:text-nowrap *:shrink-0 flex" id="product_subcta_inner">
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">All</a>
-                            </div>
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Women’s Clothing</a>
-                            </div>
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Men’s Clothing</a>
-                            </div>
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Kids Clothing</a>
-                            </div> 
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Shoes & Footwear</a>
-                            </div>
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Jewellry</a>
-                            </div> 
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Bags & Wallet</a>
-                            </div>
-                            <div class="group product_subcta_item">
-                                <a href="javascript:void(0)" class="text-color5 font-[600] text-[13px] leading-[19px] tracking-[1.5px] uppercase opacity-[0.5] group-has-[.active]:opacity-[1]">Watches</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="right_part_wraper flex-1">
+                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>Favourites</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
                     <div class="shop_grid_list_wraper grid lg:grid-cols-3 md:grid-cols-2 mobile:grid-cols-2 grid-cols-1 gap-[30px]">
                         <div class="single_product-card">
                             <div class="img_part relative">
@@ -543,78 +441,10 @@
             $('.shadow_bg').on('click',function(){
                 $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
             })
-            //====Shop Grid page ======//
-            //item_menu_list_wraper accordion type 
-            $('.shop_grid_menu_inner .item_menu_list_wraper .title').on('click',function(){
-                $(this).toggleClass('active');
-                $(this).find('i').toggleClass('hidden');
-                $(this).next('.item_menu_list').slideToggle();
-            })
-            //menu list item click active class toggle
-            $('.item_menu_list_item a').on('click',function(){
-                $(this).parent('.item_menu_list_item').toggleClass('active');
-            })
-            //shop filter open close
-            $('.shop_filter-icon').on('click',function(){
-                $('.shop_grid_menu_wraper').addClass('open');
-                $('.shop_grid_menu_wraper').toggleClass('left-[-100%] left-0');
-                $('.shop_grid .backdrop').toggleClass('right-[100%] right-0');
-            })
-            $('.shop_grid .backdrop').on('click',function(){
-                $('.shop_grid_menu_wraper').removeClass('open');
-                $('.shop_grid_menu_wraper').toggleClass('left-[-100%] left-0');
-                $('.shop_grid .backdrop').toggleClass('right-[100%] right-0');
-            })
-            //product product_subcta_wraper on click add active class
-            $('.product_subcta_item a').on('click',function(){
-                $(this).toggleClass('active');
-            })
-            //product_subcta_inner custom slider
-            let sliding_item_wraper = document.querySelector('#product_subcta_wraper').clientWidth;
-            let sliding_item_inner_wraper = document.querySelector('#product_subcta_inner').clientWidth;
-            let click_prev_icon = document.querySelector('.custom_prev_icon');
-            let click_next_icon = document.querySelector('.custom_next_icon');
-
-            console.log(sliding_item_wraper, sliding_item_inner_wraper);
-
-            let forword_x = 0; // Initialize the translation offset
-            let max_translate = sliding_item_wraper - sliding_item_inner_wraper; // Max allowed translate
-
-            function forword() {
-                if (Math.abs(forword_x) < max_translate + 90) { // Prevent exceeding the forward limit
-                    forword_x += 30; // Increment offset
-                    let innerWraper = document.querySelector('#product_subcta_inner');
-                    innerWraper.style.transform = `translateX(-${forword_x}px)`; // Apply forward transform
-                }
-            }
-
-            function backward() {
-                if (forword_x > 0) { // Prevent exceeding the backward limit (starting position)
-                    forword_x -= 30; // Decrement offset
-                    let innerWraper = document.querySelector('#product_subcta_inner');
-                    innerWraper.style.transform = `translateX(-${forword_x}px)`; // Apply backward transform
-                }
-            }
-
-            // Add event listeners for forward and backward buttons
-            click_next_icon.addEventListener('click', forword);
-            click_prev_icon.addEventListener('click', backward);
-            //navbar item and search bar toggle
-            $('.right-icon-0').on('click', function(){
-                $('.navbar_nav_menu_wraper, .search_bar_input_wraper').toggleClass("hidden");
-            })
-            //Mega Menu toggle
-            $('.mega_menu_trigger').on('click', function(){
-                $('.mega_menu').toggleClass("hidden");
-            })
-
-            //navbar cart Item open close
-            $(".nav_cart_icon").on('click', function(){
-                $(".shopping_cart_wraper , .cart_backdrop").toggleClass("hidden");
-            })
-            $(".cart_close_btn , .cart_backdrop").on('click', function(){
-                $(".shopping_cart_wraper , .cart_backdrop").addClass("hidden");
-            })
+            //buyer profile sidebar menu control
+            $('#buyer_profile_sidebar_menu_icon').on('click',function(){
+                $('.buyer_profile_menu').toggleClass('left-[-100%] left-0');              
+            });
         })
     </script>
 </body>
