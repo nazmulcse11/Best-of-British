@@ -217,10 +217,13 @@
     </header>
     <div class="main bg-[#F7F7F5] py-[40px]">
         <div class="container-1440">
-            <div class="chatting_wrapeer rounded-lg bg-[#F8FAFC] flex">
-                <div class="all_message_part lg:w-[408px] w-[280px] bg-[#FFFFFF]">
+            <div class="chatting_wrapeer relative rounded-lg bg-[#F8FAFC] flex md:flex-row flex-col">
+                <div class="all_message_part md:static absolute  left-[-120%] transition-all duration-500 ease-in-out lg:w-[408px] w-[280px] bg-[#FFFFFF] md:shadow-none shadow-2xl">
                     <div class="top-part pt-[25px] px-[20px] pb-[15px]">
-                        <h4 class="title dm-serif text-[#0F172A] text-[1rem] leading-[1.5]">All Messages <span class="not_item">(12)</span></h4>
+                        <h4 class="title dm-serif text-[#0F172A] text-[1rem] leading-[1.5] flex justify-between">
+                            <span>All Messages <span class="not_item">(12)</span></span>
+                            <span class="chat_close_icon md:hidden block"><i class="fas fa-times"></i></span>
+                        </h4>
                         <div class="input_wraper mt-4 relative">
                             <input type="text" name="massege_search_input" id="massege_search_input" placeholder="Seach Message" class="w-full bg-[#F8FAFC] rounded-lg font-[600] text-[1rem] leading-[1] text-[#486789] placeholder:text-[#486789] p-[12px] pl-[46px]">
                             <div class="icon absolute top-[50%] translate-y-[-50%] left-[20px]">
@@ -299,9 +302,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="all_message_mobile_view_part"></div>
+                <div class="all_message_mobile_view_part md:hidden flex justify-between items-center gap-[10px] bg-[#FFFFFF] p-[20px]">
+                    <h4 class="title dm-serif text-[#0F172A] text-[1rem] leading-[1.5]">All Messages <span class="not_item">(12)</span></h4>
+                    <button class="icon all_message_mobile_view_btn py-[10px]"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
                 <div class="show_massege_part flex-1">
-                    <div class="top_part p-[20px] px-[8px] pb-[12px] border-b border-[#F1F5F9]">
+                    <div class="top_part p-[20px] px-[28px] pb-[12px] border-b border-[#F1F5F9]">
                         <div class="open_sender_info flex gap-[12px] items-center justify-between">
                             <div class="flex items-center gap-[12px]">
                                 <div class="img w-10 h-10 rounded-full *:w-full *:h-full *:object-cover overflow-hidden bg-[#C4C4C4]">
@@ -442,10 +448,10 @@
             $('.shadow_bg').on('click',function(){
                 $('.shadow_bg, .buyer_menu_items').addClass('hidden');              
             })
-            //buyer profile sidebar menu control
-            $('#buyer_profile_sidebar_menu_icon').on('click',function(){
-                $('.buyer_profile_menu').toggleClass('left-[-100%] left-0');              
-            });
+            //All Chat icon toggle
+            $(".all_message_mobile_view_btn, .chat_close_icon").on('click', function(){
+                $(".all_message_part").toggleClass("left-0 left-[-120%]");
+            })
         })
     </script>
 </body>
