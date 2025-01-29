@@ -218,7 +218,7 @@
     <div class="main bg-[#F7F7F5] py-[40px]">
         <div class="container-1440">
             <div class="chatting_wrapeer rounded-lg bg-[#F8FAFC] flex">
-                <div class="all_message_part w-[408px] bg-[#FFFFFF]">
+                <div class="all_message_part lg:w-[408px] w-[280px] bg-[#FFFFFF]">
                     <div class="top-part pt-[25px] px-[20px] pb-[15px]">
                         <h4 class="title dm-serif text-[#0F172A] text-[1rem] leading-[1.5]">All Messages <span class="not_item">(12)</span></h4>
                         <div class="input_wraper mt-4 relative">
@@ -299,8 +299,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="show_massege_part p-[20px] flex-1">
-                    <div class="top_part px-[8px] pb-[12px] border-b border-[#F1F5F9]">
+                <div class="all_message_mobile_view_part"></div>
+                <div class="show_massege_part flex-1">
+                    <div class="top_part p-[20px] px-[8px] pb-[12px] border-b border-[#F1F5F9]">
                         <div class="open_sender_info flex gap-[12px] items-center justify-between">
                             <div class="flex items-center gap-[12px]">
                                 <div class="img w-10 h-10 rounded-full *:w-full *:h-full *:object-cover overflow-hidden bg-[#C4C4C4]">
@@ -314,6 +315,45 @@
                             <div class="del_icon">
                                 <button><img src="./assets/images/delete_icon.svg" alt="del"></button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="messages_text_wrapper p-[20px]">
+                        <div class="sender sender_message_wraper flex items-end gap-[10px] has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="sender_message max-w-[364px] p-[12px] rounded-lg bg-[#E2E8F0] text-[#0F172A] text-[0.875] leading-[1.5]">Hi, I’m interested in the Rolex Submariner you have in stock. Is it possible to set up a call to discuss the details?</div>
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                        </div>
+                        <div class="receiver receiver_message_wraper flex gap-[10px] items-end justify-end has-[+.receiver]:mb-[10px] has-[+.sender]:mb-[20px]">
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                            <div class="receiver_message max-w-[480px] p-[12px] rounded-lg bg-[#2F4A69] text-[#F6F9FE] text-[0.875] leading-[1.5]">Thank you for reaching out to our store! A member of our team will get back to you shortly.</div>
+                        </div>
+                        <div class="receiver receiver_message_wraper flex gap-[10px] items-end justify-end has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                            <div class="receiver_message max-w-[480px] p-[12px] rounded-lg bg-[#2F4A69] text-[#F6F9FE] text-[0.875] leading-[1.5]">Hello! Thanks for your interest in the Rolex Submariner. I’m currently in a live shopping session with another customer, but I’ll be available for a call later today. Would 3 PM work for you?</div>
+                        </div>
+                        <div class="sender sender_message_wraper flex items-end gap-[10px] has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="sender_message max-w-[364px] p-[12px] rounded-lg bg-[#E2E8F0] text-[#0F172A] text-[0.875] leading-[1.5]">3 PM sounds good! I’m looking forward to discussing it with you.</div>
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                        </div>
+                        <div class="receiver receiver_message_wraper flex gap-[10px] items-end justify-end has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                            <div class="receiver_message max-w-[480px] p-[12px] rounded-lg bg-[#2F4A69] text-[#F6F9FE] text-[0.875] leading-[1.5]">Great! I’ll call you at 3 PM. Could you please share your preferred contact details or Zoom information so I can send you the meeting link?</div>
+                        </div>
+                        <div class="sender sender_message_wraper flex items-end gap-[10px] has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="sender_message max-w-[364px] p-[12px] rounded-lg bg-[#E2E8F0] text-[#0F172A] text-[0.875] leading-[1.5]">Sure, here’s my email: buyer@email.com. You can send the Zoom link there.</div>
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                        </div>
+                        <div class="receiver receiver_message_wraper flex gap-[10px] items-end justify-end has-[+.receiver]:mb-[20px] has-[+.sender]:mb-[10px]">
+                            <div class="time text-[#CBD5E1] text-[12px] leading-[1.3]">10.00 PM</div>
+                            <div class="receiver_message max-w-[480px] p-[12px] rounded-lg bg-[#2F4A69] text-[#F6F9FE] text-[0.875] leading-[1.5]">Great! I’ll call you at 3 PM. Could you please share your preferred contact details or Zoom information so I can send you the meeting link?</div>
+                        </div>
+                    </div>
+                    <div class="who_is_writing px-[20px] py-[12px] mt-[20px] text-[#A0AEC0]">
+                        <span class="name text-[#111827]">Pretty Pixie</span> is typing ...
+                    </div>
+                    <div class="type_message_wraper p-[20px] bg-[#fff] border border-[#F1F5F9]">
+                        <textarea name="message_type_input" id="message_type_input" rows="2" class="w-full text-[1.125rem] text-[#64748B] leading-[1.5]" placeholder="Type something"></textarea>
+                        <div class="message_send_button text-end">
+                            <button class="bg-[#2F4A69] px-[32px] py-[12px] rounded-[6px] lato text-[0.875rem] text-[#F8FAFC]">Send</button>
                         </div>
                     </div>
                 </div>
