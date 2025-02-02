@@ -479,11 +479,8 @@
           </div>
         </div>
         <div
-          class="dashboard-right overflow-x-hidden flex-1 lg:w-[auto] w-[100%] lg:ml-[290px] lg:peer-[.open]:ml-[0]"
-        >
-          <div
-            class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px] flex-wrap"
-          >
+          class="dashboard-right overflow-x-hidden flex-1 lg:w-[auto] w-[100%] lg:ml-[290px] lg:peer-[.open]:ml-[0]">
+          <div class="dashboard-right-top-header bg-[#ffffff] border-b-[1px] border-[#F2F6FF] px-[40px] py-[18px] flex justify-between items-center gap-[24px] flex-wrap">
             <div class="text-part">
               <h4 class="dm-serif text-color0 text-[1.5rem] leading-[1.32]">
                 Dashboard
@@ -545,13 +542,9 @@
               </div>
             </div>
           </div>
-          <div
-            class="dasboard-wraper-main bg-color33 p-[40px] flex gap-[30px] xl:flex-row flex-col-reverse xl:w-[100%]"
-          >
+          <div class="dasboard-wraper-main bg-color33 p-[40px] flex gap-[30px] xl:flex-row flex-col-reverse xl:w-[100%]">
             <div class="main-body flex-1 xl:w-[calc(100%-352px)]">
-              <div
-                class="filter_options_wraper p-[16px] rounded-[8px] bg-[#FFFFFF]"
-              >
+              <div class="filter_options_wraper p-[16px] rounded-[8px] bg-[#FFFFFF]">
                 <div class="imput_wraper flex border-r border-[#C1D5ED]">
                   <label for="search_recomendor" class="icon text-[#5D6A83]">
                     <svg
@@ -578,18 +571,286 @@
                       />
                     </svg>
                   </label>
-                  <input
-                    type="text"
-                    id="search_recomendor"
-                    class="text-[1rem] leading-[1.5] text-[#5D6A83] placeholder:text-[#5D6A83]"
-                    placeholder="Search for names or any keywords"
-                  />
+                  <input type="text" id="search_recomendor" class="text-[1rem] leading-[1.5] text-[#5D6A83] placeholder:text-[#5D6A83]" placeholder="Search for names or any keywords"/>
+                </div>
+              </div>
+              <div class="top_recommendors_wraper mt-8">
+                <div class="heading border-b border-[#C1D5ED] pb-5 flex justify-between">
+                  <h3 class="title font-[600] text-[1.25rem] text-[#000000] leading-[1.2]">Top Recommenders</h3>
+                  <a href="javascript:void(0)" class="view_all font-[600] text-[#1F3650] text-[1.25rem] leading-[1.2]">See all</a>
+                </div>
+                <div class="recomenders_card_wraper grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-[30px] mt-10">
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recommendors__near_me_wraper mt-10">
+                <div class="heading border-b border-[#C1D5ED] pb-5 flex justify-between">
+                  <h3 class="title font-[600] text-[1.25rem] text-[#000000] leading-[1.2]">Top Recommenders</h3>
+                  <a href="javascript:void(0)" class="view_all font-[600] text-[#1F3650] text-[1.25rem] leading-[1.2]">See all</a>
+                </div>
+                <div class="recomenders_card_wraper grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-[30px] mt-10">
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
+                  <div class="recommenders_card border border-transparent p-6 bg-[#F8FAFC] text-center rounded-[10px] shadow-[0px_4px_4px__0px_#0000001A] transition-all duration-500 ease-in-out hover:bg-[#fff] hover:border-[#C1D5ED]">
+                    <div class="header">
+                      <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                        <img src="./assets/images/recomender-img.png" alt=""/>
+                      </div>
+                      <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                      <p class="rec_address text-[#5D6A83] text-[0.75rem] leading-[1.4]">London, United Kingdom</p>
+                      <div class="mt-[12px]">
+                        <span class="rec_badge rounded-[6px] px-[12px] py-[5px] bg-color4 text-[#FFFFFF] leading-[1.3]">Top Recommender</span>
+                      </div>
+                    </div>
+                    <div class="body mt-5 pt-5 border-t border-[#F2F6FF]">
+                      <div class="email flex gap-[10px] justify-between">
+                          <span class="font-semibold text-[#191B23]">Email:</span>
+                          <span class="text-[#5D6A83]">cooper@example.com</span>
+                      </div>
+                      <div class="phone flex gap-[10px] justify-between mt-[8px]">
+                          <span class="font-semibold text-[#191B23]">Phone:</span>
+                          <span class="text-[#5D6A83]">(219) 555-0114</span>
+                      </div>
+                    </div>
+                    <div class="btn_wraper mt-[28px]">
+                      <a href="javascript:void(0)" class="font-[700] text-[#5D6A83] border border-[#1F3650] py-[11px] px-[50px] rounded-[8px] transition-all duration-500 ease-in-out hover:bg-[#1F3650] hover:text-[#fff]">Message</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              class="right-sidebar bg-[#fff] p-[28px] rounded-[8px] xl:w-[352px]"
-            ></div>
+            <div class="right-sidebar bg-[#fff] px-[50px] py-[70px] rounded-[8px] xl:w-[352px]">
+              <div class="header_part text-center">
+                <div class="img w-[80px] h-[80px] mx-auto rounded-full overflow-hidden bg-[#C4C4C4] *:h-full *:w-full *:object-cover">
+                  <img src="./assets/images/recomender-img.png" alt=""/>
+                </div>
+                <h4 class="rec_name font-bold text-[#191B23] text-[1.25rem] leading-[1.25] mt-3">Courtney Henry</h4>
+                <p class="rec_address text-[#5D6A83] text-[1rem] leading-[1.4] mt-[8px]">London, United Kingdom</p>
+                <div class="mt-[8px]">
+                  <span class="rec_badge text-[1rem] text-[#5D6A83] leading-[1.3]">Top Recommender</span>
+                </div>
+              </div>
+              <div class="body_part mt-[22px]">
+                  <div class="contributions_part flex flex-col gap-6 pt-6 border-t border-[#C1D5ED]">
+                    <div class="flex justify-between gap-3">
+                      <div class="proparty text-[#5D6A83]">Total Recommendations</div>
+                      <div class="value font-semibold text-[#191B23]">236</div>
+                    </div>
+                    <div class="flex justify-between gap-3">
+                      <div class="proparty text-[#5D6A83]">Total Sales Generated</div>
+                      <div class="value font-semibold text-[#191B23]">£1k +</div>
+                    </div>
+                    <div class="flex justify-between gap-3">
+                      <div class="proparty text-[#5D6A83]">Total Earnings</div>
+                      <div class="value font-semibold text-[#191B23]">£100 +</div>
+                    </div>
+                    <div class="flex justify-between gap-3">
+                      <div class="proparty text-[#5D6A83]">Unique reference no.</div>
+                      <div class="value font-semibold text-[#191B23]">BEST-123-456</div>
+                    </div>
+                  </div>
+                  <div class="recommended_products mt-6 pt-6 border-t border-[#C1D5ED]">
+                    <h5 class="title font-semibold text-[#5D6A83]">Recommended Products</h5>
+                    <div class="recommended_products_wraper mt-4 flex flex-col gap-4">
+                      <div class="item flex gap-3 bg-[#F5F8FF] p-2 rounded-[8px]">
+                        <div class="img w-[42px] h-[42px] rounded-[10px] overflow-hidden bg-[#fff] *max-:h-full *max:w-full *:object-cover flex justify-center items-center">
+                          <img src="./assets/images/recomended_item.png" alt=""/>
+                        </div>
+                        <div class="text">
+                          <h5 class="name font-bold text-[#191B23] text-[0.875rem] leading-[1.4]">Rolex Submariner</h5>
+                          <p class="address text-[#5D6A83] text-[0.75rem] leading-[1.4]">Watches</p>
+                        </div>
+                      </div>
+                      <div class="item flex gap-3 bg-[#F5F8FF] p-2 rounded-[8px]">
+                        <div class="img w-[42px] h-[42px] rounded-[10px] overflow-hidden bg-[#fff] *max-:h-full *max:w-full *:object-cover flex justify-center items-center">
+                          <img src="./assets/images/recomended_item.png" alt=""/>
+                        </div>
+                        <div class="text">
+                          <h5 class="name font-bold text-[#191B23] text-[0.875rem] leading-[1.4]">Rolex Submariner</h5>
+                          <p class="address text-[#5D6A83] text-[0.75rem] leading-[1.4]">Watches</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact_part mt-6 pt-9 border-t border-[#C1D5ED]">
+                    <div class="btn_wraper">
+                      <a href="javascript:void(0)" class="font-[700] text-[#FFFFFF] text-[1rem] p-[11px] rounded-[8px] text-center w-full bg-[#1F3650]">Send message</a>
+                    </div>
+                  </div>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
