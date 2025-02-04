@@ -70,7 +70,6 @@ html {
   -webkit-font-smoothing: antialiased;
   /* WebKit  */
 }
-
 body {
   font-family: var(--soruce-serif);  
   font-size: 0.875rem;
