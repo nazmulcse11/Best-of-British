@@ -263,7 +263,7 @@
                   <div class="left_sidebar left_sidebar_manage_bookings bg-[#FEFEFE] px-[16px] py-[22px] rounded-[8px] xl:w-[352px] md:static absolute top-[80px] right-[-200%] md:shadow-none shadow-2xl transition-all duration-500 ease-in-out">
                       <ul class="manage_bookings_setting_menu_wraper">
                           <li class="group active">
-                              <a href="./staff-manegement.html" class="flex items-center gap-[10px] font-[400] text-color0 text-[1rem] leading-[1.5] p-4 rounded-[8px] bg-[#fff] border-b border-[#F2F6FF] group-[.active]:bg-[#F1F5F9] group-[.active]:font-bold">
+                              <a href="./dashboard-add-staff.html" class="flex items-center gap-[10px] font-[400] text-color0 text-[1rem] leading-[1.5] p-4 rounded-[8px] bg-[#fff] border-b border-[#F2F6FF] group-[.active]:bg-[#F1F5F9] group-[.active]:font-bold">
                                   <span class="icon w-[48px] h-[48px] flex items-center justify-center rounded-full bg-[#F1F5F9] group-[.active]:bg-[#1F3650] group-[.active]:text-[#fff]">
                                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <ellipse cx="12" cy="17.5" rx="7" ry="3.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
@@ -326,22 +326,26 @@
                             <div class="staff_profile_info flex-1">
                                 <div class="flex gap-[24px] flex-wrap">
                                     <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="account_fn" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">First Name</label>
-                                        <input type="text" name="account_fn" id="account_fn" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="First name">
+                                        <label for="staff_fn" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">First Name</label>
+                                        <input type="text" name="staff_fn" id="staff_fn" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="First name">
                                     </div>
                                     <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="account_ln" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Last Name</label>
-                                        <input type="text" name="account_ln" id="account_ln" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="First name">
+                                        <label for="staff_ln" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Last Name</label>
+                                        <input type="text" name="staff_ln" id="staff_ln" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="Last name">
                                     </div>
                                 </div>
                                 <div class="flex gap-[24px] flex-wrap mt-6">
                                     <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="account_email" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Email</label>
-                                        <input type="email" name="account_email" id="account_email" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="ajoysarker@mail.com">
+                                        <label for="staff_role" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Role</label>
+                                        <input type="text" name="staff_role" id="staff_role" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="Sales Staff">
                                     </div>
                                     <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="account_phone_number" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Phone Number(Optional)</label>
-                                        <input type="text" name="account_phone_number" id="account_phone_number" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="01234567891">
+                                        <label for="account_phone_number" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Store Location </label>
+                                        <select name="staff_store_location" id="staff_store_location" class="custom-select2 style_4 input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0">
+                                            <option value="1">Best of British - 123 Baker Street...</option>
+                                            <option value="1">Best of British - 123 Baker Street...</option>
+                                            <option value="1">Best of British - 123 Baker Street...</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -360,6 +364,80 @@
                             </div>
                         </form>
                       </div>
+                      <div class="weekly_houres_appoinments">
+                        <div class="header">
+                            <h3 class="title dm-serif text-color0 text-[1.25rem] leading-[1.4]">Weekly Houres</h3>
+                            <p class="text-[#5D6A83] text-[1rem] mt-1.5">Manage your staff’s availability for liveshopping appointments</p>
+                        </div>
+                        <div class="time_schedual_wraper mt-[42px] max-w-[700px]">
+                            <div class="time_scheduals flex gap-4 items-center justify-between">
+                                <div class="left_part flex items-center gap-4">
+                                    <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                    <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Monday</div>
+                                    <div class="time_wraper flex gap-2 items-center">
+                                        <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                        <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                        <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                        <button class="delete_icon text-[#C10E0E]"><i class="fa-solid fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="icon_wraper right_part flex gap-5">
+                                    <div class="add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
+                                    <div class="copy_icon text-[1.25rem] text-[#0F172A] cursor-pointer relative">
+                                        <i class="fa-regular fa-copy"></i>
+                                        <div class="copy_option_wraper w-[192px] p-4 rounded-[10px] bg-[#F8FAFC] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] absolute top-[40px] right-0">
+                                            <div class="title font-[400] text-[12px] text-[#5D6A83] mb-[5px]">Copy times to...</div>
+                                            <div class="date_options flex flex-col gap-1.5">
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_monday" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Monday</label>
+                                                   <input type="checkbox" id="opt_monday" name="opt_monday" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_tue" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Tuesday</label>
+                                                   <input type="checkbox" id="opt_tue" name="opt_tue" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_wed" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Wednesday</label>
+                                                   <input type="checkbox" id="opt_wed" name="opt_wed" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_thu" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Thursday</label>
+                                                   <input type="checkbox" id="opt_thu" name="opt_thu" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_fri" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Friday</label>
+                                                   <input type="checkbox" id="opt_fri" name="opt_fri" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_sat" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Saturday</label>
+                                                   <input type="checkbox" id="opt_sat" name="opt_sat" class="custom-checkbox square">
+                                               </div>
+                                               <div class="flex justify-between items-center gap-2">
+                                                   <label for="opt_sun" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Sunday</label>
+                                                   <input type="checkbox" id="opt_sun" name="opt_sun" class="custom-checkbox square">
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="time_zone mt-[60px]">
+                        <div class="header">
+                            <h3 class="title dm-serif text-color0 text-[1.25rem] leading-[1.4]">Weekly Houres</h3>
+                            <div class="max-w-[690px] justify-between items-center flex gap-4">
+                                <div class="max-w-[300px] flex-1">
+                                    <select name="staff_location_time_zone" id="staff_location_time_zone" class="custom-select2 style_4 input-field bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0">
+                                        <option value="1">(GMT +00:00) London</option>
+                                        <option value="1">(GMT +00:00) London</option>
+                                        <option value="1">(GMT +00:00) London</option>
+                                    </select>
+                                </div>
+                                <button class="text-[1rem] text-[#fff] bg-[#2F4A69] py-[15px] px-[50px] rounded-[10px]">Save</button>
+                            </div>
+                        </div>
+                      </div>
                   </div>
               </div>
             </div>
@@ -374,6 +452,11 @@
         $(".left_sidebar_toggler_icon").on("click", function () {
           $(".left_sidebar_account").toggleClass("right-[-200%] right-0");
         })
+      });
+
+      $(document).ready(function () {
+        //init select2
+        $('#staff_store_location, #staff_location_time_zone').select2();
       });
     </script>
   </body>

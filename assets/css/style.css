@@ -399,6 +399,10 @@ canvas {
       }
     }
 }
+/* copy icon */
+.copy_icon {
+
+}
 @keyframes left-right {
  0%{
   transform: translateX(-80px);
@@ -510,6 +514,20 @@ canvas {
     }
   }
 }
+.custom-select2.style_4 + .select2-container {
+  .select2-selection--single {
+    border: none;
+    background: #F1F5F9;
+    padding:16px;
+    .select2-selection__rendered {
+      line-height: 1.5;
+      color: #191b23;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0;
+    }
+  }
+}
 /*select-two dropdown*/
 .select2-dropdown{
   border: 1px solid #E2E8F0;
@@ -561,6 +579,13 @@ canvas {
 .menga_menu_group:has(+ .menga_menu_group) {
   margin-bottom: 40px;
 
+}
+/* stuff management add staff time shcedual */
+.time_scheduals:last-child {
+  .icon_wraper .copy_option_wraper {
+    top: auto;
+    bottom: 100%;
+  }
 }
 /* Container */
 .container-1440{
