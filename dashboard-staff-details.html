@@ -316,178 +316,67 @@
                             <h2 class="main-title dm-serif">Add Staff</h2>
                             <div class="bradecrumb text-[#5D6A83] text-[1rem] leading-[1.5]">
                                 <a href="./dashboard-staff-manegement.html" class="font-[400]">Staff Management ></a>
-                                <a href="./dashboard-add-staff.html" class="font-[600]">Add Staff</a>
+                                <a href="./dashboard-add-staff.html" class="font-[400]">Add Staff</a>
+                                <a href="./dashboard-staff-details.html" class="font-[600]">View Details</a>
                             </div>
                         </div>
                         <div class="left_sidebar_toggler_icon text-[1rem] md:hidden block"><i class="fa-solid fa-bars"></i></div>
                       </div>
-                      <div class="add_staff_info_wraper mt-[30px]">
-                        <form action="#" method="get" class="flex gap-10 flex-wrap">
-                            <div class="staff_profile_info flex-[1_1_150px]">
-                                <div class="flex gap-[24px] flex-wrap">
-                                    <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="staff_fn" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">First Name</label>
-                                        <input type="text" name="staff_fn" id="staff_fn" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="First name">
-                                    </div>
-                                    <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="staff_ln" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Last Name</label>
-                                        <input type="text" name="staff_ln" id="staff_ln" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="Last name">
-                                    </div>
-                                </div>
-                                <div class="flex gap-[24px] flex-wrap mt-6">
-                                    <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="staff_role" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Role</label>
-                                        <input type="text" name="staff_role" id="staff_role" class="input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0" placeholder="Sales Staff">
-                                    </div>
-                                    <div class="input_wraper flex-[1_1_150px]">
-                                        <label for="account_phone_number" class="font-semibold text-[#5D6A83] text-[1rem] leading-[1.5] block mb-[12px]">Store Location </label>
-                                        <select name="staff_store_location" id="staff_store_location" class="custom-select2 style_4 input-field w-[100%] bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0">
-                                            <option value="1">Best of British - 123 Baker Street...</option>
-                                            <option value="1">Best of British - 123 Baker Street...</option>
-                                            <option value="1">Best of British - 123 Baker Street...</option>
-                                        </select>
-                                    </div>
-                                </div>
+                      <div class="content_wraper flex flex-wrap">
+                        <div class="meeting_details p-[18px] pl-0 border-r border-[#F1F5F9] max-w-[352px] flex-[1_1_280px]">
+                            <div class="name text-[#334155] text-[1rem]">Ann Parker</div>
+                            <div class="meeting_duration_title font-semibold text-[#000000] text-[1.25rem] leading-[1.25] mb-[20px]">30 Minute Meeting</div>
+                            <div class="meeting_duration flex gap-[10px]">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5C5.85938 2.5 2.5 5.85938 2.5 10C2.5 14.1406 5.85938 17.5 10 17.5C14.1406 17.5 17.5 14.1406 17.5 10C17.5 5.85938 14.1406 2.5 10 2.5Z" stroke="#85A1C2" stroke-width="1.25" stroke-miterlimit="10"/>
+                                        <path d="M10 5V10.625H13.75" stroke="#85A1C2" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="text-[#334155] text-[1rem]">30 min</span>
                             </div>
-                            <div class="update_profile_right max-w-[250px] flex-[0_0_250px]">
-                                <div class="title dm-serif text-[#191B23] text-[1.125rem] leading-[1.37] mb-[9px]">Update Profile</div>
-                                <p class="text-[1rem] text-[#5D6A83] mb-[20px]">Profile of at least Size <span class="text-[#191B23]">300x300</span>. Gifs work too. <span class="text-[#191B23]">Max 5mb.</span></p>
-                                <div class="profile_img w-[162px] h-[162px] rounded-full bg-[#C4C4C4] flex justify-center items-center relative *:max-w-full *:max-h-full *:object-cover">
-                                    <img src="" alt="">
-                                    <a href="javascript:void(0)" class="icon h-[28px] w-[28px] rounded-full border border-[#fff] bg-[#0A82FD] flex justify-center items-center absolute right-[10px] bottom-[10px]">
-                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0.162514 9.02506C0.15918 10.0354 0.15918 11.049 0.15918 12.0593C0.15918 12.1193 0.172517 12.146 0.242538 12.146C0.751063 12.1443 1.25959 12.1443 1.76811 12.1443C2.27656 12.1443 2.78502 12.1443 3.29347 12.1427C3.33348 12.1427 3.38016 12.1193 3.41017 12.0927M0.162514 9.02506L3.41017 12.0927M0.162514 9.02506C0.162514 8.97838 0.185854 8.9217 0.215864 8.89169L0.162514 9.02506ZM3.41017 12.0927L3.29347 11.9614L3.29287 11.9607L3.07799 11.719C3.10208 11.6976 3.12611 11.6826 3.15078 11.6715C3.17263 11.6617 3.22147 11.643 3.29183 11.6427C3.24657 11.6428 3.20131 11.643 3.15605 11.6431C3.12626 11.6723 3.09648 11.7011 3.0663 11.7297L3.2929 11.9689L3.29347 11.9695L3.41017 12.0927ZM9.29644 5.50596C9.29572 5.50669 9.295 5.50743 9.29429 5.50816L9.65207 5.85743L9.29852 5.50388C9.29783 5.50457 9.29714 5.50526 9.29644 5.50596ZM9.3531 5.44865L9.70664 5.80219C9.78176 5.72699 9.8582 5.65363 9.93328 5.58157C9.97804 5.53861 10.0223 5.49612 10.0655 5.45398L9.71195 5.10039C9.67568 5.13571 9.63619 5.17362 9.59489 5.21327C9.51754 5.28753 9.43385 5.36787 9.3531 5.44865ZM7.15809 2.65323C7.17746 2.63386 7.19413 2.61445 7.20811 2.59655L6.84789 2.23633C6.84259 2.24295 6.83781 2.25116 6.83273 2.2599C6.82502 2.27315 6.8166 2.28762 6.80454 2.29968L6.50434 2.59988L6.85789 2.95344L7.15809 2.65323ZM0.569907 9.24475C0.600643 9.21393 0.631378 9.18312 0.662114 9.1523C0.662241 9.11043 0.662376 9.06857 0.662514 9.02672C0.662274 9.07962 0.650526 9.11713 0.641611 9.13922C0.633213 9.16003 0.613919 9.20058 0.569907 9.24475ZM0.65918 12.0593C0.65918 11.9213 0.65918 11.7831 0.659189 11.645C0.52038 11.6452 0.381545 11.6456 0.242699 11.646C0.248772 11.6459 0.420465 11.6429 0.555021 11.8007C0.618327 11.8749 0.642044 11.9504 0.651259 11.9934C0.65586 12.0149 0.657634 12.0318 0.658396 12.0417C0.659166 12.0516 0.65918 12.0581 0.65918 12.0593Z" fill="white" stroke="white"/>
-                                            <path d="M8.17433 0.918519C8.4044 0.688449 8.63781 0.458379 8.87121 0.228309C9.16463 -0.0617799 9.56809 -0.0617799 9.85818 0.228309C10.2266 0.591745 10.5942 0.956016 10.9618 1.32029C11.3294 1.68457 11.6971 2.04886 12.0655 2.41231M8.17433 0.918519L8.17432 0.918527C7.9776 1.11859 7.78088 1.31864 7.59082 1.51537M8.17433 0.918519L8.53084 1.26909C8.53035 1.26959 8.52986 1.27009 8.52936 1.27059M8.17433 0.918519L8.52788 1.27207C8.52838 1.27158 8.52887 1.27109 8.52936 1.27059M7.59082 1.51537L10.4416 4.36612C10.4445 4.36321 10.4473 4.36047 10.45 4.35791L10.4515 4.35634C10.5639 4.2395 10.6765 4.12292 10.7891 4.00658M7.59082 1.51537L7.94437 1.16181L8.29337 1.51081M7.59082 1.51537L7.95042 1.86277C8.06264 1.74661 8.17731 1.62917 8.29337 1.51081M10.7891 4.00658L11.1427 4.36018C11.2446 4.25489 11.3467 4.14969 11.4487 4.04448C11.6612 3.82525 11.8738 3.60601 12.0855 3.38594C12.3623 3.09918 12.3523 2.69573 12.0655 2.41231M10.7891 4.00658L8.29337 1.51081M10.7891 4.00658C10.8892 3.90316 10.9893 3.79994 11.0892 3.6969L11.0897 3.69642C11.3024 3.47707 11.5143 3.25853 11.7252 3.03927L11.7258 3.03871C11.7779 2.98469 11.7876 2.93876 11.787 2.90877C11.7863 2.87772 11.7734 2.8266 11.714 2.76792M12.0655 2.41231L11.714 2.76792M12.0655 2.41231L11.7144 2.76827C11.7143 2.76815 11.7142 2.76804 11.714 2.76792M11.714 2.76792C11.3453 2.4042 10.9775 2.03971 10.6101 1.67569L10.6099 1.67547C10.2422 1.31112 9.87502 0.947247 9.50705 0.58427L9.50462 0.58187L9.50462 0.581862C9.44381 0.521044 9.39423 0.510742 9.36594 0.510742C9.33736 0.510742 9.28599 0.521344 9.22274 0.583876L9.22221 0.584397C8.98909 0.814187 8.75747 1.0425 8.52936 1.27059M8.52936 1.27059C8.45029 1.35101 8.37152 1.43112 8.29337 1.51081M10.7951 4.71968L10.8118 4.70301C10.8094 4.7078 10.8036 4.7126 10.7992 4.71615C10.7975 4.71754 10.7961 4.71874 10.7951 4.71968Z" fill="white" stroke="white"/>
-                                        </svg>
-                                    </a>
-                                </div>
+                            <div class="meeting_link flex gap-[10px] mt-[18px]">
+                                <span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 8.33333L16.2942 6.43667C16.4212 6.3732 16.5623 6.34323 16.7042 6.34962C16.846 6.35601 16.9839 6.39854 17.1047 6.47317C17.2255 6.5478 17.3252 6.65206 17.3944 6.77606C17.4636 6.90006 17.4999 7.03967 17.5 7.18167V12.8183C17.4999 12.9603 17.4636 13.0999 17.3944 13.2239C17.3252 13.3479 17.2255 13.4522 17.1047 13.5268C16.9839 13.6015 16.846 13.644 16.7042 13.6504C16.5623 13.6568 16.4212 13.6268 16.2942 13.5633L12.5 11.6667V8.33333ZM2.5 6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H10.8333C11.2754 5 11.6993 5.17559 12.0118 5.48816C12.3244 5.80072 12.5 6.22464 12.5 6.66667V13.3333C12.5 13.7754 12.3244 14.1993 12.0118 14.5118C11.6993 14.8244 11.2754 15 10.8333 15H4.16667C3.72464 15 3.30072 14.8244 2.98816 14.5118C2.67559 14.1993 2.5 13.7754 2.5 13.3333V6.66667Z" stroke="#85A1C2" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <span class="text-[#2374E7] text-[1rem] leading-[19px] break-all">zoommtg://zoom.us/join?confno=8529015944&pwd=&uname=Nobody%20-%2051800000000</span>
                             </div>
-                        </form>
-                      </div>
-                      <div class="weekly_houres_appoinments mt-6">
-                        <div class="header">
-                            <h3 class="title dm-serif text-color0 text-[1.25rem] leading-[1.4]">Weekly Houres</h3>
-                            <p class="text-[#5D6A83] text-[1rem] mt-1.5">Manage your staff’s availability for liveshopping appointments</p>
                         </div>
-                        <div class="">
-                            <div class="time_schedual_wraper mt-[20px] max-w-[700px]">
-                                <div class="time_scheduals flex gap-4 flex-wrap items-center justify-between mt-6">
-                                    <div class="left_part flex flex-wrap items-center gap-4">
-                                        <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
-                                        <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Monday</div>
-                                        <div class="time_wraper flex gap-2 items-center">
-                                            <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
-                                            <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
-                                            <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
-                                            <button class="delete_icon text-[#C10E0E]"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
+                        <div class="select_time_deta_wraper xl:p-[40px] flex-1">
+                            <div class="title font-semibold text-[#000000] text-[1.25rem] mb-[28px]">Select a Date & Time</div>
+                            <div class="select_time_data_wraper flex flex-wrap gap-[30px]">
+                                <div class="select_date_wraper flex-1">
+                                    <div class="calender_wrpaer">
+                                        <div class="date-flat-picker-custom" id="staff_datepicker"></div>
                                     </div>
-                                    <div class="icon_wraper right_part flex gap-5">
-                                        <div class="add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
-                                        <div class="copy_icon text-[1.25rem] text-[#0F172A] cursor-pointer relative">
-                                            <i class="fa-regular fa-copy"></i>
-                                            <div class="copy_option_wraper w-[192px] p-4 rounded-[10px] bg-[#F8FAFC] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] absolute top-[40px] right-0 z-[2] hidden">
-                                                <div class="title font-[400] text-[12px] text-[#5D6A83] mb-[5px]">Copy times to...</div>
-                                                <div class="date_options flex flex-col gap-1.5">
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_monday" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Monday</label>
-                                                    <input type="checkbox" id="opt_monday" name="opt_monday" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_tue" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Tuesday</label>
-                                                    <input type="checkbox" id="opt_tue" name="opt_tue" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_wed" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Wednesday</label>
-                                                    <input type="checkbox" id="opt_wed" name="opt_wed" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_thu" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Thursday</label>
-                                                    <input type="checkbox" id="opt_thu" name="opt_thu" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_fri" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Friday</label>
-                                                    <input type="checkbox" id="opt_fri" name="opt_fri" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_sat" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Saturday</label>
-                                                    <input type="checkbox" id="opt_sat" name="opt_sat" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_sun" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Sunday</label>
-                                                    <input type="checkbox" id="opt_sun" name="opt_sun" class="custom-checkbox square">
-                                                </div>
+                                    <div class="time_zone mt-[60px]">
+                                        <div class="header">
+                                            <h3 class="title dm-serif text-color0 text-[1.25rem] leading-[1.4]">Time zone</h3>
+                                            <div class="max-w-[690px] flex-wrap justify-between items-center flex gap-4 mt-6">
+                                                <div class="max-w-[300px] flex-1">
+                                                    <select name="staff_location_time_zone" id="staff_location_time_zone" class="custom-select2 style_4 input-field bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0">
+                                                        <option value="1">(GMT +00:00) London</option>
+                                                        <option value="1">(GMT +00:00) London</option>
+                                                        <option value="1">(GMT +00:00) London</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="time_scheduals flex gap-4 flex-wrap items-center justify-between mt-6">
-                                    <div class="left_part flex flex-wrap items-center gap-4">
-                                        <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
-                                        <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Monday</div>
-                                        <div class="time_wraper flex gap-2 items-center">
-                                            <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
-                                            <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
-                                            <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
-                                            <button class="delete_icon text-[#C10E0E]"><i class="fa-solid fa-trash"></i></button>
-                                        </div>
+                                <div class="select_time_wraper">
+                                    <div class="selected_date font-semibold text-[#191B23] text-[1rem]">
+                                        <input type="text" placeholder="Sat, 24 September" class="staff-date-picker w-full font-semibold placeholder:text-[1rem] placeholder:text-color0">
                                     </div>
-                                    <div class="icon_wraper right_part flex gap-5">
-                                        <div class="add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
-                                        <div class="copy_icon text-[1.25rem] text-[#0F172A] cursor-pointer relative">
-                                            <i class="fa-regular fa-copy"></i>
-                                            <div class="copy_option_wraper w-[192px] p-4 rounded-[10px] bg-[#F8FAFC] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] absolute top-[40px] right-0 z-[2] hidden">
-                                                <div class="title font-[400] text-[12px] text-[#5D6A83] mb-[5px]">Copy times to...</div>
-                                                <div class="date_options flex flex-col gap-1.5">
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_monday" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Monday</label>
-                                                    <input type="checkbox" id="opt_monday" name="opt_monday" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_tue" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Tuesday</label>
-                                                    <input type="checkbox" id="opt_tue" name="opt_tue" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_wed" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Wednesday</label>
-                                                    <input type="checkbox" id="opt_wed" name="opt_wed" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_thu" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Thursday</label>
-                                                    <input type="checkbox" id="opt_thu" name="opt_thu" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_fri" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Friday</label>
-                                                    <input type="checkbox" id="opt_fri" name="opt_fri" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_sat" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Saturday</label>
-                                                    <input type="checkbox" id="opt_sat" name="opt_sat" class="custom-checkbox square">
-                                                </div>
-                                                <div class="flex justify-between items-center gap-2">
-                                                    <label for="opt_sun" class="cursor-pointer font-[400] text-[0.875rem] text-[#0F172A]">Sunday</label>
-                                                    <input type="checkbox" id="opt_sun" name="opt_sun" class="custom-checkbox square">
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="available_times_wraper mt-[14px] flex flex-col gap-[14px]">
+                                        <div class="abailable_time max-w-[205px] rounded-lg p-[14px] text-center border border-[#C1D5ED] bg-[#F8FAFC] font-semibold text-[1rem] leading-[1.6]">9:00 AM</div>
+                                        <div class="abailable_time max-w-[205px] rounded-lg p-[14px] text-center border border-[#C1D5ED] bg-[#F8FAFC] font-semibold text-[1rem] leading-[1.6]">9:30 AM</div>
+                                        <div class="abailable_time max-w-[205px] rounded-lg p-[14px] text-center border border-[#C1D5ED] bg-[#F8FAFC] font-semibold text-[1rem] leading-[1.6]">10:00 AM</div>
+                                        <div class="abailable_time max-w-[205px] rounded-lg p-[14px] text-center border border-[#C1D5ED] bg-[#F8FAFC] font-semibold text-[1rem] leading-[1.6]">10:30 AM</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="time_zone mt-[60px]">
-                        <div class="header">
-                            <h3 class="title dm-serif text-color0 text-[1.25rem] leading-[1.4]">Time zone</h3>
-                            <div class="max-w-[690px] flex-wrap justify-between items-center flex gap-4 mt-6">
-                                <div class="max-w-[300px] flex-1">
-                                    <select name="staff_location_time_zone" id="staff_location_time_zone" class="custom-select2 style_4 input-field bg-[#F1F5F9] p-4 rounded-[10px] font-semibold text-[1rem] text-color0 placeholder:text-color0">
-                                        <option value="1">(GMT +00:00) London</option>
-                                        <option value="1">(GMT +00:00) London</option>
-                                        <option value="1">(GMT +00:00) London</option>
-                                    </select>
-                                </div>
-                                <button class="text-[1rem] text-[#fff] bg-[#2F4A69] py-[15px] px-[50px] rounded-[10px]">Save</button>
                             </div>
                         </div>
                       </div>
@@ -505,33 +394,19 @@
         $(".left_sidebar_toggler_icon").on("click", function () {
           $(".left_sidebar_account").toggleClass("right-[-200%] right-0");
         })
-      });
+        //init flatpicker
+        $(".staff-date-picker").flatpickr({
+            mode: "single",
+            enableTime: false,
+            dateFormat: "d-m-Y",
+            altInput: true,
+            altFormat: "j F, Y",
+            time_12hr: false,
+            appendTo:document.querySelector('#staff_datepicker'),
+            inline: true,
+        });
 
-      $(document).ready(function () {
-        //init select2
-        $('#staff_store_location, #staff_location_time_zone').select2();
       });
-
-        //time scheduals option hide and show
-        
-        $(document).on("click", function (event) {
-            if (!$(event.target).closest(".copy_icon, .copy_option_wraper").length) {
-                $(".copy_option_wraper").addClass("hidden");
-            }
-        });
-        $(".copy_icon").on("click", function (event) {
-            event.stopPropagation(); 
-            let icon_parent_div = $(this).find(".copy_option_wraper");
-            if (icon_parent_div.hasClass("hidden")) {
-                $(".copy_option_wraper").addClass("hidden");
-                icon_parent_div.removeClass("hidden");
-            } else {
-                icon_parent_div.addClass("hidden"); 
-            }
-        });
-        $(".copy_option_wraper").on("click", function (event) {
-            event.stopPropagation(); 
-        });
     </script>
   </body>
 </html>

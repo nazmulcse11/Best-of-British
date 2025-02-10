@@ -249,6 +249,9 @@ a{
     box-shadow: none;
     position: static !important;
     width: 100%;
+    .flatpickr-months {
+      position: relative;
+    }
     .flatpickr-innerContainer {
       display: block;
       width: 100%;
@@ -584,7 +587,7 @@ canvas {
 .time_scheduals:last-child {
   .icon_wraper .copy_option_wraper {
     top: auto;
-    bottom: 100%;
+    bottom: calc(100% + 10px);
   }
 }
 /* Container */
