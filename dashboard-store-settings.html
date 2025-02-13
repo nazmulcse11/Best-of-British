@@ -294,6 +294,188 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="add_more_fee_btn_wraper">
+                                    <a href="javascript:void(0)" class="add_more_fee_btn flex items-center gap-[12px] text-[1rem] text-[#1E293B]">
+                                        <div class="icon text-[#85A1C2] h-[20px] w-[20px] flex justify-center items-center rounded-full border-[2px] border-[#85A1C2]"><i class="fa-solid fa-plus"></i></div>
+                                        <span class="text-[#1F3650] font-[600] text-[1rem] leading-[1.5]">Add more</span>
+                                    </a>
+                                </div>
+                                <div class="flex gap-[30px] flex-wrap">
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="free_shipping_theshold" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Free Shipping Threshold:<span class="text-color21">*</span></label>
+                                        <select type="text" id="free_shipping_theshold" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="(e.g., Standard Shipping)" multiple required>
+                                            <option value="0"></option>
+                                            <option value="1">Above £50</option>
+                                            <option value="2">Above £150</option>
+                                            <option value="3">Above 200</option>
+                                        </select>
+                                    </div>
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="shipping_zone" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Shipping Zones:<span class="text-color21">*</span></label>
+                                        <select type="text" id="shipping_zone" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="(e.g., Standard Shipping)" multiple required>
+                                            <option value="0"></option>
+                                            <option value="1">All postcode areas in England & Wales</option>
+                                            <option value="2">All postcode areas in England & Wales</option>
+                                            <option value="3">Above 200</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mange_return_policies_wraper">
+                        <div class="head_part pb-[8px] border-b border-[#E2E8F0] flex justify-between items-center">
+                            <div class="text">
+                                <h3 class="title dm-serif font-[400] text-[1.25rem] leading-[1.4]text-[#1F3650]">Manage Return Policies</h3>
+                                <p class="font-[600] text-[1rem] leading-[1.6] text-[#64748B]">Set up your return and refund policies.</p>
+                            </div>
+                            <div class="store_manage_toggole_icon">
+                                 <i class="fa-solid fa-minus"></i>
+                                 <i class="fa-solid fa-plus hidden"></i>
+                            </div>
+                        </div>
+                        <div class="store_manage_wraper_form py-[30px]">
+                            <form action="#" class="flex flex-col gap-[20px]">
+                                <div class="flex gap-[30px] flex-wrap">
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="return_window" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Return Window<span class="text-color21">*</span></label>
+                                        <select type="text" id="return_window" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="(e.g., Standard Shipping)" required>
+                                            <option value="0">Please Select</option>
+                                            <option value="1">Above £50</option>
+                                            <option value="2">Above £150</option>
+                                            <option value="3">Above 200</option>
+                                        </select>
+                                    </div>
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="eligible_product_return" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Eligible Products for Return<span class="text-color21">*</span></label>
+                                        <select type="text" id="eligible_product_return" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="(e.g., Standard Shipping)" required>
+                                            <option value="1">All products</option>
+                                            <option value="2">Excluding sale items</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex gap-[30px] flex-wrap">
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="return_process_time" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Refund Process Time<span class="text-color21">*</span></label>
+                                        <select type="text" id="return_process_time" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="e.g., 5-7 business days" required>
+                                            <option value="1">5-7 business days</option>
+                                            <option value="2">7-9 business days</option>
+                                            <option value="3">No Returens</option>
+                                        </select>
+                                    </div>
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="return_condition" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Conditions for Return<span class="text-color21">*</span></label>
+                                        <input type="text" id="return_condition" class="px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="e.g., Items must be unused, in original packaging" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="additional_store_information_wraper">
+                        <div class="head_part pb-[8px] border-b border-[#E2E8F0] flex justify-between items-center">
+                            <div class="text">
+                                <h3 class="title dm-serif font-[400] text-[1.25rem] leading-[1.4]text-[#1F3650]">Additional Store Information</h3>
+                                <p class="font-[600] text-[1rem] leading-[1.6] text-[#64748B]">Manage extra store details like tax information, store hours, and more.</p>
+                            </div>
+                            <div class="store_manage_toggole_icon">
+                                 <i class="fa-solid fa-minus"></i>
+                                 <i class="fa-solid fa-plus hidden"></i>
+                            </div>
+                        </div>
+                        <div class="store_manage_wraper_form py-[30px]">
+                            <div class="store_hours_part">
+                                <div class="title dm-serif text-[1.25rem] font-[400] leading-[1.4] text-[#191B23]">Store Hours</div>
+                                <div class="time_schedual_wraper mt-[20px] max-w-[700px]">
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Monday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Tuesday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Wednesday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Friday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Saturday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="time_scheduals mt-3.5">
+                                        <div class="left_part flex flex-wrap items-center gap-4">
+                                            <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
+                                            <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Sunday</div>
+                                            <div class="time_wraper flex gap-2 items-center">
+                                                <input type="time" class="from_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="09:00 AM">
+                                                <div class="devider text-[#85A1C2] font-[600]">&mdash;</div>
+                                                <input type="time" class="to_time w-[clamp(100px,140px,141px)] text-center p-4 rounded-lg bg-[#F8FAFC] text-[1rem] text-[#191B23] font-semibold placeholder:text-[#191B23]" placeholder="10:00 AM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form action="#" class="flex flex-col gap-[20px] mt-[30px]">
+                                <div class="flex gap-[30px] flex-wrap">
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="store_tax_information" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Tax Information<span class="text-color21">*</span></label>
+                                        <input type="text" id="store_tax_information" class="px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="VAT, tax numbers, etc." required>
+                                    </div>
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="return_contact_info" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Shipping/Return Contact Info<span class="text-color21">*</span></label>
+                                        <input type="text" id="return_contact_info" class="px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="Add customer service contact" required>
+                                    </div>
+                                </div>
+                                <div class="flex gap-[30px] flex-wrap">
+                                    <div class="input_wraper flex-[1_1_120px]">
+                                        <label for="holiday_closures" class=" block font-semibold text-[#1E293B] text-[1rem] leading-[1.5] mb-2">Holiday Closures<span class="text-color21">*</span></label>
+                                        <select type="text" id="holiday_closures" class="custom-select2 px-[16px] py-[12px] rounded-lg w-full border border-[#E2E8F0] focus:border-[#486789] placeholder:text-[#64748B]" placeholder="e.g., 5-7 business days">
+                                            <option></option>
+                                            <option value="1">Please select all that applies</option>
+                                            <option value="2">Please select all that applies</option>
+                                            <option value="3">Please select all that applies</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -306,10 +488,25 @@
     <script src="./assets/js/main.js"></script>
     <script>
       $(document).ready(function () {
-        //left sidebar toggle
-        $(".left_sidebar_toggler_icon").on("click", function () {
-          $(".left_sidebar_account, .left_sidebar_manage_bookings").toggleClass("right-[-200%] right-0");
-        })
+       //init select2
+        $('#free_shipping_theshold').select2({
+            placeholder: 'Please Select',
+        });
+        $('#shipping_zone').select2({
+            placeholder: 'Please Select',
+        });
+        $('#return_window').select2({
+           
+        });
+        $('#eligible_product_return').select2({
+           
+        });
+        $('#return_process_time').select2({
+           
+        });
+        $('#holiday_closures').select2({
+            placeholder: 'Please Select',
+        });
       });
     </script>
   </body>
