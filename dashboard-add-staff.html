@@ -371,7 +371,7 @@
                         </div>
                         <div class="">
                             <div class="time_schedual_wraper mt-[20px] max-w-[700px]">
-                                <div class="time_scheduals flex gap-4 flex-wrap items-center justify-between mt-6">
+                                <div class="time_scheduals dfsdadfdf flex gap-4 flex-wrap items-center justify-between mt-6">
                                     <div class="left_part flex flex-wrap items-center gap-4">
                                         <input type="checkbox" id="monday" name="monday" class="custom-checkbox square">
                                         <div class="date text-[1rem] text-[#1E293B] font-semibold w-[110px]">Monday</div>
@@ -385,7 +385,7 @@
                                         </div>
                                     </div>
                                     <div class="icon_wraper right_part flex gap-5">
-                                        <div class="add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
+                                        <div class="time_add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
                                         <div class="copy_icon text-[1.25rem] text-[#0F172A] cursor-pointer relative">
                                             <i class="fa-regular fa-copy"></i>
                                             <div class="copy_option_wraper w-[192px] p-4 rounded-[10px] bg-[#F8FAFC] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] absolute top-[40px] right-0 z-[2] hidden">
@@ -438,7 +438,7 @@
                                         </div>
                                     </div>
                                     <div class="icon_wraper right_part flex gap-5">
-                                        <div class="add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
+                                        <div class="time_add_icon text-[1.25rem] text-[#0F172A] cursor-pointer"><i class="fa-solid fa-plus"></i></div>
                                         <div class="copy_icon text-[1.25rem] text-[#0F172A] cursor-pointer relative">
                                             <i class="fa-regular fa-copy"></i>
                                             <div class="copy_option_wraper w-[192px] p-4 rounded-[10px] bg-[#F8FAFC] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.1)] absolute top-[40px] right-0 z-[2] hidden">
@@ -536,6 +536,28 @@
         $(".copy_option_wraper").on("click", function (event) {
             event.stopPropagation(); 
         });
+
+        // time scheduals option add and delete
+
+        $(document).on("click", '.time_add_icon', function () {
+            let add_icon = $(this);
+            let parent_div = add_icon.closest('.time_scheduals');
+            let clone = parent_div.find('.time_inner').first().clone();
+            clone.find('input').val('');
+            parent_div.find(".time_wraper").append(clone);
+        });
+        $(document).on("click", '.time_inner .delete_icon', function () {
+            let parent_div = $(this).closest('.time_scheduals'); 
+            let timeInnerCount = parent_div.find('.time_inner').length; 
+
+            if (timeInnerCount > 1) {
+                $(this).closest('.time_inner').remove(); 
+            } else {
+                alert("At least one time schedule must remain!");
+            }
+        });
+
+
     </script>
   </body>
 </html>
