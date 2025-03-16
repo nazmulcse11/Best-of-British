@@ -236,7 +236,13 @@
         
 
         //Dashboard sidebar 
-
+        
+        let sidebar_parent= $(".dasboard-store-hub");
+        if(sidebar_parent.hasClass('opend')){
+            $(".dasboard-store-hub-sub-menu").slideDown(1);
+            $(".dasboard-store-hub .angle-icon").addClass("close");
+            $(".dasboard-store-hub-sub-menu").removeClass("hidden");
+        }
         $(".dasboard-store-hub").on('click', function(){
             if($(".dasboard-store-hub-sub-menu").hasClass('hidden')){
                 $(".dasboard-store-hub-sub-menu").slideDown(300);
@@ -248,7 +254,7 @@
             }
             $(".dasboard-store-hub-sub-menu").toggleClass("hidden");
         });
-
+        
         //flat pickr
         $(".date-flat-picker-custom .date-picker").flatpickr({
             mode: "single",
