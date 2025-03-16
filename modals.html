@@ -128,22 +128,25 @@
         //modal on and close
         $(document).ready(function () {
             let modal_btn = document.querySelectorAll('.modal_btn');
+
             modal_btn.forEach(e => {
-                e.addEventListener('click',function(){
-                    let modal_name = '#' + e.dataset.target;
-                    let close_icon = document.querySelector(`${modal_name} .close_modal_btn`);
-                    $(modal_name).show();
-                    $(modal_name).click(function () {   
-                        if($(event.target).is('.modal-content')){
-                            $(modal_name).hide();
-                        } 
-                    });
-                    $(close_icon).click(function(){
-                        $(modal_name).hide();
-                    });
+                let modal_name = '#' + e.dataset.target;
+                let modal = $(modal_name);
+                let close_icon = $(modal_name + ' .close_modal_btn');
+
+                e.addEventListener('click', function () {
+                    modal.show();
+                });
+                modal.on('click', function (event) {
+                    console.log($(event.target).closest('.modal-content'))
+                    if (!$(event.target).closest('.modal-content').length) {
+                        modal.hide();
+                    }
+                });
+                close_icon.on('click', function () {
+                    modal.hide();
                 });
             });
-            
         });
     </script>
 </body>

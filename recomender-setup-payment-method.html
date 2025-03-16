@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Of British</title>
+    <link rel="stylesheet" href="./assets/css/plugin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="./assets/js/tailwind.js"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body> 
+    <div class="main relative">
+        <div class="max-w-[1240px] px-5 mx-auto pt-[60px] z-[-1] identity-wraper top-0 ">
+            <div class="logo-image">
+                <a href="index.html">
+                    <img src="./assets/images/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="recomender-payment-setup max-w-[651px] mx-auto mt-8">
+                <h3 class="heading dm-serif font-[400] text-[2rem] mb-[44px] text-[var(--color-0)]">Set Up Payment Method</h3>
+                <div class="payment-method">
+                    <label class="method flex justify-between items-center border-[1px] border-[#C1D5ED] py-[9px] px-[16px] rounded-lg has-[:checked]:border-[#011F53] mb-[20px]">
+                        <div class="left flex items-center gap-[12px]">
+                            <div class="icon w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#F7FAFC]">
+                                <img src="./assets/images/bank.svg" alt="bank">
+                            </div>
+                            <div class="text">
+                                <h4 class="font-[600] text-[1rem] leading-[1.5] text-[var(--color-17)]">Bank Account Details</h4>
+                                <p class="text-[0.875rem] leading-[1.5] text-[#96A3BE]">Debit Card</p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment" class="custom-checkbox style-three">
+                        </div>
+                    </label>  
+                    <label class="method flex justify-between items-center border-[1px] border-[#C1D5ED] py-[9px] px-[16px] rounded-lg has-[:checked]:border-[#011F53]">
+                        <div class="left flex items-center gap-[12px]">
+                            <div class="icon w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#F7FAFC]">
+                                <img src="./assets/images/logos_paypal1.png" alt="paypal">
+                            </div>
+                            <div class="text">
+                                <h4 class="font-[600] text-[1rem] leading-[1.5] text-[var(--color-17)]">Paypal Account</h4>
+                                <p class="text-[0.875rem] leading-[1.5] text-[#96A3BE]">Paypal</p>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment" class="custom-checkbox style-three">
+                        </div>
+                    </label>  
+                </div>
+                <div class="details mt-[20px] flex flex-col gap-[20px]">
+                    <div class="input-wraper">
+                        <label for="card-number" class="inline-block font-semibold text-[1rem] leading-[1.5] text-[#1E293B] mb-2">Card Number</label>
+                        <input type="text" class="border border-[#E2E8F0] rounded-lg py-[10px] px-[16px] w-full focus:outline-none font-semibold text-[1rem] text-[#020306] placeholder:text-[#96A3BE]" placeholder="1234 1234 1234 1234">
+                    </div>
+                    <div class="input-wraper">
+                        <label for="card-holder-name" class="inline-block font-semibold text-[1rem] leading-[1.5] text-[#1E293B] mb-2">Cardholder Name</label>
+                        <input type="text" class="border border-[#E2E8F0] rounded-lg py-[10px] px-[16px] w-full focus:outline-none font-semibold text-[1rem] text-[#020306] placeholder:text-[#96A3BE]" placeholder="John Doe">
+                    </div>
+                    <div class="flex gap-[20px] flex-wrap">
+                        <div class="input-wraper flex-[1_1_150px]">
+                            <label for="card-expiry-date" class="inline-block font-semibold text-[1rem] leading-[1.5] text-[#1E293B] mb-2">Expairy Date</label>
+                            <input type="text" id="card-expiry-date" class="border border-[#E2E8F0] rounded-lg py-[10px] px-[16px] w-full focus:outline-none font-semibold text-[1rem] text-[#020306] placeholder:text-[#96A3BE]" placeholder="mm/yyyy">
+                        </div>
+                        <div class="input-wraper flex-[1_1_150px]">
+                            <label for="card-cvv" class="inline-block font-semibold text-[1rem] leading-[1.5] text-[#1E293B] mb-2">CVV</label>
+                            <input type="text" class="border border-[#E2E8F0] rounded-lg py-[10px] px-[16px] w-full focus:outline-none font-semibold text-[1rem] text-[#020306] placeholder:text-[#96A3BE]">
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn-wraper">
+                    <a href="./recomender-ready-setup.html" class="w-[100%] bg-color6 text-[#fff] py-[16px] rounded-[10px] text-center text-[1rem] font-[600] mt-[24px]">Save Card Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        $("#card-expiry-date").flatpickr({
+            mode: "single",
+            enableTime: false,
+            dateFormat: "d-m-Y",
+            altInput: true,
+            altFormat: "j F, Y",
+            time_12hr: false,
+        });
+    </script>
+</body>
+</html>

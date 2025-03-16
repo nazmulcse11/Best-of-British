@@ -141,6 +141,18 @@ a{
       border-color: #28B636;
     }
   }
+  &.style-three {
+    height: 16px;
+    width: 16px;
+    border: 1px solid #C1D5ED;
+    &::after{
+      font-size: 10px;
+    }
+    &:checked{
+      background-color:#1E293B;
+      border-color: #1E293B;
+    }
+  }
   &.square{
     border-radius: 3px;
     border-width: 2px;
