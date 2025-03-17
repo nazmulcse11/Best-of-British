@@ -154,44 +154,40 @@
                 </div>
                 <div class="right_part_wraper flex-1">
                     <div class="top_link_part flex gap-[32px] mb-[35px]">
-                        <a href="./recomender-my-wallet.html" class="font-semibold text-color5 text-[0.8rem] tracking-[1.5px] uppercase"> Commission </a>
-                        <a href="./recomender-transiction-history.html" class="font-semibold text-[#8F9BA7] text-[0.8rem] tracking-[1.5px] uppercase"> Transaction History </a>
+                        <a href="./recomender-my-wallet.html" class="font-semibold text-[#8F9BA7] text-[0.8rem] tracking-[1.5px] uppercase"> Commission </a>
+                        <a href="./recomender-transiction-history.html" class="font-semibold text-color5 text-[0.8rem] tracking-[1.5px] uppercase"> Transaction History </a>
                     </div>
                     <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[30px] flex justify-between"><span>My Wallet</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
-                    <div class="wallet_balance_wraper mb-[20px] bg-[#A5A6AE0D] rounded-[10px] p-[24px]">
-                        <h4 class="font-semibold text-[1rem] leading-[1.2] tracking-[-0.02px] text-[#161622] mb-[12px]">Available Balance</h4>
-                        <p class="balance dm-serif text-[2rem] tracking-[0.2px] text-color-5">£50.00</p>
-                        <p class="text-[0.8rem] tracking-[-0.25px] text-[#9A979A]">Funds that are available for withdrawal.</p>
-                    </div>
-                    <div class="card_wraper">
-                        <div class="payment_method_wraper_part flex flex-wrap gap-[24px]">
-                            <label for="visa" class="flex-[1_1_220px] max-w-[314px] payment_method px-[16px] py-[20px] rounded-[10px] border-[1px] border-[#0203060D] flex justify-between items-center">
-                                <div class="flex gap-[16px] items-center">
-                                    <div class="image">
-                                        <img src="./assets/images/visa1.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <div class="card_number dm-serif text-[#141414] leading-[1]"><span>**** **** **** </span>0213</div>
-                                        <div class="exp font-[600] text-[#757575] text-[13px] leading-[1]">Exp: 12/26</div>
-                                    </div>
-                                </div>
-                                <input type="radio" name="payment_method" id="visa" class="custom-checkbox style-two">
-                            </label>
-                            <label for="mastercard" class="flex-[1_1_220px] max-w-[314px] payment_method px-[16px] py-[20px] rounded-[10px] border-[1px] border-[#0203060D] flex justify-between items-center">
-                                <div class="flex gap-[16px] items-center">
-                                    <div class="image">
-                                        <img src="./assets/images/mastercard.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <div class="card_number dm-serif text-[#141414] leading-[1]"><span>**** **** **** </span>0213</div>
-                                        <div class="exp font-[600] text-[#757575] text-[13px] leading-[1]">Exp: 12/26</div>
-                                    </div>
-                                </div>
-                                <input type="radio" name="payment_method" id="mastercard" class="custom-checkbox style-two">
-                            </label>
+                    <div class="statement_period_wraper">
+                        <div class="header px-[30px] py-[15px] bg-[#F5F5F5]">
+                            <h3 class="font-semibold text-[0.95rem] text-[#1F3650] leading-[1.4] tracking-[-0.2px] flex justify-between gap-4"><span>Statement Period</span> <span><i class="fas fa-angle-down"></i></span></h3>
+                            <div class="date_wraper text-[#50555C]">
+                                01 Sep 2024 - 12 Sep 2024
+                            </div>
                         </div>
-                        <div class="btn-wraper mt-6">
-                            <button class="modal_btn withdraw_funds_btn bg-color4 px-[24px] py-[12px] uppercase text-[#000000] text-[0.875rem] tracking-[1.5px]" data-target="withdraw_funds">Withdraw Funds</button>
+                        <div class="period-history-wraper pt-[24px] p-[30px] flex flex-col gap-[23px]">
+                            <div class="period-history has-[+_.period-history]:border-b has-[+_.period-history]:border-b-[#E6E6E4] has-[+_.period-history]:pb-[22px]">
+                                <div class="date text-[#4B4B51] mb-[20px]">12 Sep 2024</div>
+                                <div class="details flex justify-between">
+                                    <div class="time">09:00</div>
+                                    <div class="withdrawl">
+                                        <h4 class="font-semibold text-[0.95rem] text-[#272833] leading-[1.4] tracking-[-0.2px]">Withdrawal</h4>
+                                        <div class="ren_no text-[#50555C]">Ref no: 123 4567 89</div>
+                                    </div>
+                                    <div class="withdral-ammount font-semibold text-[0.95rem] text-[#272833] leading-[1.4] tracking-[-0.2px]">-£30.00 </div>
+                                </div>
+                            </div>
+                            <div class="period-history has-[+_.period-history]:border-b has-[+_.period-history]:border-b-[#E6E6E4] has-[+_.period-history]:pb-[22px]">
+                                <div class="date text-[#4B4B51] mb-[20px]">20 Sep 2024</div>
+                                <div class="details flex justify-between">
+                                    <div class="time">09:00</div>
+                                    <div class="withdrawl">
+                                        <h4 class="font-semibold text-[0.95rem] text-[#272833] leading-[1.4] tracking-[-0.2px]">Withdrawal</h4>
+                                        <div class="ren_no text-[#50555C]">Ref no: 123 4567 89</div>
+                                    </div>
+                                    <div class="withdral-ammount font-semibold text-[0.95rem] text-[#272833] leading-[1.4] tracking-[-0.2px]">-£30.00 </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
