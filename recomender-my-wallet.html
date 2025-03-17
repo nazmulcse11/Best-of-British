@@ -153,82 +153,45 @@
                     </div>
                 </div>
                 <div class="right_part_wraper flex-1">
-                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[48px] flex justify-between"><span>Referral History</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
-                    <div class="referral_wraper_part flex flex-col gap-[30px]">
-                        <div class="referral_part flex-1 pb-[10px] border-b-[1px] border-[#E6E6E4]">
-                            <div class="title text-[#4B4B51] uppercase mb-5">Referral details</div>
-                            <div class="referral_detials max-w-[450px] flex flex-col gap-[8px]">
-                                <div class="flex justify-between gap-[20px]"> 
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Date:</div>
-                                    <div class="value text-[#272833]">12 Sep 2024</div>
+                    <div class="top_link_part flex gap-[32px] mb-[35px]">
+                        <a href="./recomender-my-wallet.html" class="font-semibold text-color5 text-[0.8rem] tracking-[1.5px] uppercase"> Commission </a>
+                        <a href="./recomender-my-wallet.html" class="font-semibold text-[#8F9BA7] text-[0.8rem] tracking-[1.5px] uppercase"> Transaction History </a>
+                    </div>
+                    <h2 class="page_title dm-serif text-[2rem] leading-[1] tracking-[-0.4px] color-[#272833] mb-[30px] flex justify-between"><span>My Wallet</span> <span class="cursor-pointer md:hidden font-[500] text-[1rem]" id="buyer_profile_sidebar_menu_icon"><i class="fa-solid fa-bars"></i></span></h2>
+                    <div class="wallet_balance_wraper mb-[20px] bg-[#A5A6AE0D] rounded-[10px] p-[24px]">
+                        <h4 class="font-semibold text-[1rem] leading-[1.2] tracking-[-0.02px] text-[#161622] mb-[12px]">Available Balance</h4>
+                        <p class="balance dm-serif text-[2rem] tracking-[0.2px] text-color-5">£50.00</p>
+                        <p class="text-[0.8rem] tracking-[-0.25px] text-[#9A979A]">Funds that are available for withdrawal.</p>
+                    </div>
+                    <div class="card_wraper">
+                        <div class="payment_method_wraper_part flex flex-wrap gap-[24px]">
+                            <label for="visa" class="flex-[1_1_220px] max-w-[314px] payment_method px-[16px] py-[20px] rounded-[10px] border-[1px] border-[#0203060D] flex justify-between items-center">
+                                <div class="flex gap-[16px] items-center">
+                                    <div class="image">
+                                        <img src="./assets/images/visa1.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="card_number dm-serif text-[#141414] leading-[1]"><span>**** **** **** </span>0213</div>
+                                        <div class="exp font-[600] text-[#757575] text-[13px] leading-[1]">Exp: 12/26</div>
+                                    </div>
                                 </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Product:</div>
-                                    <div class="value text-[#272833]"><a href="./product-details.html" class="font-[600] underline text-[#1F3650]">Rolex Watch</a></div>
+                                <input type="radio" name="payment_method" id="visa" class="custom-checkbox style-two">
+                            </label>
+                            <label for="mastercard" class="flex-[1_1_220px] max-w-[314px] payment_method px-[16px] py-[20px] rounded-[10px] border-[1px] border-[#0203060D] flex justify-between items-center">
+                                <div class="flex gap-[16px] items-center">
+                                    <div class="image">
+                                        <img src="./assets/images/mastercard.png" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <div class="card_number dm-serif text-[#141414] leading-[1]"><span>**** **** **** </span>0213</div>
+                                        <div class="exp font-[600] text-[#757575] text-[13px] leading-[1]">Exp: 12/26</div>
+                                    </div>
                                 </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Recommender:</div>
-                                    <div class="value text-[#272833]">John Smith</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">URC:</div>
-                                    <div class="value text-[#272833]">BOB-0012345</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Status:</div>
-                                    <div class="value text-[#272833]">Purchased</div>
-                                </div>
-                            </div>
+                                <input type="radio" name="payment_method" id="mastercard" class="custom-checkbox style-two">
+                            </label>
                         </div>
-                        <div class="referral_part flex-1 pb-[10px] border-b-[1px] border-[#E6E6E4]">
-                            <div class="title text-[#4B4B51] uppercase mb-5">Referral details</div>
-                            <div class="referral_detials max-w-[450px] flex flex-col gap-[8px]">
-                                <div class="flex justify-between gap-[20px]"> 
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Date:</div>
-                                    <div class="value text-[#272833]">12 Sep 2024</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Product:</div>
-                                    <div class="value text-[#272833]"><a href="#/" class="font-[600] underline text-[#1F3650]">Rolex Watch</a></div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Recommender:</div>
-                                    <div class="value text-[#272833]">John Smith</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">URC:</div>
-                                    <div class="value text-[#272833]">BOB-0012345</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Status:</div>
-                                    <div class="value text-[#272833]">Purchased</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="referral_part flex-1 pb-[10px] border-b-[1px] border-[#E6E6E4]">
-                            <div class="title text-[#4B4B51] uppercase mb-5">Referral details</div>
-                            <div class="referral_detials max-w-[450px] flex flex-col gap-[8px]">
-                                <div class="flex justify-between gap-[20px]"> 
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Date:</div>
-                                    <div class="value text-[#272833]">12 Sep 2024</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Product:</div>
-                                    <div class="value text-[#272833]"><a href="#/" class="font-[600] underline text-[#1F3650]">Manual Recommendation</a></div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Recommender:</div>
-                                    <div class="value text-[#272833]">John Smith</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">URC:</div>
-                                    <div class="value text-[#272833]">BOB-0012345</div>
-                                </div>
-                                <div class="flex justify-between gap-[20px]">
-                                    <div class="property font-[600] text-[#A5A6AE] tracking-[-0.2px]">Status:</div>
-                                    <div class="value text-[#272833]">Viewed</div>
-                                </div>
-                            </div>
+                        <div class="btn-wraper mt-6">
+                            <button class="modal_btn withdraw_funds_btn bg-color4 px-[24px] py-[12px] uppercase text-[#000000] text-[0.875rem] tracking-[1.5px]" data-target="withdraw_funds">Withdraw Funds</button>
                         </div>
                     </div>
                 </div>
@@ -306,26 +269,42 @@
             </div>
         </div>
     </footer>
-    <div id="unique-referance-code" class="hidden modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+    <div id="withdraw_funds" class="hidden modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
         <div class="flex min-h-full items-center justify-center">
-            <div class=" modal-content bg-[#fff] px-[36px] py-[50px] rounded-[10px] mobilexl:min-w-[400px] max-w-[545px] dm-serif max-h-[500px] overflow-y-auto scrollbar-none">
+            <div class=" modal-content bg-[#fff] px-[36px] py-[22px] rounded-[10px] mobilexl:min-w-[400px] max-w-[545px] max-h-[500px] overflow-y-auto scrollbar-none">
                 <div class="modal_body">
                     <div class="header_text flex justify-between items-center">
-                        <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Unique Reference Code</h3>
+                        <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Withdraw Funds</h3>
                         <div class="close_modal_btn">
                             <a href="javascript:void(0)" class="close-modal cursor-pointer text-[1.25rem]"><i class="fa-solid fa-xmark"></i></a>
                         </div>
                     </div>
-                    <div class="urc_code mt-[44px]">
+                    <div class="withdraw-amount mt-[44px]">
                         <form action="#" class="flex flex-col gap-[8px]">
-                            <label for="urc_code" class="inline-block font-semibold text-[#1E293B] text-[1rem]">Code</label>
+                            <label for="urc_code" class="inline-block font-semibold text-[#1E293B] text-[1rem]">Amount you would like to withdraw</label>
                             <div class="relative">
-                                <input type="text" class="address_line bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-color11 placeholder:text-color11" placeholder="BEST-123-456">
-                                <a href="javascript:void(0)" class="absolute top-[11px] right-4">
-                                    <img src="/assets/images/copy-logo.png" alt="">
-                                </a>
+                                <input type="text" class="address_line bg-[transparent] border-[1px] border-[#CCCBC8] w-full p-[11px] rounded-[5px] tracking-[1px] text-[1rem] text-[#020306] placeholder:text-color11" placeholder="£ 30.00">
                             </div>
                         </form>
+                        <button class="confirmation-btn close_modal_btn modal_btn bg-color4 px-[24px] py-[12px] uppercase text-[#000000] text-[0.875rem] tracking-[1.5px] mt-[42px] w-full text-center" data-target="confirm_message">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="confirm_message" class="hidden modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+        <div class="flex min-h-full items-center justify-center">
+            <div class=" modal-content bg-[#fff] px-[36px] py-[22px] rounded-[10px] mobilexl:min-w-[400px] max-w-[545px] max-h-[500px] overflow-y-auto scrollbar-none">
+                <div class="modal_body">
+                    <div class="success_message_wraper text-center">
+                        <div class="h-[100px] w-[100px] flex justify-center items-center text-white text-[1.5rem] bg-[#caa25c] rounded-full mx-auto border-[10px] border-[#F6EEE0] shadow-[0_0_0_10px_#FAF6EF]">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h4 class="title dm-serif text-[1.875rem] text-[#272833] leading-[1] mt-[30px]">Succcess!</h4>
+                        <p class="tracking-[-0.2px] text-[#686970] my-[20px]">Your £30.00 has been withdrawn and will be processed shortly.</p>
+                        <div class="btn-wrpaer">
+                            <button class="close_modal_btn font-semibold text-[#020306] text-center p-[10px] rounded-[10px] bg-[#F6F6F7] w-full">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -357,6 +336,7 @@
                 let close_icon = $(modal_name + ' .close_modal_btn');
 
                 e.addEventListener('click', function () {
+                    console.log(modal_name);
                     modal.show();
                 });
                 modal.on('click', function (event) {
