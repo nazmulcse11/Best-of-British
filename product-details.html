@@ -209,11 +209,11 @@
                             <a href="javascript:void(0)" class="bg-color27 text-[#020306] font-[600] text-[.875rem] py-[10px] px-[20px] leading-[2] tracking-[1.5px]  w-full">ADD TO CART</a>
                         </div>
                         <div class="share-btn">
-                            <a href="javascript:void(0)" class="w-[44px] h-[44px] rounded-[50%] bg-[#a5a6ae1a] flex items-center justify-center">
+                            <button data-target="recomended_product" class="modal_btn w-[44px] h-[44px] rounded-[50%] bg-[#a5a6ae1a] flex items-center justify-center">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.7619 6L22 11.5556L14.7619 17.1111V14.2222C14.3763 14.2044 7.66405 13.9922 3 18C4.8672 12.35 10.7289 9.89111 14.7619 8.88889V6Z" fill="#020306"/>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="product-summary-wraper mt-[30px] flex flex-col gap-[16px]">
@@ -635,6 +635,44 @@
             </div>
         </div>
     </footer>
+    <div id="recomended_product" class=" modal-overlay fixed inset-0 bg-[#00020b66] z-[10]">
+        <div class="flex min-h-full items-center justify-center">
+            <div class=" modal-content bg-[#fff] px-[36px] py-[22px] rounded-[10px] mobilexl:min-w-[400px] w-full max-w-[676px] max-h-[500px] overflow-y-auto scrollbar-none">
+                <div class="modal_body">
+                    <div class="header_text flex justify-between items-center">
+                        <h3 class="font-[400] text-[#1A202C] text-[1.5rem] leading-[1.3] dm-serif">Recommend a product</h3>
+                        <div class="close_modal_btn">
+                            <a href="javascript:void(0)" class="close-modal cursor-pointer text-[1.25rem]"><i class="fa-solid fa-xmark"></i></a>
+                        </div>
+                    </div>
+                    <div class="withdraw-amount mt-[44px]">
+                        <form action="#" class="flex flex-col gap-[8px]">
+                            <div>
+                                <label for="urc_code" class="inline-block font-semibold text-[#1E293B] text-[1rem]">Store Name & Location</label>
+                                <div class="relative">
+                                    <input type="text" class="address_line bg-[transparent] border-[1px] border-[#E2E8F0] w-full p-[11px] rounded-[5px] tracking-[1px] text-[1rem] text-[#020306] placeholder:text-color11" placeholder="Rolex - London High Street">
+                                    <a href="javascript:void(0)" class="absolute top-[11px] right-4">
+                                        <img src="/assets/images/aroplane.svg" alt="send">
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="add_notes" class="inline-block font-semibold text-[#1E293B] text-[1rem]">Add Notes</label>
+                                <textarea name="add_notes" id="add_notes" class="bg-[transparent] border-[1px] border-[#E2E8F0] w-full p-[11px] rounded-[5px] tracking-[1px] text-[1rem] text-[#020306] placeholder:text-color11" placeholder="Write something..."></textarea>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-[#1E293B] text-[1rem]">Upload Files</div>
+                                <p class="text-[1rem] text-[#334155] mb-2">Add images or video</p>
+                                <label for="image_upload_input" id="file_text_show_input" class="block bg-[transparent] border-[1px] border-[#E2E8F0] w-full p-[11px] rounded-[5px] tracking-[1px] text-[1rem] text-[#334155] flex gap-[10px]"><span><img src="./assets/images/jam_upload.svg" alt=""></span><span>Upload a file</span></label>
+                                <input type="file" name="image_upload" id="image_upload_input" multiple class="hidden">
+                            </div>
+                        </form>
+                        <button class="confirmation-btn close_modal_btn bg-[#2F4A69] px-[24px] py-[12px] uppercase text-[#fff] text-[0.875rem] tracking-[1.5px] mt-[42px] w-full text-center" data-target="confirm_message">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./assets/js/plugin.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
@@ -655,6 +693,41 @@
                 $('.mega_menu').toggleClass("hidden");
             })
         })
+        //modal on and close
+        $(document).ready(function () {
+            let modal_btn = document.querySelectorAll('.modal_btn');
+
+            modal_btn.forEach(e => {
+                let modal_name = '#' + e.dataset.target;
+                let modal = $(modal_name);
+                let close_icon = $(modal_name + ' .close_modal_btn');
+
+                e.addEventListener('click', function () {
+                    console.log(modal_name);
+                    modal.show();
+                });
+                modal.on('click', function (event) {
+                    if (!$(event.target).closest('.modal-content').length) {
+                        modal.hide();
+                    }
+                });
+                close_icon.on('click', function () {
+                    modal.hide();
+                });
+            });
+        });
+        // Uploded file neme text
+        const fileInput = document.getElementById("image_upload_input");
+        const fileNameDisplay = document.getElementById("file_text_show_input");
+
+        fileInput.addEventListener("change", function() {
+            if (fileInput.files.length > 0) {
+                const fileNames = Array.from(fileInput.files).map(file => file.name).join(", ");
+                fileNameDisplay.textContent = `Selected files: ${fileNames}`;
+            } else {
+                fileNameDisplay.textContent = "No files selected.";
+            }
+        });
     </script>
 </body>
 </html>
